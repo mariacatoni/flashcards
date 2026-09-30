@@ -1,0 +1,8 @@
+# Large upstream source files are downloaded only when refreshing the dataset.
+*.pdf
+cedict_ts.u8
+
+# Python tooling
+__pycache__/
+*.py[cod]
+
