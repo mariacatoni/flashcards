@@ -37,6 +37,8 @@ async function loadTestFunctions() {
   vm.runInNewContext(
     `${source}\n;globalThis.testFunctions = {
       clampStrokeIndex,
+      datasetLevels,
+      datasetUrlFromManifest,
       filterSummary,
       migrateLegacyAssignments,
       strokeCharactersFor,
@@ -99,4 +101,30 @@ test("filter summaries stay concise", async () => {
   assert.equal(filterSummary([], labels, "No levels"), "No levels");
   assert.equal(filterSummary(["1"], labels, "No levels"), "HSK 1");
   assert.equal(filterSummary(["1", "2"], labels, "No levels"), "2 selected");
+});
+
+test("available HSK levels come from dataset metadata", async () => {
+  const { datasetLevels } = await loadTestFunctions();
+
+  assert.deepEqual(
+    [...datasetLevels({ dataset: { levels: [4, 1, 3, 2, 4] } })],
+    [1, 2, 3, 4],
+  );
+  assert.deepEqual([...datasetLevels({ dataset: { levels: [0, 1, 10] } })], [1]);
+  assert.deepEqual(
+    [...datasetLevels({ dataset: { levels: [9, 7, 5, 3, 1, 2, 4, 6, 8] } })],
+    [1, 2, 3, 4, 5, 6, 7, 8, 9],
+  );
+});
+
+test("the data manifest only accepts local JSON filenames", async () => {
+  const { datasetUrlFromManifest } = await loadTestFunctions();
+
+  assert.equal(
+    datasetUrlFromManifest({ schemaVersion: 1, dataset: "levels-1-4.json" }),
+    "./data/levels-1-4.json",
+  );
+  assert.throws(() =>
+    datasetUrlFromManifest({ schemaVersion: 1, dataset: "../private.json" }),
+  );
 });

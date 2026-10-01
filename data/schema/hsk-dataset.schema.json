@@ -8,7 +8,10 @@
     "schemaVersion": { "const": 1 },
     "dataset": {
       "type": "object",
-      "required": ["id", "syllabusVersion", "levels", "entryCount", "sources"],
+      "required": [
+        "id", "syllabusVersion", "levels", "entryCount",
+        "entryCountByLevel", "sources"
+      ],
       "properties": {
         "id": { "type": "string" },
         "syllabusVersion": { "const": "2025-11" },
@@ -18,6 +21,13 @@
           "uniqueItems": true
         },
         "entryCount": { "type": "integer", "minimum": 1 },
+        "entryCountByLevel": {
+          "type": "object",
+          "patternProperties": {
+            "^[1-9]$": { "type": "integer", "minimum": 1 }
+          },
+          "additionalProperties": false
+        },
         "sources": { "type": "array", "minItems": 2 }
       }
     },

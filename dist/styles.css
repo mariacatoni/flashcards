@@ -16,6 +16,20 @@
   --level-1-ink: #405c67;
   --level-2-bg: #eee9de;
   --level-2-ink: #6c5b3f;
+  --level-3-bg: #e5ede5;
+  --level-3-ink: #48604b;
+  --level-4-bg: #eee6eb;
+  --level-4-ink: #6a5060;
+  --level-5-bg: #e9e7ef;
+  --level-5-ink: #5a5572;
+  --level-6-bg: #f0e8df;
+  --level-6-ink: #705b45;
+  --level-7-bg: #e2eceb;
+  --level-7-ink: #3f6260;
+  --level-8-bg: #f0e5e3;
+  --level-8-ink: #704d49;
+  --level-9-bg: #e6e9ed;
+  --level-9-ink: #4f5d6b;
   --deck-active: #e7ebe7;
   --deck-active-ink: #34493d;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
@@ -211,6 +225,7 @@ input:focus-visible {
   top: calc(100% + 0.3rem);
   left: 0;
   min-width: 100%;
+  max-height: min(24rem, calc(100vh - 8rem));
   display: grid;
   gap: 0.65rem;
   margin: 0;
@@ -219,6 +234,12 @@ input:focus-visible {
   border: 1px solid var(--line-strong);
   border-radius: 3px;
   box-shadow: none;
+  overflow-y: auto;
+}
+
+.filter-options {
+  display: grid;
+  gap: 0.65rem;
 }
 
 .deck-filter-menu .filter-popover {
@@ -293,10 +314,58 @@ input:focus-visible {
   letter-spacing: 0.04em;
 }
 
+.level-badge[data-level="1"] {
+  color: var(--level-1-ink);
+  background: var(--level-1-bg);
+  border-color: color-mix(in srgb, var(--level-1-ink) 25%, transparent);
+}
+
 .level-badge[data-level="2"] {
   color: var(--level-2-ink);
   background: var(--level-2-bg);
   border-color: color-mix(in srgb, var(--level-2-ink) 25%, transparent);
+}
+
+.level-badge[data-level="3"] {
+  color: var(--level-3-ink);
+  background: var(--level-3-bg);
+  border-color: color-mix(in srgb, var(--level-3-ink) 25%, transparent);
+}
+
+.level-badge[data-level="4"] {
+  color: var(--level-4-ink);
+  background: var(--level-4-bg);
+  border-color: color-mix(in srgb, var(--level-4-ink) 25%, transparent);
+}
+
+.level-badge[data-level="5"] {
+  color: var(--level-5-ink);
+  background: var(--level-5-bg);
+  border-color: color-mix(in srgb, var(--level-5-ink) 25%, transparent);
+}
+
+.level-badge[data-level="6"] {
+  color: var(--level-6-ink);
+  background: var(--level-6-bg);
+  border-color: color-mix(in srgb, var(--level-6-ink) 25%, transparent);
+}
+
+.level-badge[data-level="7"] {
+  color: var(--level-7-ink);
+  background: var(--level-7-bg);
+  border-color: color-mix(in srgb, var(--level-7-ink) 25%, transparent);
+}
+
+.level-badge[data-level="8"] {
+  color: var(--level-8-ink);
+  background: var(--level-8-bg);
+  border-color: color-mix(in srgb, var(--level-8-ink) 25%, transparent);
+}
+
+.level-badge[data-level="9"] {
+  color: var(--level-9-ink);
+  background: var(--level-9-bg);
+  border-color: color-mix(in srgb, var(--level-9-ink) 25%, transparent);
 }
 
 .part-of-speech {

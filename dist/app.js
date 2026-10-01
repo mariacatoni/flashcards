@@ -17,7 +17,7 @@ const state = {
   document: null,
   cards: [],
   index: 0,
-  levels: ["1"],
+  levels: [],
   decks: [DEFAULT_DECK],
   query: "",
   assignments: {},
@@ -33,7 +33,7 @@ const state = {
 let hanziWriterPromise;
 
 const elements = {
-  levelFilters: [...document.querySelectorAll(".level-filter-input")],
+  levelFilterOptions: document.querySelector("#level-filter-options"),
   levelFilterSummary: document.querySelector("#level-filter-summary"),
   searchInput: document.querySelector("#search-input"),
   deckFilters: [...document.querySelectorAll(".deck-filter-input")],
@@ -185,6 +185,26 @@ function updateFilterValues(values, value, checked) {
   return nextValues;
 }
 
+function datasetLevels(documentValue) {
+  const levels = documentValue?.dataset?.levels;
+  if (!Array.isArray(levels)) return [];
+  return [...new Set(levels)]
+    .filter((level) => Number.isInteger(level) && level >= 1 && level <= 9)
+    .sort((left, right) => left - right);
+}
+
+function datasetUrlFromManifest(manifest) {
+  const filename = manifest?.dataset;
+  if (
+    manifest?.schemaVersion !== 1 ||
+    typeof filename !== "string" ||
+    !/^[a-zA-Z0-9._-]+\.json$/.test(filename)
+  ) {
+    throw new Error("The data manifest is invalid.");
+  }
+  return `./data/${filename}`;
+}
+
 function filterSummary(values, labels, emptyLabel) {
   if (values.length === 0) return emptyLabel;
   if (values.length === 1) return labels[values[0]];
@@ -195,6 +215,32 @@ function cardsInSelectedLevels() {
   return state.document.entries.filter(
     (card) => state.levels.includes(String(card.level)),
   );
+}
+
+function renderLevelFilters() {
+  const availableLevels = datasetLevels(state.document);
+  const availableValues = availableLevels.map(String);
+  state.levels = state.levels.filter((level) => availableValues.includes(level));
+  if (state.levels.length === 0 && availableValues.length > 0) {
+    state.levels = [availableValues[0]];
+  }
+
+  const choices = availableLevels.map((level) => {
+    const label = document.createElement("label");
+    label.className = "filter-choice";
+
+    const checkbox = document.createElement("input");
+    checkbox.className = "level-filter-input";
+    checkbox.type = "checkbox";
+    checkbox.value = String(level);
+    checkbox.checked = state.levels.includes(String(level));
+
+    const text = document.createElement("span");
+    text.textContent = `HSK ${level}`;
+    label.append(checkbox, text);
+    return label;
+  });
+  elements.levelFilterOptions.replaceChildren(...choices);
 }
 
 function normalizeMarkedPinyin(value) {
@@ -269,9 +315,12 @@ function updateDeckOptions() {
 }
 
 function updateFilterSummaries() {
+  const levelLabels = Object.fromEntries(
+    datasetLevels(state.document).map((level) => [String(level), `HSK ${level}`]),
+  );
   elements.levelFilterSummary.textContent = filterSummary(
     state.levels,
-    { 1: "HSK 1", 2: "HSK 2" },
+    levelLabels,
     "No levels",
   );
   elements.deckFilterSummary.textContent = filterSummary(
@@ -610,10 +659,15 @@ function bindEvents() {
       });
     });
   });
-  elements.levelFilters.forEach((checkbox) => {
-    checkbox.addEventListener("change", () =>
-      setLevelFilter(checkbox.value, checkbox.checked),
-    );
+  elements.levelFilterOptions.addEventListener("change", (event) => {
+    const checkbox = event.target;
+    if (
+      !(checkbox instanceof HTMLInputElement) ||
+      !checkbox.classList.contains("level-filter-input")
+    ) {
+      return;
+    }
+    setLevelFilter(checkbox.value, checkbox.checked);
   });
   elements.searchInput.addEventListener("input", (event) => setSearch(event.target.value));
   elements.deckFilters.forEach((checkbox) => {
@@ -675,9 +729,15 @@ function bindEvents() {
 async function initialize() {
   bindEvents();
   try {
-    const response = await fetch("./data/levels-1-2.json");
+    const manifestResponse = await fetch("./data/manifest.json");
+    if (!manifestResponse.ok) {
+      throw new Error(`Manifest request failed with status ${manifestResponse.status}`);
+    }
+    const manifest = await manifestResponse.json();
+    const response = await fetch(datasetUrlFromManifest(manifest));
     if (!response.ok) throw new Error(`Data request failed with status ${response.status}`);
     state.document = await response.json();
+    renderLevelFilters();
     state.assignments = loadAssignments();
     applyFilters();
   } catch (error) {

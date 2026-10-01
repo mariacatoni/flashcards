@@ -9,24 +9,58 @@ from collections import Counter
 from pathlib import Path
 
 
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_EXPECTED_COUNTS = (
+    ROOT / "data/sources/hsk-2025-11/expected-level-counts.json"
+)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("dataset", type=Path)
+    parser.add_argument(
+        "--expected-counts",
+        type=Path,
+        default=DEFAULT_EXPECTED_COUNTS,
+        help="Independent, reviewed per-level count contract",
+    )
     return parser.parse_args()
 
 
-def validate(path: Path) -> list[str]:
+def load_expected_counts(path: Path = DEFAULT_EXPECTED_COUNTS) -> dict[int, int]:
     document = json.loads(path.read_text(encoding="utf-8"))
+    return {int(level): int(count) for level, count in document["counts"].items()}
+
+
+def validate(
+    path: Path, expected_counts: dict[int, int] | None = None
+) -> list[str]:
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if expected_counts is None:
+        expected_counts = load_expected_counts()
     errors: list[str] = []
     entries = document.get("entries", [])
     ids = [entry.get("id") for entry in entries]
+    dataset = document.get("dataset", {})
+    declared_levels = dataset.get("levels", [])
+    actual_counts = Counter(entry.get("level") for entry in entries)
+    actual_levels = set(actual_counts)
 
     if document.get("schemaVersion") != 1:
         errors.append("schemaVersion must be 1")
     if len(ids) != len(set(ids)):
         errors.append("entry IDs must be unique")
-    if document.get("dataset", {}).get("entryCount") != len(entries):
+    if dataset.get("entryCount") != len(entries):
         errors.append("dataset.entryCount does not match entries")
+    if declared_levels != sorted(set(declared_levels)):
+        errors.append("dataset.levels must be unique and sorted")
+    if set(declared_levels) != actual_levels:
+        errors.append("dataset.levels does not match entry levels")
+    expected_metadata_counts = {
+        str(level): count for level, count in sorted(actual_counts.items())
+    }
+    if dataset.get("entryCountByLevel") != expected_metadata_counts:
+        errors.append("dataset.entryCountByLevel does not match entries")
 
     for entry in entries:
         label = entry.get("id", "<missing id>")
@@ -46,20 +80,17 @@ def validate(path: Path) -> list[str]:
                 if syllable.get("tone") not in range(1, 6):
                     errors.append(f"{label}: invalid tone number")
 
-    expected_counts = {"1": 300, "2": 204}
-    actual_counts = Counter(str(entry["level"]) for entry in entries)
-    if set(document.get("dataset", {}).get("levels", [])) == {1, 2}:
-        for level, expected in expected_counts.items():
-            if actual_counts[level] != expected:
-                errors.append(
-                    f"level {level}: expected {expected} entries, found {actual_counts[level]}"
-                )
+    for level, expected in expected_counts.items():
+        if level in actual_levels and actual_counts[level] != expected:
+            errors.append(
+                f"level {level}: expected {expected} entries, found {actual_counts[level]}"
+            )
     return errors
 
 
 def main() -> None:
     args = parse_args()
-    errors = validate(args.dataset)
+    errors = validate(args.dataset, load_expected_counts(args.expected_counts))
     if errors:
         print("Validation failed:")
         for error in errors:

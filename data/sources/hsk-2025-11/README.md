@@ -2,6 +2,8 @@
 
 `hsk-levels-1-2.source.tsv` is a reproducible, reviewable snapshot containing
 only Level 1 and Level 2 rows selected from the upstream generated TSV.
+It remains the current production source while the interface and pipeline are
+prepared for cumulative snapshots through Level 9.
 
 ## Provenance
 
@@ -34,5 +36,14 @@ The importer accepts this subset or the complete upstream TSV. To refresh:
 4. Compare its validation report with the current snapshot.
 5. Replace this TSV only after reviewing changed and unresolved rows.
 6. Regenerate and validate the JSON.
+
+For a level expansion, create a new cumulative snapshot such as
+`hsk-levels-1-4.source.tsv`; do not overwrite or assemble it by concatenating
+level files. Preserve upstream `word_index` values so existing generated IDs
+and browser deck assignments remain stable. Record the full upstream checksum,
+selection date, extraction commit, and any manual review decisions here before
+publishing the expanded dataset. Add independently verified official counts to
+`expected-level-counts.json`; the validator and publishing script use this file
+to detect missing or extra source rows.
 
 Large PDF and dictionary source files are intentionally excluded from Git.

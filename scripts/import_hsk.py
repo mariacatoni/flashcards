@@ -59,8 +59,7 @@ def parse_args() -> argparse.Namespace:
         "--levels",
         type=int,
         nargs="+",
-        default=[1, 2],
-        help="Levels to include (default: 1 2)",
+        help="Levels to include (default: every level present in the source)",
     )
     return parser.parse_args()
 
@@ -155,7 +154,9 @@ def convert_row(row: dict[str, str]) -> dict[str, object]:
     }
 
 
-def read_entries(path: Path, levels: set[int]) -> list[dict[str, object]]:
+def read_entries(
+    path: Path, levels: set[int] | None = None
+) -> list[dict[str, object]]:
     with path.open(encoding="utf-8", newline="") as source:
         reader = csv.DictReader(source, delimiter="\t")
         missing = REQUIRED_COLUMNS.difference(reader.fieldnames or [])
@@ -165,7 +166,8 @@ def read_entries(path: Path, levels: set[int]) -> list[dict[str, object]]:
         entries = [
             convert_row(row)
             for row in reader
-            if row["level"].isdigit() and int(row["level"]) in levels
+            if row["level"].isdigit()
+            and (levels is None or int(row["level"]) in levels)
         ]
 
     entries.sort(key=lambda entry: (entry["sourceIndex"], entry["level"], entry["id"]))
@@ -217,12 +219,15 @@ def write_dataset(dataset: dict[str, object], output: Path) -> None:
 
 def main() -> None:
     args = parse_args()
-    levels = set(args.levels)
-    if not levels or min(levels) < 1 or max(levels) > 9:
+    requested_levels = set(args.levels) if args.levels else None
+    if requested_levels and (
+        min(requested_levels) < 1 or max(requested_levels) > 9
+    ):
         raise SystemExit("Levels must be integers from 1 through 9")
-    entries = read_entries(args.input, levels)
+    entries = read_entries(args.input, requested_levels)
     if not entries:
         raise SystemExit("No entries matched the requested levels")
+    levels = {int(entry["level"]) for entry in entries}
     dataset = build_dataset(entries, levels)
     write_dataset(dataset, args.output)
     counts = dataset["dataset"]["entryCountByLevel"]
