@@ -34,13 +34,27 @@
       <section class="filter-bar" aria-label="Card filters">
         <div class="search-control">
           <label for="search-input">Search</label>
-          <input
-            id="search-input"
-            type="search"
-            placeholder="Character or pinyin"
-            autocomplete="off"
-            spellcheck="false"
-          />
+          <div class="search-combobox">
+            <input
+              id="search-input"
+              type="search"
+              role="combobox"
+              placeholder="Character or pinyin"
+              autocomplete="off"
+              spellcheck="false"
+              aria-autocomplete="list"
+              aria-controls="search-suggestions"
+              aria-expanded="false"
+              aria-haspopup="listbox"
+            />
+            <ul
+              class="search-suggestions"
+              id="search-suggestions"
+              role="listbox"
+              aria-label="Potential matches"
+              hidden
+            ></ul>
+          </div>
         </div>
 
         <div class="filter-menu">

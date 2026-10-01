@@ -41,6 +41,8 @@ async function loadTestFunctions() {
       datasetUrlFromManifest,
       filterSummary,
       initialDeckFor,
+      cardMatchesQuery,
+      matchingSearchSuggestions,
       migrateLegacyAssignments,
       strokeCharactersFor,
       updateFilterValues,
@@ -143,4 +145,45 @@ test("the data manifest only accepts local JSON filenames", async () => {
   assert.throws(() =>
     datasetUrlFromManifest({ schemaVersion: 1, dataset: "../private.json" }),
   );
+});
+
+test("search matches characters and common pinyin forms", async () => {
+  const { cardMatchesQuery } = await loadTestFunctions();
+  const card = {
+    simplified: "学习",
+    pinyin: { display: "xué xí", numbered: "xue2 xi2" },
+  };
+
+  assert.equal(cardMatchesQuery(card, "学"), true);
+  assert.equal(cardMatchesQuery(card, "xue"), true);
+  assert.equal(cardMatchesQuery(card, "xué"), true);
+  assert.equal(cardMatchesQuery(card, "xue2"), true);
+  assert.equal(cardMatchesQuery(card, "shi"), false);
+});
+
+test("search suggestions rank exact matches first and respect the limit", async () => {
+  const { matchingSearchSuggestions } = await loadTestFunctions();
+  const cards = [
+    {
+      id: "two",
+      simplified: "学习",
+      pinyin: { display: "xué xí", numbered: "xue2 xi2" },
+    },
+    { id: "one", simplified: "学", pinyin: { display: "xué", numbered: "xue2" } },
+    {
+      id: "three",
+      simplified: "学校",
+      pinyin: { display: "xué xiào", numbered: "xue2 xiao4" },
+    },
+  ];
+
+  assert.deepEqual(
+    [...matchingSearchSuggestions(cards, "xue", 2)].map((card) => card.id),
+    ["one", "two"],
+  );
+  assert.deepEqual(
+    [...matchingSearchSuggestions(cards, "学校", 2)].map((card) => card.id),
+    ["three"],
+  );
+  assert.deepEqual([...matchingSearchSuggestions(cards, "", 2)], []);
 });

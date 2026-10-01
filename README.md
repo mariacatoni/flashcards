@@ -71,7 +71,9 @@ Unclassified. The app still opens with the Studying deck selected.
 Cards can also be filtered by simplified characters, tone-marked pinyin,
 numbered pinyin, or pinyin without tones. The HSK-level and deck dropdowns
 contain checkboxes that can be combined to study more than one level or deck
-at a time.
+at a time. Search displays up to seven potential matches from the selected
+levels and decks; a match can be chosen with the pointer or with the arrow keys
+and Enter.
 
 The Stroke order control opens an animated, character-by-character reference.
 Hanzi Writer and its character data are loaded on demand from pinned jsDelivr

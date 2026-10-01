@@ -8,6 +8,7 @@ const HANZI_DATA_ROOT =
 const DEFAULT_FILTER_DECK = "studying";
 const NEW_CARD_DECK = "unclassified";
 const PRECLASSIFIED_MAX_LEVEL = 2;
+const SEARCH_SUGGESTION_LIMIT = 7;
 const DECK_LABELS = {
   unclassified: "Unclassified",
   later: "To learn later",
@@ -23,6 +24,8 @@ const state = {
   levels: [],
   decks: [DEFAULT_FILTER_DECK],
   query: "",
+  searchSuggestionIndex: -1,
+  searchSuggestionsVisible: false,
   assignments: {},
   canPersist: true,
   showPinyin: true,
@@ -39,6 +42,7 @@ const elements = {
   levelFilterOptions: document.querySelector("#level-filter-options"),
   levelFilterSummary: document.querySelector("#level-filter-summary"),
   searchInput: document.querySelector("#search-input"),
+  searchSuggestions: document.querySelector("#search-suggestions"),
   deckFilters: [...document.querySelectorAll(".deck-filter-input")],
   deckFilterSummary: document.querySelector("#deck-filter-summary"),
   deckCountLabels: [...document.querySelectorAll("[data-deck-count]")],
@@ -288,8 +292,8 @@ function normalizePlainPinyin(value) {
     .replace(/[^a-z]/g, "");
 }
 
-function matchesSearch(card) {
-  const query = state.query.trim();
+function cardMatchesQuery(card, queryValue) {
+  const query = queryValue.trim();
   if (!query) return true;
   if (card.simplified.includes(query)) return true;
 
@@ -314,6 +318,47 @@ function matchesSearch(card) {
     normalizedQuery.length > 0 &&
     normalizePlainPinyin(card.pinyin.display).includes(normalizedQuery)
   );
+}
+
+function matchesSearch(card) {
+  return cardMatchesQuery(card, state.query);
+}
+
+function searchMatchRank(card, queryValue) {
+  const query = queryValue.trim();
+  if (card.simplified === query) return 0;
+  if (card.simplified.startsWith(query)) return 1;
+
+  let normalizedQuery;
+  let normalizedPinyin;
+  if (/[1-5]/.test(query)) {
+    normalizedQuery = normalizeNumberedPinyin(query);
+    normalizedPinyin = normalizeNumberedPinyin(card.pinyin.numbered);
+  } else if (TONE_MARK_PATTERN.test(query.normalize("NFC"))) {
+    normalizedQuery = normalizeMarkedPinyin(query);
+    normalizedPinyin = normalizeMarkedPinyin(card.pinyin.display);
+  } else {
+    normalizedQuery = normalizePlainPinyin(query);
+    normalizedPinyin = normalizePlainPinyin(card.pinyin.display);
+  }
+
+  if (normalizedQuery && normalizedPinyin === normalizedQuery) return 0;
+  if (normalizedQuery && normalizedPinyin.startsWith(normalizedQuery)) return 1;
+  return 2;
+}
+
+function matchingSearchSuggestions(cards, query, limit = SEARCH_SUGGESTION_LIMIT) {
+  if (!query.trim() || limit <= 0) return [];
+  return cards
+    .map((card, index) => ({ card, index }))
+    .filter(({ card }) => cardMatchesQuery(card, query))
+    .sort(
+      (left, right) =>
+        searchMatchRank(left.card, query) - searchMatchRank(right.card, query) ||
+        left.index - right.index,
+    )
+    .slice(0, limit)
+    .map(({ card }) => card);
 }
 
 function updateDeckOptions() {
@@ -378,6 +423,119 @@ function renderPinyin(card) {
     });
   });
   elements.pinyin.setAttribute("aria-label", card.pinyin.display);
+}
+
+function currentSearchSuggestions() {
+  const eligibleCards = cardsInSelectedLevels().filter((card) =>
+    state.decks.includes(deckFor(card)),
+  );
+  return matchingSearchSuggestions(eligibleCards, state.query);
+}
+
+function closeSearchSuggestions() {
+  state.searchSuggestionsVisible = false;
+  state.searchSuggestionIndex = -1;
+  elements.searchSuggestions.hidden = true;
+  elements.searchSuggestions.replaceChildren();
+  elements.searchInput.setAttribute("aria-expanded", "false");
+  elements.searchInput.removeAttribute("aria-activedescendant");
+}
+
+function renderSearchSuggestions() {
+  const suggestions = currentSearchSuggestions();
+  if (
+    !state.searchSuggestionsVisible ||
+    !state.query.trim() ||
+    suggestions.length === 0
+  ) {
+    closeSearchSuggestions();
+    return;
+  }
+
+  state.searchSuggestionIndex = Math.min(
+    state.searchSuggestionIndex,
+    suggestions.length - 1,
+  );
+
+  const options = suggestions.map((card, index) => {
+    const option = document.createElement("li");
+    option.id = `search-suggestion-${index}`;
+    option.className = "search-suggestion";
+    option.dataset.cardId = card.id;
+    option.setAttribute("role", "option");
+    option.setAttribute(
+      "aria-selected",
+      String(index === state.searchSuggestionIndex),
+    );
+
+    const heading = document.createElement("span");
+    heading.className = "search-suggestion-heading";
+
+    const hanzi = document.createElement("span");
+    hanzi.className = "search-suggestion-hanzi";
+    hanzi.lang = "zh-Hans";
+    hanzi.textContent = card.simplified;
+
+    const pinyin = document.createElement("span");
+    pinyin.className = "search-suggestion-pinyin";
+    pinyin.textContent = card.pinyin.display;
+
+    const level = document.createElement("span");
+    level.className = "level-badge search-suggestion-level";
+    level.dataset.level = String(card.level);
+    level.textContent = `HSK ${card.level}`;
+
+    const definition = document.createElement("span");
+    definition.className = "search-suggestion-definition";
+    definition.textContent = card.definitions[0];
+
+    heading.append(hanzi, pinyin, level);
+    option.append(heading, definition);
+    return option;
+  });
+
+  elements.searchSuggestions.replaceChildren(...options);
+  elements.searchSuggestions.hidden = false;
+  elements.searchInput.setAttribute("aria-expanded", "true");
+  if (state.searchSuggestionIndex >= 0) {
+    elements.searchInput.setAttribute(
+      "aria-activedescendant",
+      `search-suggestion-${state.searchSuggestionIndex}`,
+    );
+  } else {
+    elements.searchInput.removeAttribute("aria-activedescendant");
+  }
+}
+
+function setSearchSuggestionIndex(index) {
+  const suggestions = currentSearchSuggestions();
+  if (suggestions.length === 0) {
+    closeSearchSuggestions();
+    return;
+  }
+  state.searchSuggestionsVisible = true;
+  state.searchSuggestionIndex = Math.min(Math.max(index, 0), suggestions.length - 1);
+  renderSearchSuggestions();
+  document
+    .querySelector(`#search-suggestion-${state.searchSuggestionIndex}`)
+    ?.scrollIntoView({ block: "nearest" });
+}
+
+function selectSearchSuggestion(cardId) {
+  const card = state.document.entries.find((entry) => entry.id === cardId);
+  if (!card) return;
+
+  state.query = card.simplified;
+  elements.searchInput.value = card.simplified;
+  state.searchSuggestionsVisible = false;
+  state.searchSuggestionIndex = -1;
+  applyFilters();
+  const selectedIndex = state.cards.findIndex((entry) => entry.id === card.id);
+  if (selectedIndex >= 0) {
+    state.index = selectedIndex;
+    render();
+  }
+  closeSearchSuggestions();
 }
 
 function loadHanziWriter() {
@@ -619,8 +777,12 @@ function setDeckFilter(deck, checked) {
 
 function setSearch(query) {
   state.query = query;
+  state.searchSuggestionsVisible = Boolean(query.trim());
+  state.searchSuggestionIndex = -1;
+  elements.searchSuggestions.scrollTop = 0;
   elements.deckStatus.textContent = "";
   applyFilters();
+  renderSearchSuggestions();
 }
 
 function assignCurrentCard(deck) {
@@ -684,12 +846,47 @@ function bindEvents() {
     setLevelFilter(checkbox.value, checkbox.checked);
   });
   elements.searchInput.addEventListener("input", (event) => setSearch(event.target.value));
+  elements.searchInput.addEventListener("focus", () => {
+    if (!state.query.trim()) return;
+    state.searchSuggestionsVisible = true;
+    renderSearchSuggestions();
+  });
+  elements.searchInput.addEventListener("keydown", (event) => {
+    const suggestions = currentSearchSuggestions();
+    if (event.key === "ArrowDown" && suggestions.length > 0) {
+      event.preventDefault();
+      const nextIndex =
+        state.searchSuggestionIndex >= suggestions.length - 1
+          ? 0
+          : state.searchSuggestionIndex + 1;
+      setSearchSuggestionIndex(nextIndex);
+    } else if (event.key === "ArrowUp" && suggestions.length > 0) {
+      event.preventDefault();
+      const nextIndex =
+        state.searchSuggestionIndex <= 0
+          ? suggestions.length - 1
+          : state.searchSuggestionIndex - 1;
+      setSearchSuggestionIndex(nextIndex);
+    } else if (event.key === "Enter" && state.searchSuggestionIndex >= 0) {
+      event.preventDefault();
+      selectSearchSuggestion(suggestions[state.searchSuggestionIndex]?.id);
+    } else if (event.key === "Escape" || event.key === "Tab") {
+      closeSearchSuggestions();
+    }
+  });
+  elements.searchSuggestions.addEventListener("click", (event) => {
+    const option = event.target.closest?.("[data-card-id]");
+    if (!option) return;
+    selectSearchSuggestion(option.dataset.cardId);
+    elements.searchInput.focus();
+  });
   elements.deckFilters.forEach((checkbox) => {
     checkbox.addEventListener("change", () =>
       setDeckFilter(checkbox.value, checkbox.checked),
     );
   });
   document.addEventListener("click", (event) => {
+    if (!event.target.closest?.(".search-control")) closeSearchSuggestions();
     if (event.target.closest?.(".filter-menu")) return;
     elements.filterMenus.forEach((menu) => {
       menu.open = false;

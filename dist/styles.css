@@ -166,10 +166,82 @@ input:focus-visible {
   width: min(100%, 300px);
 }
 
+.search-combobox {
+  position: relative;
+}
+
 .search-control input {
   width: 100%;
   padding: 0 0.7rem;
   background: var(--surface);
+}
+
+.search-suggestions {
+  position: absolute;
+  z-index: 20;
+  top: calc(100% + 0.3rem);
+  left: 0;
+  width: min(30rem, calc(100vw - 2rem));
+  max-height: min(26rem, calc(100vh - 8rem));
+  margin: 0;
+  padding: 0.3rem;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  overflow-y: auto;
+}
+
+.search-suggestion {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.search-suggestion + .search-suggestion {
+  border-top: 1px solid var(--line);
+}
+
+.search-suggestion:hover,
+.search-suggestion[aria-selected="true"] {
+  background: #eceeeb;
+}
+
+.search-suggestion-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  min-width: 0;
+}
+
+.search-suggestion-hanzi {
+  font-family: "LXGW WenKai GB", "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-size: 1.3rem;
+}
+
+.search-suggestion-pinyin {
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.search-suggestion-level {
+  min-height: 22px;
+  margin-left: auto;
+  padding: 0.15rem 0.4rem;
+  font-size: 0.68rem;
+  white-space: nowrap;
+}
+
+.search-suggestion-definition {
+  overflow: hidden;
+  color: #434b4f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .filter-menu {
