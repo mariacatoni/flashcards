@@ -34,3 +34,15 @@ python3 scripts/check_stroke_coverage.py \
 
 Source provenance and licensing are documented in
 `data/sources/hsk-2025-11/README.md` and `ATTRIBUTION.md`.
+
+## Local flashcard preview
+
+The Step 2 interface is a buildless static site in `dist/`. Sync the validated
+dataset and serve that directory with:
+
+```sh
+python3 scripts/sync_site_data.py
+python3 -m http.server 4173 --directory dist
+```
+
+Then open `http://localhost:4173`.
