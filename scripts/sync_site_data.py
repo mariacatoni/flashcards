@@ -13,7 +13,7 @@ except ImportError:
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE = ROOT / "data/generated/hsk-2025-11/levels-1-2.json"
+DEFAULT_SOURCE = ROOT / "data/generated/hsk-2025-11/levels-1-4.json"
 DATA_DIRECTORY = ROOT / "dist/data"
 MANIFEST = DATA_DIRECTORY / "manifest.json"
 

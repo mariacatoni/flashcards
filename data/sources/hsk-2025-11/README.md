@@ -1,9 +1,9 @@
 # HSK 3.0 source snapshot
 
-`hsk-levels-1-2.source.tsv` is a reproducible, reviewable snapshot containing
-only Level 1 and Level 2 rows selected from the upstream generated TSV.
-It remains the current production source while the interface and pipeline are
-prepared for cumulative snapshots through Level 9.
+`hsk-levels-1-4.source.tsv` is the current cumulative snapshot. It contains
+Levels 1–4 selected from the pinned upstream generated TSV. The earlier
+`hsk-levels-1-2.source.tsv` snapshot remains preserved for reproducibility and
+regression comparisons.
 
 ## Provenance
 
@@ -14,7 +14,10 @@ prepared for cumulative snapshots through Level 9.
 - Upstream file: `hsk_word_list.tsv`
 - Upstream full-file SHA-256:
   `46f8139f651cf4895dcdb9b1f517795778257716433bdcc5127460fd00d0f9ee`
-- Snapshot selected: 2026-09-30
+- Level 1–2 snapshot selected: 2026-09-30
+- Level 1–4 snapshot selected: 2026-10-01
+- Level 1–4 snapshot SHA-256:
+  `da997147e0d98b8bd4f103f41f1d98a85db83e3eb75e5a0441309833c6bea8b6`
 
 The snapshot retains the original source index, every level-specific row,
 official tone-marked pinyin, part-of-speech codes, numbered pinyin, and
@@ -25,6 +28,9 @@ simplified side before storage.
 
 Level 2 contains four level-specific grammatical uses of Level 1 headwords.
 These are intentional and must not be deduplicated by written form alone.
+The Level 1–4 snapshot contains 300 Level 1 rows, 204 Level 2 rows, 507 Level 3
+rows, and 1,019 Level 4 rows. The upstream source labels advanced vocabulary
+as a combined `7-9` band rather than three separate vocabulary lists.
 
 ## Refreshing
 

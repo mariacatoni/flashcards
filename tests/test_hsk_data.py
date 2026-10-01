@@ -6,17 +6,19 @@ from pathlib import Path
 
 from scripts.import_hsk import build_dataset, read_entries, write_dataset
 from scripts.check_stroke_coverage import build_report
+from scripts.select_hsk_source import select_rows
 from scripts.validate_hsk import load_expected_counts, validate
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "data/sources/hsk-2025-11/hsk-levels-1-2.source.tsv"
+SOURCE = ROOT / "data/sources/hsk-2025-11/hsk-levels-1-4.source.tsv"
+LEGACY_SOURCE = ROOT / "data/sources/hsk-2025-11/hsk-levels-1-2.source.tsv"
 
 
 class HskDataTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.entries = read_entries(SOURCE, {1, 2})
+        cls.entries = read_entries(SOURCE, {1, 2, 3, 4})
 
     def test_expected_level_counts(self):
         expected = load_expected_counts()
@@ -29,6 +31,29 @@ class HskDataTests(unittest.TestCase):
     def test_importer_can_select_every_level_in_the_source(self):
         all_entries = read_entries(SOURCE)
         self.assertEqual(self.entries, all_entries)
+
+    def test_level_one_and_two_entries_remain_unchanged(self):
+        legacy_entries = read_entries(LEGACY_SOURCE, {1, 2})
+        current_early_entries = [
+            entry for entry in self.entries if entry["level"] in {1, 2}
+        ]
+        self.assertEqual(legacy_entries, current_early_entries)
+
+    def test_source_selector_reproduces_the_reviewed_snapshot(self):
+        upstream = Path("/tmp/hsk_word_list-pinned.tsv")
+        if not upstream.exists():
+            self.skipTest("Pinned upstream HSK TSV is not available")
+        with tempfile.TemporaryDirectory() as directory:
+            output = Path(directory) / "levels-1-4.tsv"
+            counts = select_rows(upstream, output, {"1", "2", "3", "4"})
+            self.assertEqual(
+                {"1": 300, "2": 204, "3": 507, "4": 1019},
+                dict(counts),
+            )
+            self.assertEqual(
+                SOURCE.read_text(encoding="utf-8"),
+                output.read_text(encoding="utf-8"),
+            )
 
     def test_ids_are_unique(self):
         ids = [entry["id"] for entry in self.entries]
@@ -52,13 +77,13 @@ class HskDataTests(unittest.TestCase):
         self.assertEqual({1, 2}, {entry["level"] for entry in duo})
 
     def test_generated_document_passes_validator(self):
-        dataset = build_dataset(self.entries, {1, 2})
+        dataset = build_dataset(self.entries, {1, 2, 3, 4})
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "dataset.json"
             write_dataset(dataset, output)
             self.assertEqual([], validate(output))
 
-    def test_dataset_contract_accepts_future_levels_through_nine(self):
+    def test_dataset_contract_accepts_numeric_levels_through_nine(self):
         future_entries = []
         for level in range(3, 10):
             entry = deepcopy(self.entries[0])
@@ -74,7 +99,7 @@ class HskDataTests(unittest.TestCase):
             self.assertEqual([], validate(output, expected_counts={}))
 
     def test_validator_rejects_inconsistent_level_metadata(self):
-        dataset = build_dataset(self.entries, {1, 2})
+        dataset = build_dataset(self.entries, {1, 2, 3, 4})
         dataset["dataset"]["entryCountByLevel"]["2"] -= 1
         with tempfile.TemporaryDirectory() as directory:
             output = Path(directory) / "dataset.json"
@@ -101,7 +126,7 @@ class HskDataTests(unittest.TestCase):
         tree = Path("/tmp/hanzi-writer-tree.json")
         if not tree.exists():
             self.skipTest("Hanzi Writer tree inventory not available")
-        dataset = ROOT / "data/generated/hsk-2025-11/levels-1-2.json"
+        dataset = ROOT / "data/generated/hsk-2025-11/levels-1-4.json"
         report = build_report(dataset, tree)
         self.assertEqual([], report["missingCharacters"])
         self.assertEqual(100.0, report["coveragePercent"])

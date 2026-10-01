@@ -5,8 +5,11 @@ const HANZI_WRITER_SRC =
   "https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js";
 const HANZI_DATA_ROOT =
   "https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/";
-const DEFAULT_DECK = "studying";
+const DEFAULT_FILTER_DECK = "studying";
+const NEW_CARD_DECK = "unclassified";
+const PRECLASSIFIED_MAX_LEVEL = 2;
 const DECK_LABELS = {
+  unclassified: "Unclassified",
   later: "To learn later",
   studying: "Studying",
   learned: "Learned",
@@ -18,7 +21,7 @@ const state = {
   cards: [],
   index: 0,
   levels: [],
-  decks: [DEFAULT_DECK],
+  decks: [DEFAULT_FILTER_DECK],
   query: "",
   assignments: {},
   canPersist: true,
@@ -106,8 +109,14 @@ function currentCard() {
   return state.cards[state.index];
 }
 
+function initialDeckFor(card) {
+  return Number(card?.level) <= PRECLASSIFIED_MAX_LEVEL
+    ? DEFAULT_FILTER_DECK
+    : NEW_CARD_DECK;
+}
+
 function deckFor(card) {
-  return state.assignments[card.id] ?? DEFAULT_DECK;
+  return state.assignments[card.id] ?? initialDeckFor(card);
 }
 
 function strokeCharactersFor(card) {
@@ -138,11 +147,16 @@ function migrateLegacyAssignments(entries, value) {
 
   return Object.fromEntries(
     entries
-      .map((card) => [
-        card.id,
-        legacyAssignments[card.id] ?? LEGACY_DEFAULT_DECK,
-      ])
-      .filter(([, deck]) => deck !== DEFAULT_DECK),
+      .map((card) => {
+        const deck =
+          legacyAssignments[card.id] ??
+          (Number(card.level) <= PRECLASSIFIED_MAX_LEVEL
+            ? LEGACY_DEFAULT_DECK
+            : initialDeckFor(card));
+        return [card.id, deck, card];
+      })
+      .filter(([, deck, card]) => deck !== initialDeckFor(card))
+      .map(([id, deck]) => [id, deck]),
   );
 }
 
@@ -303,7 +317,7 @@ function matchesSearch(card) {
 }
 
 function updateDeckOptions() {
-  const counts = { later: 0, studying: 0, learned: 0 };
+  const counts = { unclassified: 0, later: 0, studying: 0, learned: 0 };
   cardsInSelectedLevels().forEach((card) => {
     counts[deckFor(card)] += 1;
   });
@@ -613,7 +627,7 @@ function assignCurrentCard(deck) {
   const card = currentCard();
   if (!card || !Object.hasOwn(DECK_LABELS, deck)) return;
 
-  if (deck === DEFAULT_DECK) delete state.assignments[card.id];
+  if (deck === initialDeckFor(card)) delete state.assignments[card.id];
   else state.assignments[card.id] = deck;
 
   saveAssignments();

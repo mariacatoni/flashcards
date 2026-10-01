@@ -40,6 +40,7 @@ async function loadTestFunctions() {
       datasetLevels,
       datasetUrlFromManifest,
       filterSummary,
+      initialDeckFor,
       migrateLegacyAssignments,
       strokeCharactersFor,
       updateFilterValues,
@@ -51,7 +52,12 @@ async function loadTestFunctions() {
 
 test("legacy deck assignments retain their old meaning", async () => {
   const { migrateLegacyAssignments } = await loadTestFunctions();
-  const entries = [{ id: "unassigned" }, { id: "studying" }, { id: "learned" }];
+  const entries = [
+    { id: "unassigned", level: 1 },
+    { id: "studying", level: 1 },
+    { id: "learned", level: 1 },
+    { id: "new-level", level: 3 },
+  ];
   const legacy = {
     studying: "studying",
     learned: "learned",
@@ -62,6 +68,16 @@ test("legacy deck assignments retain their old meaning", async () => {
     { ...migrateLegacyAssignments(entries, legacy) },
     { unassigned: "later", learned: "learned" },
   );
+});
+
+test("new levels begin unclassified without changing the opening deck", async () => {
+  const { initialDeckFor } = await loadTestFunctions();
+
+  assert.equal(initialDeckFor({ level: 1 }), "studying");
+  assert.equal(initialDeckFor({ level: 2 }), "studying");
+  assert.equal(initialDeckFor({ level: 3 }), "unclassified");
+  assert.equal(initialDeckFor({ level: 4 }), "unclassified");
+  assert.equal(initialDeckFor({ level: 5 }), "unclassified");
 });
 
 test("stroke-order characters preserve repeated positions in a word", async () => {

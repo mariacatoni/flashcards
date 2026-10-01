@@ -61,6 +61,10 @@
             <fieldset class="filter-popover" id="deck-filter">
               <legend class="visually-hidden">Filter by deck</legend>
               <label class="filter-choice">
+                <input class="deck-filter-input" type="checkbox" value="unclassified" />
+                <span data-deck-count="unclassified">Unclassified</span>
+              </label>
+              <label class="filter-choice">
                 <input class="deck-filter-input" type="checkbox" value="later" />
                 <span data-deck-count="later">To learn later</span>
               </label>
@@ -110,6 +114,9 @@
           <fieldset class="deck-assignment" id="deck-assignment">
             <legend>Move this card to</legend>
             <div class="deck-options">
+              <button class="deck-button" type="button" data-deck="unclassified">
+                Unclassified
+              </button>
               <button class="deck-button" type="button" data-deck="later">
                 To learn later
               </button>

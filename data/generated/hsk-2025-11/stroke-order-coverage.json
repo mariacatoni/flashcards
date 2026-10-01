@@ -1,12 +1,12 @@
 {
-  "datasetId": "hsk-3.0-2025-11-levels-1-2",
+  "datasetId": "hsk-3.0-2025-11-levels-1-2-3-4",
   "source": {
     "repository": "https://github.com/chanind/hanzi-writer-data",
     "commit": "68d10a4b21150cae5e1ebbd223eed289cf32d90c",
     "license": "Arphic Public License"
   },
-  "requiredCharacterCount": 371,
-  "availableCharacterCount": 371,
+  "requiredCharacterCount": 1096,
+  "availableCharacterCount": 1096,
   "coveragePercent": 100.0,
   "missingCharacters": []
 }
