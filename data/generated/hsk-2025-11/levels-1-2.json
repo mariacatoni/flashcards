@@ -54,9 +54,6 @@
       "level": 1,
       "simplified": "爱",
       "senseNumber": null,
-      "traditionalForms": [
-        "愛"
-      ],
       "characters": [
         "爱"
       ],
@@ -92,9 +89,6 @@
       "level": 1,
       "simplified": "八",
       "senseNumber": null,
-      "traditionalForms": [
-        "八"
-      ],
       "characters": [
         "八"
       ],
@@ -128,9 +122,6 @@
       "level": 1,
       "simplified": "爸爸",
       "senseNumber": null,
-      "traditionalForms": [
-        "爸爸"
-      ],
       "characters": [
         "爸",
         "爸"
@@ -157,7 +148,7 @@
       ],
       "definitions": [
         "(coll.) father; dad",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -170,9 +161,6 @@
       "level": 1,
       "simplified": "吧",
       "senseNumber": null,
-      "traditionalForms": [
-        "吧"
-      ],
       "characters": [
         "吧"
       ],
@@ -209,9 +197,6 @@
       "level": 1,
       "simplified": "白天",
       "senseNumber": null,
-      "traditionalForms": [
-        "白天"
-      ],
       "characters": [
         "白",
         "天"
@@ -240,7 +225,7 @@
         "daytime",
         "during the day",
         "day",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -253,9 +238,6 @@
       "level": 1,
       "simplified": "百",
       "senseNumber": null,
-      "traditionalForms": [
-        "百"
-      ],
       "characters": [
         "百"
       ],
@@ -292,9 +274,6 @@
       "level": 1,
       "simplified": "半",
       "senseNumber": null,
-      "traditionalForms": [
-        "半"
-      ],
       "characters": [
         "半"
       ],
@@ -331,9 +310,6 @@
       "level": 1,
       "simplified": "包子",
       "senseNumber": null,
-      "traditionalForms": [
-        "包子"
-      ],
       "characters": [
         "包",
         "子"
@@ -360,7 +336,7 @@
       ],
       "definitions": [
         "baozi; bao (steamed stuffed bun)",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -373,9 +349,6 @@
       "level": 1,
       "simplified": "杯子",
       "senseNumber": null,
-      "traditionalForms": [
-        "杯子"
-      ],
       "characters": [
         "杯",
         "子"
@@ -403,7 +376,7 @@
       "definitions": [
         "cup",
         "glass",
-        "CL:個|个[ge4],隻|只[zhi1]"
+        "CL:个[ge4],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -416,9 +389,6 @@
       "level": 1,
       "simplified": "本",
       "senseNumber": 1,
-      "traditionalForms": [
-        "本"
-      ],
       "characters": [
         "本"
       ],
@@ -460,9 +430,6 @@
       "level": 1,
       "simplified": "边",
       "senseNumber": null,
-      "traditionalForms": [
-        "邊"
-      ],
       "characters": [
         "边"
       ],
@@ -489,7 +456,7 @@
         "margin",
         "border",
         "boundary",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "simultaneously"
       ],
       "quality": {
@@ -503,9 +470,6 @@
       "level": 1,
       "simplified": "病",
       "senseNumber": null,
-      "traditionalForms": [
-        "病"
-      ],
       "characters": [
         "病"
       ],
@@ -528,7 +492,7 @@
       ],
       "definitions": [
         "illness",
-        "CL:場|场[chang2]",
+        "CL:场[chang2]",
         "disease",
         "to fall ill",
         "defect"
@@ -544,9 +508,6 @@
       "level": 1,
       "simplified": "不",
       "senseNumber": null,
-      "traditionalForms": [
-        "不"
-      ],
       "characters": [
         "不"
       ],
@@ -581,9 +542,6 @@
       "level": 1,
       "simplified": "不客气",
       "senseNumber": null,
-      "traditionalForms": [
-        "不客氣"
-      ],
       "characters": [
         "不",
         "客",
@@ -629,9 +587,6 @@
       "level": 1,
       "simplified": "不要",
       "senseNumber": null,
-      "traditionalForms": [
-        "不要"
-      ],
       "characters": [
         "不",
         "要"
@@ -670,9 +625,6 @@
       "level": 1,
       "simplified": "菜",
       "senseNumber": null,
-      "traditionalForms": [
-        "菜"
-      ],
       "characters": [
         "菜"
       ],
@@ -694,7 +646,7 @@
       ],
       "definitions": [
         "vegetable; greens (CL:棵[ke1])",
-        "dish (of food) (CL:樣|样[yang4],道[dao4],盤|盘[pan2])",
+        "dish (of food) (CL:样[yang4],道[dao4],盘[pan2])",
         "(of one's skills etc) weak; poor",
         "(coll.) (one's) type"
       ],
@@ -709,9 +661,6 @@
       "level": 1,
       "simplified": "茶",
       "senseNumber": null,
-      "traditionalForms": [
-        "茶"
-      ],
       "characters": [
         "茶"
       ],
@@ -734,7 +683,7 @@
       "definitions": [
         "tea",
         "tea plant",
-        "CL:杯[bei1],壺|壶[hu2]"
+        "CL:杯[bei1],壶[hu2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -747,9 +696,6 @@
       "level": 1,
       "simplified": "唱",
       "senseNumber": null,
-      "traditionalForms": [
-        "唱"
-      ],
       "characters": [
         "唱"
       ],
@@ -785,9 +731,6 @@
       "level": 1,
       "simplified": "超市",
       "senseNumber": null,
-      "traditionalForms": [
-        "超市"
-      ],
       "characters": [
         "超",
         "市"
@@ -813,7 +756,7 @@
         "名"
       ],
       "definitions": [
-        "supermarket (abbr. for 超級市場|超级市场[chao1 ji2 shi4 chang3])",
+        "supermarket (abbr. for 超级市场[chao1 ji2 shi4 chang3])",
         "CL:家[jia1]"
       ],
       "quality": {
@@ -827,9 +770,6 @@
       "level": 1,
       "simplified": "车",
       "senseNumber": null,
-      "traditionalForms": [
-        "車"
-      ],
       "characters": [
         "车"
       ],
@@ -852,7 +792,7 @@
       "definitions": [
         "car",
         "vehicle",
-        "CL:輛|辆[liang4]",
+        "CL:辆[liang4]",
         "machine",
         "to shape with a lathe",
         "Kangxi radical 159",
@@ -869,10 +809,6 @@
       "level": 1,
       "simplified": "吃",
       "senseNumber": null,
-      "traditionalForms": [
-        "吃",
-        "喫"
-      ],
       "characters": [
         "吃"
       ],
@@ -911,9 +847,6 @@
       "level": 1,
       "simplified": "出租车",
       "senseNumber": null,
-      "traditionalForms": [
-        "出租車"
-      ],
       "characters": [
         "出",
         "租",
@@ -958,9 +891,6 @@
       "level": 1,
       "simplified": "穿",
       "senseNumber": null,
-      "traditionalForms": [
-        "穿"
-      ],
       "characters": [
         "穿"
       ],
@@ -1002,9 +932,6 @@
       "level": 1,
       "simplified": "打电话",
       "senseNumber": null,
-      "traditionalForms": [
-        "打電話"
-      ],
       "characters": [
         "打",
         "电",
@@ -1046,9 +973,6 @@
       "level": 1,
       "simplified": "大",
       "senseNumber": null,
-      "traditionalForms": [
-        "大"
-      ],
       "characters": [
         "大"
       ],
@@ -1087,9 +1011,6 @@
       "level": 1,
       "simplified": "大家",
       "senseNumber": null,
-      "traditionalForms": [
-        "大家"
-      ],
       "characters": [
         "大",
         "家"
@@ -1130,9 +1051,6 @@
       "level": 1,
       "simplified": "大学",
       "senseNumber": null,
-      "traditionalForms": [
-        "大學"
-      ],
       "characters": [
         "大",
         "学"
@@ -1158,7 +1076,7 @@
         "名"
       ],
       "definitions": [
-        "the Great Learning, one of the Four Books 四書|四书[Si4 shu1] in Confucianism",
+        "the Great Learning, one of the Four Books 四书[Si4 shu1] in Confucianism",
         "university",
         "college",
         "CL:所[suo3]"
@@ -1174,9 +1092,6 @@
       "level": 1,
       "simplified": "大学生",
       "senseNumber": null,
-      "traditionalForms": [
-        "大學生"
-      ],
       "characters": [
         "大",
         "学",
@@ -1220,9 +1135,6 @@
       "level": 1,
       "simplified": "到",
       "senseNumber": null,
-      "traditionalForms": [
-        "到"
-      ],
       "characters": [
         "到"
       ],
@@ -1260,9 +1172,6 @@
       "level": 1,
       "simplified": "的",
       "senseNumber": null,
-      "traditionalForms": [
-        "的"
-      ],
       "characters": [
         "的"
       ],
@@ -1286,7 +1195,7 @@
         "of; ~'s (possessive particle)",
         "(used after an attribute when it modifies a noun)",
         "(used at the end of a declarative sentence for emphasis)",
-        "(used after a noun, verb or adjective to form a nominal expression, as in 皮革的[pi2 ge2 de5] \"one made of leather\" or 跑堂兒的|跑堂儿的[pao3 tang2 r5 de5] \"a waiter (literally, one who runs back and forth in a restaurant)\" or 新的[xin1 de5] \"new one\")",
+        "(used after a noun, verb or adjective to form a nominal expression, as in 皮革的[pi2 ge2 de5] \"one made of leather\" or 跑堂儿的[pao3 tang2 r5 de5] \"a waiter (literally, one who runs back and forth in a restaurant)\" or 新的[xin1 de5] \"new one\")",
         "also pr. [di4] or [di5] in poetry and songs"
       ],
       "quality": {
@@ -1300,9 +1209,6 @@
       "level": 1,
       "simplified": "第",
       "senseNumber": null,
-      "traditionalForms": [
-        "第"
-      ],
       "characters": [
         "第"
       ],
@@ -1340,9 +1246,6 @@
       "level": 1,
       "simplified": "弟弟",
       "senseNumber": null,
-      "traditionalForms": [
-        "弟弟"
-      ],
       "characters": [
         "弟",
         "弟"
@@ -1369,7 +1272,7 @@
       ],
       "definitions": [
         "younger brother",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -1382,9 +1285,6 @@
       "level": 1,
       "simplified": "点",
       "senseNumber": 1,
-      "traditionalForms": [
-        "點"
-      ],
       "characters": [
         "点"
       ],
@@ -1432,9 +1332,6 @@
       "level": 1,
       "simplified": "店",
       "senseNumber": null,
-      "traditionalForms": [
-        "店"
-      ],
       "characters": [
         "店"
       ],
@@ -1469,9 +1366,6 @@
       "level": 1,
       "simplified": "电话",
       "senseNumber": null,
-      "traditionalForms": [
-        "電話"
-      ],
       "characters": [
         "电",
         "话"
@@ -1514,9 +1408,6 @@
       "level": 1,
       "simplified": "电脑",
       "senseNumber": null,
-      "traditionalForms": [
-        "電腦"
-      ],
       "characters": [
         "电",
         "脑"
@@ -1543,7 +1434,7 @@
       ],
       "definitions": [
         "computer",
-        "CL:臺|台[tai2]"
+        "CL:台[tai2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -1556,9 +1447,6 @@
       "level": 1,
       "simplified": "电视",
       "senseNumber": null,
-      "traditionalForms": [
-        "電視"
-      ],
       "characters": [
         "电",
         "视"
@@ -1585,7 +1473,7 @@
       ],
       "definitions": [
         "television; TV",
-        "CL:臺|台[tai2],部[bu4]"
+        "CL:台[tai2],部[bu4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -1598,9 +1486,6 @@
       "level": 1,
       "simplified": "电影",
       "senseNumber": null,
-      "traditionalForms": [
-        "電影"
-      ],
       "characters": [
         "电",
         "影"
@@ -1627,7 +1512,7 @@
       ],
       "definitions": [
         "movie; film",
-        "CL:部[bu4],片[pian4],場|场[chang3]"
+        "CL:部[bu4],片[pian4],场[chang3]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -1640,9 +1525,6 @@
       "level": 1,
       "simplified": "电影院",
       "senseNumber": null,
-      "traditionalForms": [
-        "電影院"
-      ],
       "characters": [
         "电",
         "影",
@@ -1687,9 +1569,6 @@
       "level": 1,
       "simplified": "东西",
       "senseNumber": null,
-      "traditionalForms": [
-        "東西"
-      ],
       "characters": [
         "东",
         "西"
@@ -1718,7 +1597,7 @@
         "thing",
         "stuff",
         "person",
-        "CL:個|个[ge4],件[jian4]"
+        "CL:个[ge4],件[jian4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -1731,9 +1610,6 @@
       "level": 1,
       "simplified": "都",
       "senseNumber": null,
-      "traditionalForms": [
-        "都"
-      ],
       "characters": [
         "都"
       ],
@@ -1770,9 +1646,6 @@
       "level": 1,
       "simplified": "读",
       "senseNumber": null,
-      "traditionalForms": [
-        "讀"
-      ],
       "characters": [
         "读"
       ],
@@ -1809,9 +1682,6 @@
       "level": 1,
       "simplified": "读书",
       "senseNumber": null,
-      "traditionalForms": [
-        "讀書"
-      ],
       "characters": [
         "读",
         "书"
@@ -1852,9 +1722,6 @@
       "level": 1,
       "simplified": "对",
       "senseNumber": null,
-      "traditionalForms": [
-        "對"
-      ],
       "characters": [
         "对"
       ],
@@ -1900,9 +1767,6 @@
       "level": 1,
       "simplified": "对不起",
       "senseNumber": null,
-      "traditionalForms": [
-        "對不起"
-      ],
       "characters": [
         "对",
         "不",
@@ -1947,9 +1811,6 @@
       "level": 1,
       "simplified": "多",
       "senseNumber": null,
-      "traditionalForms": [
-        "多"
-      ],
       "characters": [
         "多"
       ],
@@ -1989,9 +1850,6 @@
       "level": 2,
       "simplified": "多",
       "senseNumber": null,
-      "traditionalForms": [
-        "多"
-      ],
       "characters": [
         "多"
       ],
@@ -2030,9 +1888,6 @@
       "level": 1,
       "simplified": "多少",
       "senseNumber": null,
-      "traditionalForms": [
-        "多少"
-      ],
       "characters": [
         "多",
         "少"
@@ -2072,9 +1927,6 @@
       "level": 1,
       "simplified": "儿子",
       "senseNumber": null,
-      "traditionalForms": [
-        "兒子"
-      ],
       "characters": [
         "儿",
         "子"
@@ -2113,9 +1965,6 @@
       "level": 1,
       "simplified": "二",
       "senseNumber": null,
-      "traditionalForms": [
-        "二"
-      ],
       "characters": [
         "二"
       ],
@@ -2151,9 +2000,6 @@
       "level": 1,
       "simplified": "饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "飯"
-      ],
       "characters": [
         "饭"
       ],
@@ -2177,7 +2023,7 @@
         "cooked rice",
         "CL:碗[wan3]",
         "meal",
-        "CL:頓|顿[dun4]",
+        "CL:顿[dun4]",
         "(loanword) fan",
         "devotee"
       ],
@@ -2192,9 +2038,6 @@
       "level": 1,
       "simplified": "饭店",
       "senseNumber": null,
-      "traditionalForms": [
-        "飯店"
-      ],
       "characters": [
         "饭",
         "店"
@@ -2222,7 +2065,7 @@
       "definitions": [
         "restaurant",
         "hotel",
-        "CL:家[jia1],個|个[ge4]"
+        "CL:家[jia1],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2235,9 +2078,6 @@
       "level": 1,
       "simplified": "房间",
       "senseNumber": null,
-      "traditionalForms": [
-        "房間"
-      ],
       "characters": [
         "房",
         "间"
@@ -2264,7 +2104,7 @@
       ],
       "definitions": [
         "room",
-        "CL:間|间[jian1],個|个[ge4]"
+        "CL:间[jian1],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2277,9 +2117,6 @@
       "level": 1,
       "simplified": "非常",
       "senseNumber": null,
-      "traditionalForms": [
-        "非常"
-      ],
       "characters": [
         "非",
         "常"
@@ -2319,9 +2156,6 @@
       "level": 1,
       "simplified": "飞机",
       "senseNumber": null,
-      "traditionalForms": [
-        "飛機"
-      ],
       "characters": [
         "飞",
         "机"
@@ -2361,9 +2195,6 @@
       "level": 1,
       "simplified": "分",
       "senseNumber": null,
-      "traditionalForms": [
-        "分"
-      ],
       "characters": [
         "分"
       ],
@@ -2407,9 +2238,6 @@
       "level": 1,
       "simplified": "分钟",
       "senseNumber": null,
-      "traditionalForms": [
-        "分鐘"
-      ],
       "characters": [
         "分",
         "钟"
@@ -2448,9 +2276,6 @@
       "level": 1,
       "simplified": "高兴",
       "senseNumber": null,
-      "traditionalForms": [
-        "高興"
-      ],
       "characters": [
         "高",
         "兴"
@@ -2492,10 +2317,6 @@
       "level": 1,
       "simplified": "歌",
       "senseNumber": null,
-      "traditionalForms": [
-        "歌",
-        "謌"
-      ],
       "characters": [
         "歌"
       ],
@@ -2531,9 +2352,6 @@
       "level": 1,
       "simplified": "哥哥",
       "senseNumber": null,
-      "traditionalForms": [
-        "哥哥"
-      ],
       "characters": [
         "哥",
         "哥"
@@ -2560,7 +2378,7 @@
       ],
       "definitions": [
         "older brother",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2573,10 +2391,6 @@
       "level": 1,
       "simplified": "个",
       "senseNumber": null,
-      "traditionalForms": [
-        "個",
-        "箇"
-      ],
       "characters": [
         "个"
       ],
@@ -2599,7 +2413,7 @@
       "definitions": [
         "(classifier used before a noun that has no specific classifier)",
         "(bound form) individual",
-        "variant of 個|个[ge4]"
+        "variant of 个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2612,9 +2426,6 @@
       "level": 1,
       "simplified": "给",
       "senseNumber": null,
-      "traditionalForms": [
-        "給"
-      ],
       "characters": [
         "给"
       ],
@@ -2656,9 +2467,6 @@
       "level": 2,
       "simplified": "给",
       "senseNumber": null,
-      "traditionalForms": [
-        "給"
-      ],
       "characters": [
         "给"
       ],
@@ -2700,9 +2508,6 @@
       "level": 1,
       "simplified": "公司",
       "senseNumber": null,
-      "traditionalForms": [
-        "公司"
-      ],
       "characters": [
         "公",
         "司"
@@ -2742,9 +2547,6 @@
       "level": 1,
       "simplified": "工作",
       "senseNumber": null,
-      "traditionalForms": [
-        "工作"
-      ],
       "characters": [
         "工",
         "作"
@@ -2776,7 +2578,7 @@
         "job",
         "work",
         "task",
-        "CL:個|个[ge4],份[fen4],項|项[xiang4]"
+        "CL:个[ge4],份[fen4],项[xiang4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2789,9 +2591,6 @@
       "level": 1,
       "simplified": "狗",
       "senseNumber": null,
-      "traditionalForms": [
-        "狗"
-      ],
       "characters": [
         "狗"
       ],
@@ -2813,7 +2612,7 @@
       ],
       "definitions": [
         "dog",
-        "CL:隻|只[zhi1],條|条[tiao2]"
+        "CL:只[zhi1],条[tiao2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -2826,9 +2625,6 @@
       "level": 1,
       "simplified": "贵",
       "senseNumber": null,
-      "traditionalForms": [
-        "貴"
-      ],
       "characters": [
         "贵"
       ],
@@ -2849,7 +2645,7 @@
         "形"
       ],
       "definitions": [
-        "Guizhou Province (abbr. for 貴州省|贵州省[Gui4 zhou1 Sheng3])",
+        "Guizhou Province (abbr. for 贵州省[Gui4 zhou1 Sheng3])",
         "expensive",
         "(bound form) highly valued; precious",
         "(bound form) noble; of high rank",
@@ -2866,9 +2662,6 @@
       "level": 1,
       "simplified": "国",
       "senseNumber": null,
-      "traditionalForms": [
-        "國"
-      ],
       "characters": [
         "国"
       ],
@@ -2904,9 +2697,6 @@
       "level": 1,
       "simplified": "还",
       "senseNumber": null,
-      "traditionalForms": [
-        "還"
-      ],
       "characters": [
         "还"
       ],
@@ -2951,9 +2741,6 @@
       "level": 1,
       "simplified": "孩子",
       "senseNumber": null,
-      "traditionalForms": [
-        "孩子"
-      ],
       "characters": [
         "孩",
         "子"
@@ -2992,9 +2779,6 @@
       "level": 1,
       "simplified": "汉语",
       "senseNumber": null,
-      "traditionalForms": [
-        "漢語"
-      ],
       "characters": [
         "汉",
         "语"
@@ -3033,9 +2817,6 @@
       "level": 1,
       "simplified": "汉字",
       "senseNumber": null,
-      "traditionalForms": [
-        "漢字"
-      ],
       "characters": [
         "汉",
         "字"
@@ -3074,9 +2855,6 @@
       "level": 1,
       "simplified": "好",
       "senseNumber": null,
-      "traditionalForms": [
-        "好"
-      ],
       "characters": [
         "好"
       ],
@@ -3118,9 +2896,6 @@
       "level": 2,
       "simplified": "好",
       "senseNumber": null,
-      "traditionalForms": [
-        "好"
-      ],
       "characters": [
         "好"
       ],
@@ -3162,9 +2937,6 @@
       "level": 1,
       "simplified": "好吃",
       "senseNumber": null,
-      "traditionalForms": [
-        "好吃"
-      ],
       "characters": [
         "好",
         "吃"
@@ -3203,9 +2975,6 @@
       "level": 1,
       "simplified": "好看",
       "senseNumber": null,
-      "traditionalForms": [
-        "好看"
-      ],
       "characters": [
         "好",
         "看"
@@ -3246,9 +3015,6 @@
       "level": 1,
       "simplified": "好听",
       "senseNumber": null,
-      "traditionalForms": [
-        "好聽"
-      ],
       "characters": [
         "好",
         "听"
@@ -3287,9 +3053,6 @@
       "level": 1,
       "simplified": "好玩儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "好玩兒"
-      ],
       "characters": [
         "好",
         "玩",
@@ -3333,9 +3096,6 @@
       "level": 1,
       "simplified": "号",
       "senseNumber": null,
-      "traditionalForms": [
-        "號"
-      ],
       "characters": [
         "号"
       ],
@@ -3381,9 +3141,6 @@
       "level": 1,
       "simplified": "喝",
       "senseNumber": null,
-      "traditionalForms": [
-        "喝"
-      ],
       "characters": [
         "喝"
       ],
@@ -3418,11 +3175,6 @@
       "level": 1,
       "simplified": "和",
       "senseNumber": 1,
-      "traditionalForms": [
-        "咊",
-        "和",
-        "龢"
-      ],
       "characters": [
         "和"
       ],
@@ -3465,9 +3217,6 @@
       "level": 1,
       "simplified": "很",
       "senseNumber": null,
-      "traditionalForms": [
-        "很"
-      ],
       "characters": [
         "很"
       ],
@@ -3502,10 +3251,6 @@
       "level": 1,
       "simplified": "后",
       "senseNumber": null,
-      "traditionalForms": [
-        "后",
-        "後"
-      ],
       "characters": [
         "后"
       ],
@@ -3550,11 +3295,6 @@
       "level": 1,
       "simplified": "回",
       "senseNumber": null,
-      "traditionalForms": [
-        "回",
-        "迴",
-        "逥"
-      ],
       "characters": [
         "回"
       ],
@@ -3588,7 +3328,7 @@
         "to curve",
         "to return",
         "to revolve",
-        "variant of 迴|回[hui2]"
+        "variant of 回[hui2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -3601,9 +3341,6 @@
       "level": 1,
       "simplified": "会",
       "senseNumber": 1,
-      "traditionalForms": [
-        "會"
-      ],
       "characters": [
         "会"
       ],
@@ -3642,9 +3379,6 @@
       "level": 1,
       "simplified": "火车",
       "senseNumber": null,
-      "traditionalForms": [
-        "火車"
-      ],
       "characters": [
         "火",
         "车"
@@ -3671,7 +3405,7 @@
       ],
       "definitions": [
         "train",
-        "CL:列[lie4],節|节[jie2],班[ban1],趟[tang4]"
+        "CL:列[lie4],节[jie2],班[ban1],趟[tang4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -3684,9 +3418,6 @@
       "level": 1,
       "simplified": "鸡蛋",
       "senseNumber": null,
-      "traditionalForms": [
-        "雞蛋"
-      ],
       "characters": [
         "鸡",
         "蛋"
@@ -3714,7 +3445,7 @@
       "definitions": [
         "(chicken) egg",
         "hen's egg",
-        "CL:個|个[ge4],打[da2]"
+        "CL:个[ge4],打[da2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -3727,9 +3458,6 @@
       "level": 1,
       "simplified": "几",
       "senseNumber": null,
-      "traditionalForms": [
-        "幾"
-      ],
       "characters": [
         "几"
       ],
@@ -3767,10 +3495,6 @@
       "level": 1,
       "simplified": "家",
       "senseNumber": null,
-      "traditionalForms": [
-        "傢",
-        "家"
-      ],
       "characters": [
         "家"
       ],
@@ -3798,8 +3522,8 @@
         "classifier for families or businesses",
         "refers to the philosophical schools of pre-Han China",
         "noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian",
-        "CL:個|个[ge4]",
-        "used in 傢伙|家伙[jia1 huo5] and 傢俱|家俱[jia1 ju4]"
+        "CL:个[ge4]",
+        "used in 家伙[jia1 huo5] and 家俱[jia1 ju4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -3812,9 +3536,6 @@
       "level": 1,
       "simplified": "家人",
       "senseNumber": null,
-      "traditionalForms": [
-        "家人"
-      ],
       "characters": [
         "家",
         "人"
@@ -3854,9 +3575,6 @@
       "level": 1,
       "simplified": "见",
       "senseNumber": null,
-      "traditionalForms": [
-        "見"
-      ],
       "characters": [
         "见"
       ],
@@ -3895,9 +3613,6 @@
       "level": 1,
       "simplified": "件",
       "senseNumber": null,
-      "traditionalForms": [
-        "件"
-      ],
       "characters": [
         "件"
       ],
@@ -3933,9 +3648,6 @@
       "level": 1,
       "simplified": "饺子",
       "senseNumber": null,
-      "traditionalForms": [
-        "餃子"
-      ],
       "characters": [
         "饺",
         "子"
@@ -3963,7 +3675,7 @@
       "definitions": [
         "dumpling",
         "pot-sticker",
-        "CL:個|个[ge4],隻|只[zhi1]"
+        "CL:个[ge4],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -3976,10 +3688,6 @@
       "level": 1,
       "simplified": "叫",
       "senseNumber": null,
-      "traditionalForms": [
-        "叫",
-        "呌"
-      ],
       "characters": [
         "叫"
       ],
@@ -4019,9 +3727,6 @@
       "level": 1,
       "simplified": "姐姐",
       "senseNumber": null,
-      "traditionalForms": [
-        "姐姐"
-      ],
       "characters": [
         "姐",
         "姐"
@@ -4048,7 +3753,7 @@
       ],
       "definitions": [
         "older sister",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4061,9 +3766,6 @@
       "level": 1,
       "simplified": "今年",
       "senseNumber": null,
-      "traditionalForms": [
-        "今年"
-      ],
       "characters": [
         "今",
         "年"
@@ -4102,9 +3804,6 @@
       "level": 1,
       "simplified": "今天",
       "senseNumber": null,
-      "traditionalForms": [
-        "今天"
-      ],
       "characters": [
         "今",
         "天"
@@ -4144,9 +3843,6 @@
       "level": 1,
       "simplified": "九",
       "senseNumber": null,
-      "traditionalForms": [
-        "九"
-      ],
       "characters": [
         "九"
       ],
@@ -4181,9 +3877,6 @@
       "level": 1,
       "simplified": "觉得",
       "senseNumber": null,
-      "traditionalForms": [
-        "覺得"
-      ],
       "characters": [
         "觉",
         "得"
@@ -4223,9 +3916,6 @@
       "level": 1,
       "simplified": "开",
       "senseNumber": null,
-      "traditionalForms": [
-        "開"
-      ],
       "characters": [
         "开"
       ],
@@ -4253,8 +3943,8 @@
         "to write out (a prescription, check, invoice etc)",
         "(directional complement) away; off",
         "carat (gold)",
-        "abbr. for Kelvin, 開爾文|开尔文[Kai1 er3 wen2]",
-        "abbr. for 開本|开本[kai1 ben3], book format"
+        "abbr. for Kelvin, 开尔文[Kai1 er3 wen2]",
+        "abbr. for 开本[kai1 ben3], book format"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4267,9 +3957,6 @@
       "level": 1,
       "simplified": "开车",
       "senseNumber": null,
-      "traditionalForms": [
-        "開車"
-      ],
       "characters": [
         "开",
         "车"
@@ -4309,9 +3996,6 @@
       "level": 1,
       "simplified": "看",
       "senseNumber": null,
-      "traditionalForms": [
-        "看"
-      ],
       "characters": [
         "看"
       ],
@@ -4355,9 +4039,6 @@
       "level": 1,
       "simplified": "看病",
       "senseNumber": null,
-      "traditionalForms": [
-        "看病"
-      ],
       "characters": [
         "看",
         "病"
@@ -4397,9 +4078,6 @@
       "level": 1,
       "simplified": "看见",
       "senseNumber": null,
-      "traditionalForms": [
-        "看見"
-      ],
       "characters": [
         "看",
         "见"
@@ -4438,9 +4116,6 @@
       "level": 1,
       "simplified": "可以",
       "senseNumber": null,
-      "traditionalForms": [
-        "可以"
-      ],
       "characters": [
         "可",
         "以"
@@ -4485,9 +4160,6 @@
       "level": 1,
       "simplified": "课",
       "senseNumber": null,
-      "traditionalForms": [
-        "課"
-      ],
       "characters": [
         "课"
       ],
@@ -4510,10 +4182,10 @@
       "definitions": [
         "subject",
         "course",
-        "CL:門|门[men2]",
+        "CL:门[men2]",
         "class",
         "lesson",
-        "CL:堂[tang2],節|节[jie2]",
+        "CL:堂[tang2],节[jie2]",
         "to levy",
         "tax",
         "form of divination"
@@ -4529,9 +4201,6 @@
       "level": 1,
       "simplified": "口",
       "senseNumber": null,
-      "traditionalForms": [
-        "口"
-      ],
       "characters": [
         "口"
       ],
@@ -4568,9 +4237,6 @@
       "level": 1,
       "simplified": "块",
       "senseNumber": null,
-      "traditionalForms": [
-        "塊"
-      ],
       "characters": [
         "块"
       ],
@@ -4606,9 +4272,6 @@
       "level": 1,
       "simplified": "来",
       "senseNumber": null,
-      "traditionalForms": [
-        "來"
-      ],
       "characters": [
         "来"
       ],
@@ -4631,13 +4294,13 @@
       "definitions": [
         "to come",
         "(used as a substitute for a more specific verb)",
-        "hither (directional complement for motion toward the speaker, as in 回來|回来[hui2 lai5])",
-        "ever since (as in 自古以來|自古以来[zi4 gu3 yi3 lai2])",
+        "hither (directional complement for motion toward the speaker, as in 回来[hui2 lai5])",
+        "ever since (as in 自古以来[zi4 gu3 yi3 lai2])",
         "for the past (amount of time)",
-        "(prefix) the coming ...; the next ... (as in 來世|来世[lai2 shi4])",
+        "(prefix) the coming ...; the next ... (as in 来世[lai2 shi4])",
         "(between two verbs) in order to",
         "(after a round number) approximately",
-        "(used after 得[de2] to indicate possibility, as in 談得來|谈得来[tan2 de5 lai2], or after 不[bu4] to indicate impossibility, as in 吃不來|吃不来[chi1 bu5 lai2])"
+        "(used after 得[de2] to indicate possibility, as in 谈得来[tan2 de5 lai2], or after 不[bu4] to indicate impossibility, as in 吃不来[chi1 bu5 lai2])"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4650,9 +4313,6 @@
       "level": 1,
       "simplified": "老师",
       "senseNumber": null,
-      "traditionalForms": [
-        "老師"
-      ],
       "characters": [
         "老",
         "师"
@@ -4679,7 +4339,7 @@
       ],
       "definitions": [
         "teacher",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4692,9 +4352,6 @@
       "level": 1,
       "simplified": "了",
       "senseNumber": null,
-      "traditionalForms": [
-        "了"
-      ],
       "characters": [
         "了"
       ],
@@ -4730,9 +4387,6 @@
       "level": 1,
       "simplified": "冷",
       "senseNumber": null,
-      "traditionalForms": [
-        "冷"
-      ],
       "characters": [
         "冷"
       ],
@@ -4767,11 +4421,6 @@
       "level": 1,
       "simplified": "里",
       "senseNumber": null,
-      "traditionalForms": [
-        "裏",
-        "裡",
-        "里"
-      ],
       "characters": [
         "里"
       ],
@@ -4796,13 +4445,13 @@
         "li, ancient measure of length, approx. 500 m",
         "neighborhood",
         "ancient administrative unit of 25 families",
-        "(Tw) borough, administrative unit between the township 鎮|镇[zhen4] and neighborhood 鄰|邻[lin2] levels",
+        "(Tw) borough, administrative unit between the township 镇[zhen4] and neighborhood 邻[lin2] levels",
         "lining",
         "interior",
         "inside",
         "internal",
-        "also written 裏|里[li3]",
-        "variant of 裡|里[li3]"
+        "also written 里[li3]",
+        "variant of 里[li3]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4815,9 +4464,6 @@
       "level": 1,
       "simplified": "两",
       "senseNumber": 1,
-      "traditionalForms": [
-        "兩"
-      ],
       "characters": [
         "两"
       ],
@@ -4855,9 +4501,6 @@
       "level": 1,
       "simplified": "零",
       "senseNumber": null,
-      "traditionalForms": [
-        "零"
-      ],
       "characters": [
         "零"
       ],
@@ -4902,9 +4545,6 @@
       "level": 1,
       "simplified": "六",
       "senseNumber": null,
-      "traditionalForms": [
-        "六"
-      ],
       "characters": [
         "六"
       ],
@@ -4939,9 +4579,6 @@
       "level": 1,
       "simplified": "妈妈",
       "senseNumber": null,
-      "traditionalForms": [
-        "媽媽"
-      ],
       "characters": [
         "妈",
         "妈"
@@ -4970,7 +4607,7 @@
         "mama",
         "mommy",
         "mother",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -4983,9 +4620,6 @@
       "level": 1,
       "simplified": "吗",
       "senseNumber": null,
-      "traditionalForms": [
-        "嗎"
-      ],
       "characters": [
         "吗"
       ],
@@ -5019,9 +4653,6 @@
       "level": 1,
       "simplified": "买",
       "senseNumber": null,
-      "traditionalForms": [
-        "買"
-      ],
       "characters": [
         "买"
       ],
@@ -5056,9 +4687,6 @@
       "level": 1,
       "simplified": "卖",
       "senseNumber": null,
-      "traditionalForms": [
-        "賣"
-      ],
       "characters": [
         "卖"
       ],
@@ -5095,9 +4723,6 @@
       "level": 1,
       "simplified": "忙",
       "senseNumber": null,
-      "traditionalForms": [
-        "忙"
-      ],
       "characters": [
         "忙"
       ],
@@ -5135,9 +4760,6 @@
       "level": 1,
       "simplified": "猫",
       "senseNumber": null,
-      "traditionalForms": [
-        "貓"
-      ],
       "characters": [
         "猫"
       ],
@@ -5158,7 +4780,7 @@
         "名"
       ],
       "definitions": [
-        "cat (CL:隻|只[zhi1])",
+        "cat (CL:只[zhi1])",
         "(dialect) to hide oneself",
         "(loanword) (coll.) modem"
       ],
@@ -5173,9 +4795,6 @@
       "level": 1,
       "simplified": "没关系",
       "senseNumber": null,
-      "traditionalForms": [
-        "沒關係"
-      ],
       "characters": [
         "没",
         "关",
@@ -5217,9 +4836,6 @@
       "level": 1,
       "simplified": "没事",
       "senseNumber": null,
-      "traditionalForms": [
-        "沒事"
-      ],
       "characters": [
         "没",
         "事"
@@ -5263,9 +4879,6 @@
       "level": 1,
       "simplified": "没有",
       "senseNumber": null,
-      "traditionalForms": [
-        "沒有"
-      ],
       "characters": [
         "没",
         "有"
@@ -5309,9 +4922,6 @@
       "level": 1,
       "simplified": "妹妹",
       "senseNumber": null,
-      "traditionalForms": [
-        "妹妹"
-      ],
       "characters": [
         "妹",
         "妹"
@@ -5339,7 +4949,7 @@
       "definitions": [
         "younger sister",
         "young woman",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -5352,9 +4962,6 @@
       "level": 1,
       "simplified": "们",
       "senseNumber": null,
-      "traditionalForms": [
-        "們"
-      ],
       "characters": [
         "们"
       ],
@@ -5388,9 +4995,6 @@
       "level": 1,
       "simplified": "米饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "米飯"
-      ],
       "characters": [
         "米",
         "饭"
@@ -5429,9 +5033,6 @@
       "level": 1,
       "simplified": "面包",
       "senseNumber": null,
-      "traditionalForms": [
-        "麵包"
-      ],
       "characters": [
         "面",
         "包"
@@ -5458,7 +5059,7 @@
       ],
       "definitions": [
         "bread",
-        "CL:片[pian4],塊|块[kuai4]"
+        "CL:片[pian4],块[kuai4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -5471,9 +5072,6 @@
       "level": 1,
       "simplified": "面条儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "麵條兒"
-      ],
       "characters": [
         "面",
         "条",
@@ -5504,7 +5102,7 @@
         "名"
       ],
       "definitions": [
-        "erhua variant of 麵條|面条[mian4 tiao2]"
+        "erhua variant of 面条[mian4 tiao2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -5517,9 +5115,6 @@
       "level": 1,
       "simplified": "明年",
       "senseNumber": null,
-      "traditionalForms": [
-        "明年"
-      ],
       "characters": [
         "明",
         "年"
@@ -5558,9 +5153,6 @@
       "level": 1,
       "simplified": "明天",
       "senseNumber": null,
-      "traditionalForms": [
-        "明天"
-      ],
       "characters": [
         "明",
         "天"
@@ -5599,9 +5191,6 @@
       "level": 1,
       "simplified": "名字",
       "senseNumber": null,
-      "traditionalForms": [
-        "名字"
-      ],
       "characters": [
         "名",
         "字"
@@ -5628,7 +5217,7 @@
       ],
       "definitions": [
         "name (of a person or thing)",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -5641,9 +5230,6 @@
       "level": 1,
       "simplified": "哪",
       "senseNumber": null,
-      "traditionalForms": [
-        "哪"
-      ],
       "characters": [
         "哪"
       ],
@@ -5678,9 +5264,6 @@
       "level": 1,
       "simplified": "哪个",
       "senseNumber": null,
-      "traditionalForms": [
-        "哪個"
-      ],
       "characters": [
         "哪",
         "个"
@@ -5720,10 +5303,6 @@
       "level": 1,
       "simplified": "哪里",
       "senseNumber": null,
-      "traditionalForms": [
-        "哪裏",
-        "哪裡"
-      ],
       "characters": [
         "哪",
         "里"
@@ -5761,7 +5340,7 @@
         "wherever",
         "nowhere (negative answer to question)",
         "humble expression denying compliment",
-        "also written 哪裡|哪里"
+        "also written 哪里"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -5774,9 +5353,6 @@
       "level": 1,
       "simplified": "哪儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "哪兒"
-      ],
       "characters": [
         "哪",
         "儿"
@@ -5817,9 +5393,6 @@
       "level": 1,
       "simplified": "哪些",
       "senseNumber": null,
-      "traditionalForms": [
-        "哪些"
-      ],
       "characters": [
         "哪",
         "些"
@@ -5860,9 +5433,6 @@
       "level": 1,
       "simplified": "那",
       "senseNumber": null,
-      "traditionalForms": [
-        "那"
-      ],
       "characters": [
         "那"
       ],
@@ -5898,9 +5468,6 @@
       "level": 2,
       "simplified": "那",
       "senseNumber": null,
-      "traditionalForms": [
-        "那"
-      ],
       "characters": [
         "那"
       ],
@@ -5936,9 +5503,6 @@
       "level": 1,
       "simplified": "那边",
       "senseNumber": null,
-      "traditionalForms": [
-        "那邊"
-      ],
       "characters": [
         "那",
         "边"
@@ -5978,9 +5542,6 @@
       "level": 1,
       "simplified": "那个",
       "senseNumber": null,
-      "traditionalForms": [
-        "那個"
-      ],
       "characters": [
         "那",
         "个"
@@ -6027,10 +5588,6 @@
       "level": 1,
       "simplified": "那里",
       "senseNumber": null,
-      "traditionalForms": [
-        "那裏",
-        "那裡"
-      ],
       "characters": [
         "那",
         "里"
@@ -6069,9 +5626,6 @@
       "level": 1,
       "simplified": "那儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "那兒"
-      ],
       "characters": [
         "那",
         "儿"
@@ -6110,9 +5664,6 @@
       "level": 1,
       "simplified": "那些",
       "senseNumber": null,
-      "traditionalForms": [
-        "那些"
-      ],
       "characters": [
         "那",
         "些"
@@ -6151,9 +5702,6 @@
       "level": 1,
       "simplified": "男",
       "senseNumber": null,
-      "traditionalForms": [
-        "男"
-      ],
       "characters": [
         "男"
       ],
@@ -6188,9 +5736,6 @@
       "level": 1,
       "simplified": "男朋友",
       "senseNumber": null,
-      "traditionalForms": [
-        "男朋友"
-      ],
       "characters": [
         "男",
         "朋",
@@ -6234,9 +5779,6 @@
       "level": 1,
       "simplified": "呢",
       "senseNumber": null,
-      "traditionalForms": [
-        "呢"
-      ],
       "characters": [
         "呢"
       ],
@@ -6272,9 +5814,6 @@
       "level": 1,
       "simplified": "能",
       "senseNumber": null,
-      "traditionalForms": [
-        "能"
-      ],
       "characters": [
         "能"
       ],
@@ -6313,10 +5852,6 @@
       "level": 1,
       "simplified": "你",
       "senseNumber": null,
-      "traditionalForms": [
-        "你",
-        "妳"
-      ],
       "characters": [
         "你"
       ],
@@ -6351,9 +5886,6 @@
       "level": 1,
       "simplified": "你好",
       "senseNumber": null,
-      "traditionalForms": [
-        "你好"
-      ],
       "characters": [
         "你",
         "好"
@@ -6390,9 +5922,6 @@
       "level": 1,
       "simplified": "你们",
       "senseNumber": null,
-      "traditionalForms": [
-        "你們"
-      ],
       "characters": [
         "你",
         "们"
@@ -6431,10 +5960,6 @@
       "level": 1,
       "simplified": "年",
       "senseNumber": null,
-      "traditionalForms": [
-        "年",
-        "秊"
-      ],
       "characters": [
         "年"
       ],
@@ -6461,7 +5986,7 @@
         "variant of 年[nian2]",
         "surname Nian",
         "year",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -6474,9 +5999,6 @@
       "level": 1,
       "simplified": "您",
       "senseNumber": null,
-      "traditionalForms": [
-        "您"
-      ],
       "characters": [
         "您"
       ],
@@ -6510,9 +6032,6 @@
       "level": 1,
       "simplified": "牛奶",
       "senseNumber": null,
-      "traditionalForms": [
-        "牛奶"
-      ],
       "characters": [
         "牛",
         "奶"
@@ -6552,9 +6071,6 @@
       "level": 1,
       "simplified": "女",
       "senseNumber": null,
-      "traditionalForms": [
-        "女"
-      ],
       "characters": [
         "女"
       ],
@@ -6590,9 +6106,6 @@
       "level": 1,
       "simplified": "女儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "女兒"
-      ],
       "characters": [
         "女",
         "儿"
@@ -6631,9 +6144,6 @@
       "level": 1,
       "simplified": "女朋友",
       "senseNumber": null,
-      "traditionalForms": [
-        "女朋友"
-      ],
       "characters": [
         "女",
         "朋",
@@ -6677,9 +6187,6 @@
       "level": 1,
       "simplified": "女士",
       "senseNumber": null,
-      "traditionalForms": [
-        "女士"
-      ],
       "characters": [
         "女",
         "士"
@@ -6707,7 +6214,7 @@
       "definitions": [
         "lady",
         "madam",
-        "CL:個|个[ge4],位[wei4]",
+        "CL:个[ge4],位[wei4]",
         "Miss",
         "Ms"
       ],
@@ -6722,9 +6229,6 @@
       "level": 1,
       "simplified": "朋友",
       "senseNumber": null,
-      "traditionalForms": [
-        "朋友"
-      ],
       "characters": [
         "朋",
         "友"
@@ -6751,7 +6255,7 @@
       ],
       "definitions": [
         "friend",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -6764,9 +6268,6 @@
       "level": 1,
       "simplified": "便宜",
       "senseNumber": null,
-      "traditionalForms": [
-        "便宜"
-      ],
       "characters": [
         "便",
         "宜"
@@ -6807,9 +6308,6 @@
       "level": 1,
       "simplified": "漂亮",
       "senseNumber": null,
-      "traditionalForms": [
-        "漂亮"
-      ],
       "characters": [
         "漂",
         "亮"
@@ -6848,9 +6346,6 @@
       "level": 1,
       "simplified": "苹果",
       "senseNumber": null,
-      "traditionalForms": [
-        "蘋果"
-      ],
       "characters": [
         "苹",
         "果"
@@ -6878,7 +6373,7 @@
       "definitions": [
         "Apple (American tech company)",
         "apple",
-        "CL:個|个[ge4],顆|颗[ke1]"
+        "CL:个[ge4],颗[ke1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -6891,9 +6386,6 @@
       "level": 1,
       "simplified": "七",
       "senseNumber": null,
-      "traditionalForms": [
-        "七"
-      ],
       "characters": [
         "七"
       ],
@@ -6928,9 +6420,6 @@
       "level": 1,
       "simplified": "起床",
       "senseNumber": null,
-      "traditionalForms": [
-        "起床"
-      ],
       "characters": [
         "起",
         "床"
@@ -6969,10 +6458,6 @@
       "level": 1,
       "simplified": "千",
       "senseNumber": null,
-      "traditionalForms": [
-        "千",
-        "韆"
-      ],
       "characters": [
         "千"
       ],
@@ -6994,7 +6479,7 @@
       ],
       "definitions": [
         "thousand",
-        "used in 鞦韆|秋千[qiu1 qian1]"
+        "used in 秋千[qiu1 qian1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -7007,9 +6492,6 @@
       "level": 1,
       "simplified": "前",
       "senseNumber": null,
-      "traditionalForms": [
-        "前"
-      ],
       "characters": [
         "前"
       ],
@@ -7053,9 +6535,6 @@
       "level": 1,
       "simplified": "钱",
       "senseNumber": null,
-      "traditionalForms": [
-        "錢"
-      ],
       "characters": [
         "钱"
       ],
@@ -7078,8 +6557,8 @@
       "definitions": [
         "coin",
         "money",
-        "CL:筆|笔[bi3]",
-        "unit of weight, one tenth of a tael 兩|两[liang3]",
+        "CL:笔[bi3]",
+        "unit of weight, one tenth of a tael 两[liang3]",
         "surname Qian"
       ],
       "quality": {
@@ -7093,9 +6572,6 @@
       "level": 1,
       "simplified": "请",
       "senseNumber": null,
-      "traditionalForms": [
-        "請"
-      ],
       "characters": [
         "请"
       ],
@@ -7133,9 +6609,6 @@
       "level": 1,
       "simplified": "请问",
       "senseNumber": null,
-      "traditionalForms": [
-        "請問"
-      ],
       "characters": [
         "请",
         "问"
@@ -7174,9 +6647,6 @@
       "level": 1,
       "simplified": "去",
       "senseNumber": null,
-      "traditionalForms": [
-        "去"
-      ],
       "characters": [
         "去"
       ],
@@ -7223,9 +6693,6 @@
       "level": 1,
       "simplified": "去年",
       "senseNumber": null,
-      "traditionalForms": [
-        "去年"
-      ],
       "characters": [
         "去",
         "年"
@@ -7264,9 +6731,6 @@
       "level": 1,
       "simplified": "热",
       "senseNumber": null,
-      "traditionalForms": [
-        "熱"
-      ],
       "characters": [
         "热"
       ],
@@ -7304,9 +6768,6 @@
       "level": 1,
       "simplified": "人",
       "senseNumber": null,
-      "traditionalForms": [
-        "人"
-      ],
       "characters": [
         "人"
       ],
@@ -7328,7 +6789,7 @@
       ],
       "definitions": [
         "person; people",
-        "CL:個|个[ge4],位[wei4]"
+        "CL:个[ge4],位[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -7341,9 +6802,6 @@
       "level": 1,
       "simplified": "认识",
       "senseNumber": null,
-      "traditionalForms": [
-        "認識"
-      ],
       "characters": [
         "认",
         "识"
@@ -7389,9 +6847,6 @@
       "level": 1,
       "simplified": "日",
       "senseNumber": null,
-      "traditionalForms": [
-        "日"
-      ],
       "characters": [
         "日"
       ],
@@ -7428,9 +6883,6 @@
       "level": 1,
       "simplified": "三",
       "senseNumber": null,
-      "traditionalForms": [
-        "三"
-      ],
       "characters": [
         "三"
       ],
@@ -7466,9 +6918,6 @@
       "level": 1,
       "simplified": "商店",
       "senseNumber": null,
-      "traditionalForms": [
-        "商店"
-      ],
       "characters": [
         "商",
         "店"
@@ -7495,7 +6944,7 @@
       ],
       "definitions": [
         "store; shop",
-        "CL:家[jia1],個|个[ge4]"
+        "CL:家[jia1],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -7508,9 +6957,6 @@
       "level": 1,
       "simplified": "上",
       "senseNumber": null,
-      "traditionalForms": [
-        "上"
-      ],
       "characters": [
         "上"
       ],
@@ -7550,9 +6996,6 @@
       "level": 1,
       "simplified": "上班",
       "senseNumber": null,
-      "traditionalForms": [
-        "上班"
-      ],
       "characters": [
         "上",
         "班"
@@ -7594,9 +7037,6 @@
       "level": 1,
       "simplified": "上课",
       "senseNumber": null,
-      "traditionalForms": [
-        "上課"
-      ],
       "characters": [
         "上",
         "课"
@@ -7637,9 +7077,6 @@
       "level": 1,
       "simplified": "上午",
       "senseNumber": null,
-      "traditionalForms": [
-        "上午"
-      ],
       "characters": [
         "上",
         "午"
@@ -7666,7 +7103,7 @@
       ],
       "definitions": [
         "morning",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -7679,9 +7116,6 @@
       "level": 1,
       "simplified": "上学",
       "senseNumber": null,
-      "traditionalForms": [
-        "上學"
-      ],
       "characters": [
         "上",
         "学"
@@ -7721,9 +7155,6 @@
       "level": 1,
       "simplified": "少",
       "senseNumber": null,
-      "traditionalForms": [
-        "少"
-      ],
       "characters": [
         "少"
       ],
@@ -7763,9 +7194,6 @@
       "level": 1,
       "simplified": "谁",
       "senseNumber": null,
-      "traditionalForms": [
-        "誰"
-      ],
       "characters": [
         "谁"
       ],
@@ -7806,9 +7234,6 @@
       "level": 1,
       "simplified": "什么",
       "senseNumber": null,
-      "traditionalForms": [
-        "什麼"
-      ],
       "characters": [
         "什",
         "么"
@@ -7848,9 +7273,6 @@
       "level": 1,
       "simplified": "生病",
       "senseNumber": null,
-      "traditionalForms": [
-        "生病"
-      ],
       "characters": [
         "生",
         "病"
@@ -7889,9 +7311,6 @@
       "level": 1,
       "simplified": "十",
       "senseNumber": null,
-      "traditionalForms": [
-        "十"
-      ],
       "characters": [
         "十"
       ],
@@ -7926,9 +7345,6 @@
       "level": 1,
       "simplified": "时候",
       "senseNumber": null,
-      "traditionalForms": [
-        "時候"
-      ],
       "characters": [
         "时",
         "候"
@@ -7970,9 +7386,6 @@
       "level": 1,
       "simplified": "时间",
       "senseNumber": null,
-      "traditionalForms": [
-        "時間"
-      ],
       "characters": [
         "时",
         "间"
@@ -8013,9 +7426,6 @@
       "level": 1,
       "simplified": "事",
       "senseNumber": null,
-      "traditionalForms": [
-        "事"
-      ],
       "characters": [
         "事"
       ],
@@ -8041,7 +7451,7 @@
         "item",
         "work",
         "affair",
-        "CL:件[jian4],樁|桩[zhuang1],回[hui2]"
+        "CL:件[jian4],桩[zhuang1],回[hui2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -8054,10 +7464,6 @@
       "level": 1,
       "simplified": "是",
       "senseNumber": null,
-      "traditionalForms": [
-        "是",
-        "昰"
-      ],
       "characters": [
         "是"
       ],
@@ -8095,9 +7501,6 @@
       "level": 1,
       "simplified": "手机",
       "senseNumber": null,
-      "traditionalForms": [
-        "手機"
-      ],
       "characters": [
         "手",
         "机"
@@ -8124,7 +7527,7 @@
       ],
       "definitions": [
         "cell phone; mobile phone",
-        "CL:部[bu4],臺|台[tai2]"
+        "CL:部[bu4],台[tai2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -8137,9 +7540,6 @@
       "level": 1,
       "simplified": "书",
       "senseNumber": null,
-      "traditionalForms": [
-        "書"
-      ],
       "characters": [
         "书"
       ],
@@ -8160,11 +7560,11 @@
         "名"
       ],
       "definitions": [
-        "abbr. for 書經|书经[Shu1 jing1]",
+        "abbr. for 书经[Shu1 jing1]",
         "book",
         "letter",
         "document",
-        "CL:本[ben3],冊|册[ce4],部[bu4]",
+        "CL:本[ben3],册[ce4],部[bu4]",
         "to write"
       ],
       "quality": {
@@ -8178,9 +7578,6 @@
       "level": 1,
       "simplified": "书店",
       "senseNumber": null,
-      "traditionalForms": [
-        "書店"
-      ],
       "characters": [
         "书",
         "店"
@@ -8220,9 +7617,6 @@
       "level": 1,
       "simplified": "水",
       "senseNumber": null,
-      "traditionalForms": [
-        "水"
-      ],
       "characters": [
         "水"
       ],
@@ -8246,7 +7640,7 @@
         "surname Shui",
         "water",
         "(after a name) ... River",
-        "to swim (used mostly in 會水|会水[hui4 shui3] and 水性[shui3 xing4])",
+        "to swim (used mostly in 会水[hui4 shui3] and 水性[shui3 xing4])",
         "(coll.) lacking in substance; shoddy",
         "(bound form) additional cost; extra income",
         "classifier for washings of a garment"
@@ -8262,9 +7656,6 @@
       "level": 1,
       "simplified": "水果",
       "senseNumber": null,
-      "traditionalForms": [
-        "水果"
-      ],
       "characters": [
         "水",
         "果"
@@ -8291,7 +7682,7 @@
       ],
       "definitions": [
         "fruit",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -8304,9 +7695,6 @@
       "level": 1,
       "simplified": "睡",
       "senseNumber": null,
-      "traditionalForms": [
-        "睡"
-      ],
       "characters": [
         "睡"
       ],
@@ -8341,9 +7729,6 @@
       "level": 1,
       "simplified": "睡觉",
       "senseNumber": null,
-      "traditionalForms": [
-        "睡覺"
-      ],
       "characters": [
         "睡",
         "觉"
@@ -8383,10 +7768,6 @@
       "level": 1,
       "simplified": "说",
       "senseNumber": null,
-      "traditionalForms": [
-        "說",
-        "説"
-      ],
       "characters": [
         "说"
       ],
@@ -8411,7 +7792,7 @@
         "to explain; to comment",
         "to scold; to tell off",
         "(bound form) theory; doctrine",
-        "variant of 說|说[shuo1]"
+        "variant of 说[shuo1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -8424,9 +7805,6 @@
       "level": 1,
       "simplified": "说话",
       "senseNumber": null,
-      "traditionalForms": [
-        "說話"
-      ],
       "characters": [
         "说",
         "话"
@@ -8471,9 +7849,6 @@
       "level": 1,
       "simplified": "四",
       "senseNumber": null,
-      "traditionalForms": [
-        "四"
-      ],
       "characters": [
         "四"
       ],
@@ -8508,10 +7883,6 @@
       "level": 1,
       "simplified": "岁",
       "senseNumber": null,
-      "traditionalForms": [
-        "嵗",
-        "歲"
-      ],
       "characters": [
         "岁"
       ],
@@ -8535,7 +7906,7 @@
         "classifier for years (of age)",
         "year",
         "year (of crop harvests)",
-        "variant of 歲|岁[sui4], year",
+        "variant of 岁[sui4], year",
         "years old"
       ],
       "quality": {
@@ -8549,9 +7920,6 @@
       "level": 1,
       "simplified": "他",
       "senseNumber": null,
-      "traditionalForms": [
-        "他"
-      ],
       "characters": [
         "他"
       ],
@@ -8586,10 +7954,6 @@
       "level": 1,
       "simplified": "它",
       "senseNumber": null,
-      "traditionalForms": [
-        "它",
-        "牠"
-      ],
       "characters": [
         "它"
       ],
@@ -8624,9 +7988,6 @@
       "level": 1,
       "simplified": "她",
       "senseNumber": null,
-      "traditionalForms": [
-        "她"
-      ],
       "characters": [
         "她"
       ],
@@ -8660,9 +8021,6 @@
       "level": 1,
       "simplified": "他们",
       "senseNumber": null,
-      "traditionalForms": [
-        "他們"
-      ],
       "characters": [
         "他",
         "们"
@@ -8701,9 +8059,6 @@
       "level": 1,
       "simplified": "它们",
       "senseNumber": null,
-      "traditionalForms": [
-        "它們"
-      ],
       "characters": [
         "它",
         "们"
@@ -8742,9 +8097,6 @@
       "level": 1,
       "simplified": "她们",
       "senseNumber": null,
-      "traditionalForms": [
-        "她們"
-      ],
       "characters": [
         "她",
         "们"
@@ -8783,9 +8135,6 @@
       "level": 1,
       "simplified": "太",
       "senseNumber": null,
-      "traditionalForms": [
-        "太"
-      ],
       "characters": [
         "太"
       ],
@@ -8823,9 +8172,6 @@
       "level": 1,
       "simplified": "天",
       "senseNumber": null,
-      "traditionalForms": [
-        "天"
-      ],
       "characters": [
         "天"
       ],
@@ -8862,9 +8208,6 @@
       "level": 1,
       "simplified": "天气",
       "senseNumber": null,
-      "traditionalForms": [
-        "天氣"
-      ],
       "characters": [
         "天",
         "气"
@@ -8903,9 +8246,6 @@
       "level": 1,
       "simplified": "听",
       "senseNumber": null,
-      "traditionalForms": [
-        "聽"
-      ],
       "characters": [
         "听"
       ],
@@ -8944,9 +8284,6 @@
       "level": 1,
       "simplified": "听见",
       "senseNumber": null,
-      "traditionalForms": [
-        "聽見"
-      ],
       "characters": [
         "听",
         "见"
@@ -8985,9 +8322,6 @@
       "level": 1,
       "simplified": "同学",
       "senseNumber": null,
-      "traditionalForms": [
-        "同學"
-      ],
       "characters": [
         "同",
         "学"
@@ -9016,7 +8350,7 @@
         "to study at the same school",
         "fellow student",
         "classmate",
-        "CL:位[wei4],個|个[ge4]"
+        "CL:位[wei4],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -9029,9 +8363,6 @@
       "level": 1,
       "simplified": "外",
       "senseNumber": null,
-      "traditionalForms": [
-        "外"
-      ],
       "characters": [
         "外"
       ],
@@ -9068,9 +8399,6 @@
       "level": 1,
       "simplified": "外边",
       "senseNumber": null,
-      "traditionalForms": [
-        "外邊"
-      ],
       "characters": [
         "外",
         "边"
@@ -9112,10 +8440,6 @@
       "level": 1,
       "simplified": "玩",
       "senseNumber": null,
-      "traditionalForms": [
-        "玩",
-        "翫"
-      ],
       "characters": [
         "玩"
       ],
@@ -9157,9 +8481,6 @@
       "level": 1,
       "simplified": "晚",
       "senseNumber": null,
-      "traditionalForms": [
-        "晚"
-      ],
       "characters": [
         "晚"
       ],
@@ -9195,9 +8516,6 @@
       "level": 1,
       "simplified": "晚饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "晚飯"
-      ],
       "characters": [
         "晚",
         "饭"
@@ -9226,7 +8544,7 @@
         "evening meal",
         "dinner",
         "supper",
-        "CL:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+        "CL:份[fen4],顿[dun4],次[ci4],餐[can1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -9239,9 +8557,6 @@
       "level": 1,
       "simplified": "晚上",
       "senseNumber": null,
-      "traditionalForms": [
-        "晚上"
-      ],
       "characters": [
         "晚",
         "上"
@@ -9269,7 +8584,7 @@
       "definitions": [
         "evening",
         "night",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "in the evening"
       ],
       "quality": {
@@ -9283,11 +8598,6 @@
       "level": 1,
       "simplified": "喂",
       "senseNumber": 1,
-      "traditionalForms": [
-        "喂",
-        "餧",
-        "餵"
-      ],
       "characters": [
         "喂"
       ],
@@ -9311,7 +8621,7 @@
         "hey",
         "to feed (an animal, baby, invalid etc)",
         "to feed",
-        "variant of 餵|喂[wei4]"
+        "variant of 喂[wei4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -9324,9 +8634,6 @@
       "level": 1,
       "simplified": "问",
       "senseNumber": null,
-      "traditionalForms": [
-        "問"
-      ],
       "characters": [
         "问"
       ],
@@ -9360,9 +8667,6 @@
       "level": 1,
       "simplified": "问题",
       "senseNumber": null,
-      "traditionalForms": [
-        "問題"
-      ],
       "characters": [
         "问",
         "题"
@@ -9392,7 +8696,7 @@
         "problem",
         "issue",
         "topic",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -9405,9 +8709,6 @@
       "level": 1,
       "simplified": "我",
       "senseNumber": null,
-      "traditionalForms": [
-        "我"
-      ],
       "characters": [
         "我"
       ],
@@ -9441,9 +8742,6 @@
       "level": 1,
       "simplified": "我们",
       "senseNumber": null,
-      "traditionalForms": [
-        "我們"
-      ],
       "characters": [
         "我",
         "们"
@@ -9482,9 +8780,6 @@
       "level": 1,
       "simplified": "五",
       "senseNumber": null,
-      "traditionalForms": [
-        "五"
-      ],
       "characters": [
         "五"
       ],
@@ -9519,9 +8814,6 @@
       "level": 1,
       "simplified": "午饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "午飯"
-      ],
       "characters": [
         "午",
         "饭"
@@ -9548,7 +8840,7 @@
       ],
       "definitions": [
         "lunch",
-        "CL:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+        "CL:份[fen4],顿[dun4],次[ci4],餐[can1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -9561,9 +8853,6 @@
       "level": 1,
       "simplified": "喜欢",
       "senseNumber": null,
-      "traditionalForms": [
-        "喜歡"
-      ],
       "characters": [
         "喜",
         "欢"
@@ -9602,9 +8891,6 @@
       "level": 1,
       "simplified": "下",
       "senseNumber": null,
-      "traditionalForms": [
-        "下"
-      ],
       "characters": [
         "下"
       ],
@@ -9650,9 +8936,6 @@
       "level": 1,
       "simplified": "下雨",
       "senseNumber": null,
-      "traditionalForms": [
-        "下雨"
-      ],
       "characters": [
         "下",
         "雨"
@@ -9689,9 +8972,6 @@
       "level": 1,
       "simplified": "下班",
       "senseNumber": null,
-      "traditionalForms": [
-        "下班"
-      ],
       "characters": [
         "下",
         "班"
@@ -9731,9 +9011,6 @@
       "level": 1,
       "simplified": "下课",
       "senseNumber": null,
-      "traditionalForms": [
-        "下課"
-      ],
       "characters": [
         "下",
         "课"
@@ -9775,9 +9052,6 @@
       "level": 1,
       "simplified": "下午",
       "senseNumber": null,
-      "traditionalForms": [
-        "下午"
-      ],
       "characters": [
         "下",
         "午"
@@ -9804,7 +9078,7 @@
       ],
       "definitions": [
         "afternoon",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "p.m."
       ],
       "quality": {
@@ -9818,9 +9092,6 @@
       "level": 1,
       "simplified": "先生",
       "senseNumber": null,
-      "traditionalForms": [
-        "先生"
-      ],
       "characters": [
         "先",
         "生"
@@ -9863,9 +9134,6 @@
       "level": 1,
       "simplified": "现在",
       "senseNumber": null,
-      "traditionalForms": [
-        "現在"
-      ],
       "characters": [
         "现",
         "在"
@@ -9904,9 +9172,6 @@
       "level": 1,
       "simplified": "想",
       "senseNumber": null,
-      "traditionalForms": [
-        "想"
-      ],
       "characters": [
         "想"
       ],
@@ -9944,9 +9209,6 @@
       "level": 1,
       "simplified": "小",
       "senseNumber": null,
-      "traditionalForms": [
-        "小"
-      ],
       "characters": [
         "小"
       ],
@@ -9984,9 +9246,6 @@
       "level": 1,
       "simplified": "小朋友",
       "senseNumber": null,
-      "traditionalForms": [
-        "小朋友"
-      ],
       "characters": [
         "小",
         "朋",
@@ -10018,7 +9277,7 @@
       ],
       "definitions": [
         "child; kid (used to refer to a child, or by an adult to address a child, or, in Taiwan, to refer to sb's own child)",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -10031,9 +9290,6 @@
       "level": 1,
       "simplified": "小时",
       "senseNumber": null,
-      "traditionalForms": [
-        "小時"
-      ],
       "characters": [
         "小",
         "时"
@@ -10060,7 +9316,7 @@
       ],
       "definitions": [
         "hour",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -10073,9 +9329,6 @@
       "level": 1,
       "simplified": "小学",
       "senseNumber": null,
-      "traditionalForms": [
-        "小學"
-      ],
       "characters": [
         "小",
         "学"
@@ -10114,9 +9367,6 @@
       "level": 1,
       "simplified": "小学生",
       "senseNumber": null,
-      "traditionalForms": [
-        "小學生"
-      ],
       "characters": [
         "小",
         "学",
@@ -10149,7 +9399,7 @@
       "definitions": [
         "primary school student",
         "schoolchild",
-        "CL:個|个[ge4],名[ming2]",
+        "CL:个[ge4],名[ming2]",
         "(fig.) beginner"
       ],
       "quality": {
@@ -10163,9 +9413,6 @@
       "level": 1,
       "simplified": "些",
       "senseNumber": null,
-      "traditionalForms": [
-        "些"
-      ],
       "characters": [
         "些"
       ],
@@ -10199,9 +9446,6 @@
       "level": 1,
       "simplified": "写",
       "senseNumber": null,
-      "traditionalForms": [
-        "寫"
-      ],
       "characters": [
         "写"
       ],
@@ -10235,9 +9479,6 @@
       "level": 1,
       "simplified": "谢谢",
       "senseNumber": null,
-      "traditionalForms": [
-        "謝謝"
-      ],
       "characters": [
         "谢",
         "谢"
@@ -10278,9 +9519,6 @@
       "level": 1,
       "simplified": "新",
       "senseNumber": null,
-      "traditionalForms": [
-        "新"
-      ],
       "characters": [
         "新"
       ],
@@ -10319,9 +9557,6 @@
       "level": 1,
       "simplified": "星期",
       "senseNumber": null,
-      "traditionalForms": [
-        "星期"
-      ],
       "characters": [
         "星",
         "期"
@@ -10348,7 +9583,7 @@
       ],
       "definitions": [
         "week",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "day of the week",
         "Sunday"
       ],
@@ -10363,9 +9598,6 @@
       "level": 1,
       "simplified": "星期日",
       "senseNumber": null,
-      "traditionalForms": [
-        "星期日"
-      ],
       "characters": [
         "星",
         "期",
@@ -10409,9 +9641,6 @@
       "level": 1,
       "simplified": "星期天",
       "senseNumber": null,
-      "traditionalForms": [
-        "星期天"
-      ],
       "characters": [
         "星",
         "期",
@@ -10455,9 +9684,6 @@
       "level": 1,
       "simplified": "休息",
       "senseNumber": null,
-      "traditionalForms": [
-        "休息"
-      ],
       "characters": [
         "休",
         "息"
@@ -10497,9 +9723,6 @@
       "level": 1,
       "simplified": "学",
       "senseNumber": null,
-      "traditionalForms": [
-        "學"
-      ],
       "characters": [
         "学"
       ],
@@ -10537,9 +9760,6 @@
       "level": 1,
       "simplified": "学生",
       "senseNumber": null,
-      "traditionalForms": [
-        "學生"
-      ],
       "characters": [
         "学",
         "生"
@@ -10579,9 +9799,6 @@
       "level": 1,
       "simplified": "学习",
       "senseNumber": null,
-      "traditionalForms": [
-        "學習"
-      ],
       "characters": [
         "学",
         "习"
@@ -10621,9 +9838,6 @@
       "level": 1,
       "simplified": "学校",
       "senseNumber": null,
-      "traditionalForms": [
-        "學校"
-      ],
       "characters": [
         "学",
         "校"
@@ -10663,9 +9877,6 @@
       "level": 1,
       "simplified": "雪",
       "senseNumber": null,
-      "traditionalForms": [
-        "雪"
-      ],
       "characters": [
         "雪"
       ],
@@ -10687,7 +9898,7 @@
       ],
       "definitions": [
         "snow",
-        "CL:場|场[chang2]",
+        "CL:场[chang2]",
         "(literary) to wipe away (a humiliation etc)",
         "surname Xue"
       ],
@@ -10702,9 +9913,6 @@
       "level": 1,
       "simplified": "要",
       "senseNumber": null,
-      "traditionalForms": [
-        "要"
-      ],
       "characters": [
         "要"
       ],
@@ -10742,9 +9950,6 @@
       "level": 1,
       "simplified": "也",
       "senseNumber": null,
-      "traditionalForms": [
-        "也"
-      ],
       "characters": [
         "也"
       ],
@@ -10781,9 +9986,6 @@
       "level": 1,
       "simplified": "一",
       "senseNumber": null,
-      "traditionalForms": [
-        "一"
-      ],
       "characters": [
         "一"
       ],
@@ -10823,9 +10025,6 @@
       "level": 1,
       "simplified": "衣服",
       "senseNumber": null,
-      "traditionalForms": [
-        "衣服"
-      ],
       "characters": [
         "衣",
         "服"
@@ -10865,9 +10064,6 @@
       "level": 1,
       "simplified": "医生",
       "senseNumber": null,
-      "traditionalForms": [
-        "醫生"
-      ],
       "characters": [
         "医",
         "生"
@@ -10894,7 +10090,7 @@
       ],
       "definitions": [
         "doctor",
-        "CL:個|个[ge4],位[wei4],名[ming2]"
+        "CL:个[ge4],位[wei4],名[ming2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -10907,9 +10103,6 @@
       "level": 1,
       "simplified": "医院",
       "senseNumber": null,
-      "traditionalForms": [
-        "醫院"
-      ],
       "characters": [
         "医",
         "院"
@@ -10949,9 +10142,6 @@
       "level": 1,
       "simplified": "一半",
       "senseNumber": null,
-      "traditionalForms": [
-        "一半"
-      ],
       "characters": [
         "一",
         "半"
@@ -10990,9 +10180,6 @@
       "level": 1,
       "simplified": "一下",
       "senseNumber": null,
-      "traditionalForms": [
-        "一下"
-      ],
       "characters": [
         "一",
         "下"
@@ -11032,9 +10219,6 @@
       "level": 1,
       "simplified": "椅子",
       "senseNumber": null,
-      "traditionalForms": [
-        "椅子"
-      ],
       "characters": [
         "椅",
         "子"
@@ -11061,7 +10245,7 @@
       ],
       "definitions": [
         "chair",
-        "CL:把[ba3],張|张[zhang1]"
+        "CL:把[ba3],张[zhang1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11074,9 +10258,6 @@
       "level": 1,
       "simplified": "一点儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "一點兒"
-      ],
       "characters": [
         "一",
         "点",
@@ -11107,7 +10288,7 @@
         "数量"
       ],
       "definitions": [
-        "erhua variant of 一點|一点[yi1 dian3]"
+        "erhua variant of 一点[yi1 dian3]"
       ],
       "quality": {
         "pinyinMatchesCedict": false,
@@ -11120,9 +10301,6 @@
       "level": 1,
       "simplified": "一些",
       "senseNumber": null,
-      "traditionalForms": [
-        "一些"
-      ],
       "characters": [
         "一",
         "些"
@@ -11161,9 +10339,6 @@
       "level": 1,
       "simplified": "有",
       "senseNumber": null,
-      "traditionalForms": [
-        "有"
-      ],
       "characters": [
         "有"
       ],
@@ -11198,9 +10373,6 @@
       "level": 1,
       "simplified": "有的",
       "senseNumber": null,
-      "traditionalForms": [
-        "有的"
-      ],
       "characters": [
         "有",
         "的"
@@ -11240,9 +10412,6 @@
       "level": 1,
       "simplified": "有点儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "有點兒"
-      ],
       "characters": [
         "有",
         "点",
@@ -11288,9 +10457,6 @@
       "level": 1,
       "simplified": "有些",
       "senseNumber": null,
-      "traditionalForms": [
-        "有些"
-      ],
       "characters": [
         "有",
         "些"
@@ -11330,9 +10496,6 @@
       "level": 1,
       "simplified": "雨",
       "senseNumber": null,
-      "traditionalForms": [
-        "雨"
-      ],
       "characters": [
         "雨"
       ],
@@ -11354,7 +10517,7 @@
       ],
       "definitions": [
         "rain",
-        "CL:陣|阵[zhen4],場|场[chang2]"
+        "CL:阵[zhen4],场[chang2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11367,9 +10530,6 @@
       "level": 1,
       "simplified": "元",
       "senseNumber": null,
-      "traditionalForms": [
-        "元"
-      ],
       "characters": [
         "元"
       ],
@@ -11412,9 +10572,6 @@
       "level": 1,
       "simplified": "月",
       "senseNumber": null,
-      "traditionalForms": [
-        "月"
-      ],
       "characters": [
         "月"
       ],
@@ -11438,7 +10595,7 @@
         "moon",
         "month",
         "monthly",
-        "CL:個|个[ge4],輪|轮[lun2]"
+        "CL:个[ge4],轮[lun2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11451,9 +10608,6 @@
       "level": 1,
       "simplified": "再",
       "senseNumber": null,
-      "traditionalForms": [
-        "再"
-      ],
       "characters": [
         "再"
       ],
@@ -11479,7 +10633,7 @@
         "(before an adjective) more",
         "then (after sth, and not until then)",
         "no matter how ... (followed by an adjective or verb, and then (usually) 也[ye3] or 都[dou1] for emphasis)",
-        "(used to introduce additional information, as in 再則|再则[zai4 ze2], 再就是[zai4 jiu4 shi4] etc)",
+        "(used to introduce additional information, as in 再则[zai4 ze2], 再就是[zai4 jiu4 shi4] etc)",
         "(literary) to reappear; to reoccur"
       ],
       "quality": {
@@ -11493,9 +10647,6 @@
       "level": 1,
       "simplified": "在",
       "senseNumber": null,
-      "traditionalForms": [
-        "在"
-      ],
       "characters": [
         "在"
       ],
@@ -11533,9 +10684,6 @@
       "level": 1,
       "simplified": "再见",
       "senseNumber": null,
-      "traditionalForms": [
-        "再見"
-      ],
       "characters": [
         "再",
         "见"
@@ -11575,9 +10723,6 @@
       "level": 1,
       "simplified": "早",
       "senseNumber": null,
-      "traditionalForms": [
-        "早"
-      ],
       "characters": [
         "早"
       ],
@@ -11615,9 +10760,6 @@
       "level": 1,
       "simplified": "早饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "早飯"
-      ],
       "characters": [
         "早",
         "饭"
@@ -11644,7 +10786,7 @@
       ],
       "definitions": [
         "breakfast",
-        "CL:份[fen4],頓|顿[dun4],次[ci4],餐[can1]"
+        "CL:份[fen4],顿[dun4],次[ci4],餐[can1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11657,9 +10799,6 @@
       "level": 1,
       "simplified": "早上",
       "senseNumber": null,
-      "traditionalForms": [
-        "早上"
-      ],
       "characters": [
         "早",
         "上"
@@ -11686,7 +10825,7 @@
       ],
       "definitions": [
         "early morning",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11699,10 +10838,6 @@
       "level": 1,
       "simplified": "怎么",
       "senseNumber": null,
-      "traditionalForms": [
-        "怎麼",
-        "怎麽"
-      ],
       "characters": [
         "怎",
         "么"
@@ -11731,7 +10866,7 @@
         "how?",
         "what?",
         "why?",
-        "variant of 怎麼|怎么[zen3 me5]"
+        "variant of 怎么[zen3 me5]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -11744,9 +10879,6 @@
       "level": 1,
       "simplified": "怎么样",
       "senseNumber": null,
-      "traditionalForms": [
-        "怎麼樣"
-      ],
       "characters": [
         "怎",
         "么",
@@ -11793,9 +10925,6 @@
       "level": 1,
       "simplified": "找",
       "senseNumber": null,
-      "traditionalForms": [
-        "找"
-      ],
       "characters": [
         "找"
       ],
@@ -11835,9 +10964,6 @@
       "level": 1,
       "simplified": "这",
       "senseNumber": null,
-      "traditionalForms": [
-        "這"
-      ],
       "characters": [
         "这"
       ],
@@ -11873,9 +10999,6 @@
       "level": 1,
       "simplified": "这边",
       "senseNumber": null,
-      "traditionalForms": [
-        "這邊"
-      ],
       "characters": [
         "这",
         "边"
@@ -11915,9 +11038,6 @@
       "level": 1,
       "simplified": "这个",
       "senseNumber": null,
-      "traditionalForms": [
-        "這個"
-      ],
       "characters": [
         "这",
         "个"
@@ -11957,10 +11077,6 @@
       "level": 1,
       "simplified": "这里",
       "senseNumber": null,
-      "traditionalForms": [
-        "這裏",
-        "這裡"
-      ],
       "characters": [
         "这",
         "里"
@@ -11987,7 +11103,7 @@
       ],
       "definitions": [
         "here",
-        "variant of 這裡|这里[zhe4 li3]"
+        "variant of 这里[zhe4 li3]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -12000,9 +11116,6 @@
       "level": 1,
       "simplified": "这儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "這兒"
-      ],
       "characters": [
         "这",
         "儿"
@@ -12041,9 +11154,6 @@
       "level": 1,
       "simplified": "这些",
       "senseNumber": null,
-      "traditionalForms": [
-        "這些"
-      ],
       "characters": [
         "这",
         "些"
@@ -12082,9 +11192,6 @@
       "level": 1,
       "simplified": "真",
       "senseNumber": null,
-      "traditionalForms": [
-        "真"
-      ],
       "characters": [
         "真"
       ],
@@ -12123,9 +11230,6 @@
       "level": 1,
       "simplified": "正在",
       "senseNumber": null,
-      "traditionalForms": [
-        "正在"
-      ],
       "characters": [
         "正",
         "在"
@@ -12164,11 +11268,6 @@
       "level": 1,
       "simplified": "只",
       "senseNumber": null,
-      "traditionalForms": [
-        "只",
-        "秖",
-        "隻"
-      ],
       "characters": [
         "只"
       ],
@@ -12191,7 +11290,7 @@
       "definitions": [
         "classifier for birds and certain animals, one of a pair, some utensils, vessels etc",
         "grain that has begun to ripen",
-        "variant of 隻|只[zhi1]"
+        "variant of 只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -12204,9 +11303,6 @@
       "level": 1,
       "simplified": "知道",
       "senseNumber": null,
-      "traditionalForms": [
-        "知道"
-      ],
       "characters": [
         "知",
         "道"
@@ -12246,9 +11342,6 @@
       "level": 1,
       "simplified": "中国",
       "senseNumber": null,
-      "traditionalForms": [
-        "中國"
-      ],
       "characters": [
         "中",
         "国"
@@ -12287,9 +11380,6 @@
       "level": 1,
       "simplified": "中文",
       "senseNumber": null,
-      "traditionalForms": [
-        "中文"
-      ],
       "characters": [
         "中",
         "文"
@@ -12328,9 +11418,6 @@
       "level": 1,
       "simplified": "中午",
       "senseNumber": null,
-      "traditionalForms": [
-        "中午"
-      ],
       "characters": [
         "中",
         "午"
@@ -12358,7 +11445,7 @@
       "definitions": [
         "noon",
         "midday",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -12371,9 +11458,6 @@
       "level": 1,
       "simplified": "中学",
       "senseNumber": null,
-      "traditionalForms": [
-        "中學"
-      ],
       "characters": [
         "中",
         "学"
@@ -12412,9 +11496,6 @@
       "level": 1,
       "simplified": "中学生",
       "senseNumber": null,
-      "traditionalForms": [
-        "中學生"
-      ],
       "characters": [
         "中",
         "学",
@@ -12459,9 +11540,6 @@
       "level": 1,
       "simplified": "住",
       "senseNumber": null,
-      "traditionalForms": [
-        "住"
-      ],
       "characters": [
         "住"
       ],
@@ -12497,9 +11575,6 @@
       "level": 1,
       "simplified": "桌子",
       "senseNumber": null,
-      "traditionalForms": [
-        "桌子"
-      ],
       "characters": [
         "桌",
         "子"
@@ -12527,7 +11602,7 @@
       "definitions": [
         "table",
         "desk",
-        "CL:張|张[zhang1],套[tao4]"
+        "CL:张[zhang1],套[tao4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -12540,9 +11615,6 @@
       "level": 1,
       "simplified": "字",
       "senseNumber": null,
-      "traditionalForms": [
-        "字"
-      ],
       "characters": [
         "字"
       ],
@@ -12567,7 +11639,7 @@
         "symbol",
         "character",
         "word",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "courtesy or style name traditionally given to males aged 20 in dynastic China"
       ],
       "quality": {
@@ -12581,9 +11653,6 @@
       "level": 1,
       "simplified": "昨天",
       "senseNumber": null,
-      "traditionalForms": [
-        "昨天"
-      ],
       "characters": [
         "昨",
         "天"
@@ -12622,9 +11691,6 @@
       "level": 1,
       "simplified": "坐",
       "senseNumber": null,
-      "traditionalForms": [
-        "坐"
-      ],
       "characters": [
         "坐"
       ],
@@ -12663,9 +11729,6 @@
       "level": 1,
       "simplified": "做",
       "senseNumber": null,
-      "traditionalForms": [
-        "做"
-      ],
       "characters": [
         "做"
       ],
@@ -12704,9 +11767,6 @@
       "level": 1,
       "simplified": "做饭",
       "senseNumber": null,
-      "traditionalForms": [
-        "做飯"
-      ],
       "characters": [
         "做",
         "饭"
@@ -12744,9 +11804,6 @@
       "level": 2,
       "simplified": "啊",
       "senseNumber": null,
-      "traditionalForms": [
-        "啊"
-      ],
       "characters": [
         "啊"
       ],
@@ -12780,9 +11837,6 @@
       "level": 2,
       "simplified": "爱好",
       "senseNumber": null,
-      "traditionalForms": [
-        "愛好"
-      ],
       "characters": [
         "爱",
         "好"
@@ -12811,7 +11865,7 @@
       "definitions": [
         "to like; to be fond of; to take pleasure in; to be keen on",
         "interest; hobby",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -12824,9 +11878,6 @@
       "level": 2,
       "simplified": "白色",
       "senseNumber": null,
-      "traditionalForms": [
-        "白色"
-      ],
       "characters": [
         "白",
         "色"
@@ -12867,9 +11918,6 @@
       "level": 2,
       "simplified": "班",
       "senseNumber": null,
-      "traditionalForms": [
-        "班"
-      ],
       "characters": [
         "班"
       ],
@@ -12894,7 +11942,7 @@
         "team; class; grade",
         "(military) squad",
         "work shift",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "classifier for groups of people and scheduled transport vehicles"
       ],
       "quality": {
@@ -12908,11 +11956,6 @@
       "level": 2,
       "simplified": "帮",
       "senseNumber": null,
-      "traditionalForms": [
-        "幇",
-        "幚",
-        "幫"
-      ],
       "characters": [
         "帮"
       ],
@@ -12933,7 +11976,7 @@
         "动"
       ],
       "definitions": [
-        "old variant of 幫|帮[bang1]",
+        "old variant of 帮[bang1]",
         "to help",
         "to assist",
         "to support",
@@ -12959,9 +12002,6 @@
       "level": 2,
       "simplified": "帮忙",
       "senseNumber": null,
-      "traditionalForms": [
-        "幫忙"
-      ],
       "characters": [
         "帮",
         "忙"
@@ -13003,9 +12043,6 @@
       "level": 2,
       "simplified": "包",
       "senseNumber": null,
-      "traditionalForms": [
-        "包"
-      ],
       "characters": [
         "包"
       ],
@@ -13042,7 +12079,7 @@
         "to hold or embrace",
         "bundle",
         "packet",
-        "CL:個|个[ge4],隻|只[zhi1]"
+        "CL:个[ge4],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -13055,9 +12092,6 @@
       "level": 2,
       "simplified": "本子",
       "senseNumber": null,
-      "traditionalForms": [
-        "本子"
-      ],
       "characters": [
         "本",
         "子"
@@ -13100,9 +12134,6 @@
       "level": 2,
       "simplified": "比",
       "senseNumber": null,
-      "traditionalForms": [
-        "比"
-      ],
       "characters": [
         "比"
       ],
@@ -13126,7 +12157,7 @@
       "definitions": [
         "Belgium",
         "Belgian",
-        "abbr. for 比利時|比利时[Bi3 li4 shi2]",
+        "abbr. for 比利时[Bi3 li4 shi2]",
         "to compare",
         "(followed by a noun and adjective) more {adj.} than {noun}",
         "ratio",
@@ -13144,9 +12175,6 @@
       "level": 2,
       "simplified": "笔",
       "senseNumber": null,
-      "traditionalForms": [
-        "筆"
-      ],
       "characters": [
         "笔"
       ],
@@ -13185,9 +12213,6 @@
       "level": 2,
       "simplified": "别",
       "senseNumber": 1,
-      "traditionalForms": [
-        "別"
-      ],
       "characters": [
         "别"
       ],
@@ -13216,7 +12241,7 @@
         "don't ...!",
         "to fasten with a pin or clip",
         "to stick in; to insert (in order to hinder movement)",
-        "(noun suffix) category (as in 性別|性别[xing4 bie2], 派別|派别[pai4 bie2])"
+        "(noun suffix) category (as in 性别[xing4 bie2], 派别[pai4 bie2])"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -13229,9 +12254,6 @@
       "level": 2,
       "simplified": "不错",
       "senseNumber": null,
-      "traditionalForms": [
-        "不錯"
-      ],
       "characters": [
         "不",
         "错"
@@ -13273,9 +12295,6 @@
       "level": 2,
       "simplified": "不好意思",
       "senseNumber": null,
-      "traditionalForms": [
-        "不好意思"
-      ],
       "characters": [
         "不",
         "好",
@@ -13324,9 +12343,6 @@
       "level": 2,
       "simplified": "长",
       "senseNumber": null,
-      "traditionalForms": [
-        "長"
-      ],
       "characters": [
         "长"
       ],
@@ -13364,9 +12380,6 @@
       "level": 2,
       "simplified": "车站",
       "senseNumber": null,
-      "traditionalForms": [
-        "車站"
-      ],
       "characters": [
         "车",
         "站"
@@ -13394,7 +12407,7 @@
       "definitions": [
         "rail station",
         "bus stop",
-        "CL:處|处[chu4],個|个[ge4]"
+        "CL:处[chu4],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -13407,10 +12420,6 @@
       "level": 2,
       "simplified": "出",
       "senseNumber": null,
-      "traditionalForms": [
-        "出",
-        "齣"
-      ],
       "characters": [
         "出"
       ],
@@ -13450,9 +12459,6 @@
       "level": 2,
       "simplified": "出国",
       "senseNumber": null,
-      "traditionalForms": [
-        "出國"
-      ],
       "characters": [
         "出",
         "国"
@@ -13491,9 +12497,6 @@
       "level": 2,
       "simplified": "出来",
       "senseNumber": null,
-      "traditionalForms": [
-        "出來"
-      ],
       "characters": [
         "出",
         "来"
@@ -13534,9 +12537,6 @@
       "level": 2,
       "simplified": "出门",
       "senseNumber": null,
-      "traditionalForms": [
-        "出門"
-      ],
       "characters": [
         "出",
         "门"
@@ -13579,9 +12579,6 @@
       "level": 2,
       "simplified": "出去",
       "senseNumber": null,
-      "traditionalForms": [
-        "出去"
-      ],
       "characters": [
         "出",
         "去"
@@ -13620,10 +12617,6 @@
       "level": 2,
       "simplified": "床",
       "senseNumber": null,
-      "traditionalForms": [
-        "床",
-        "牀"
-      ],
       "characters": [
         "床"
       ],
@@ -13644,7 +12637,7 @@
         "名"
       ],
       "definitions": [
-        "bed; couch (furniture that one can lie down on) (CL:張|张[zhang1])",
+        "bed; couch (furniture that one can lie down on) (CL:张[zhang1])",
         "bed; bottom (of rivers, oceans, gardens etc)",
         "frame; chassis",
         "classifier for blankets, quilts etc",
@@ -13661,10 +12654,6 @@
       "level": 2,
       "simplified": "词",
       "senseNumber": null,
-      "traditionalForms": [
-        "䛐",
-        "詞"
-      ],
       "characters": [
         "词"
       ],
@@ -13685,7 +12674,7 @@
         "名"
       ],
       "definitions": [
-        "old variant of 詞|词[ci2]",
+        "old variant of 词[ci2]",
         "word",
         "statement; speech; lyrics",
         "a form of lyric poetry, flourishing in the Song dynasty 宋朝[Song4 chao2] (CL:首[shou3])"
@@ -13701,9 +12690,6 @@
       "level": 2,
       "simplified": "次",
       "senseNumber": null,
-      "traditionalForms": [
-        "次"
-      ],
       "characters": [
         "次"
       ],
@@ -13749,10 +12735,6 @@
       "level": 2,
       "simplified": "从",
       "senseNumber": null,
-      "traditionalForms": [
-        "从",
-        "從"
-      ],
       "characters": [
         "从"
       ],
@@ -13782,7 +12764,7 @@
         "(bound form) (Taiwan pr. [zong4]) assistant; auxiliary; subordinate",
         "(bound form) (Taiwan pr. [zong4]) related by common paternal grandfather or earlier ancestor",
         "surname Cong",
-        "variant of 從|从[cong2]"
+        "variant of 从[cong2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -13795,9 +12777,6 @@
       "level": 2,
       "simplified": "从小",
       "senseNumber": null,
-      "traditionalForms": [
-        "從小"
-      ],
       "characters": [
         "从",
         "小"
@@ -13836,9 +12815,6 @@
       "level": 2,
       "simplified": "错",
       "senseNumber": null,
-      "traditionalForms": [
-        "錯"
-      ],
       "characters": [
         "错"
       ],
@@ -13885,9 +12861,6 @@
       "level": 2,
       "simplified": "打",
       "senseNumber": 1,
-      "traditionalForms": [
-        "打"
-      ],
       "characters": [
         "打"
       ],
@@ -13908,10 +12881,10 @@
         "动"
       ],
       "definitions": [
-        "a semantically light, transitive verb that is combined with various grammatical objects to form compound verbs and verb-object phrases with a diverse range of meanings (e.g. 打傘|打伞[da3 san3] \"to hold an umbrella\", 打電話|打电话[da3 dian4 hua4] \"to make a phone call\", 打針|打针[da3 zhen1] \"to get an injection\", 打手套[da3 shou3 tao4] \"to knit gloves\", 打氣|打气[da3 qi4] \"to inflate\")",
+        "a semantically light, transitive verb that is combined with various grammatical objects to form compound verbs and verb-object phrases with a diverse range of meanings (e.g. 打伞[da3 san3] \"to hold an umbrella\", 打电话[da3 dian4 hua4] \"to make a phone call\", 打针[da3 zhen1] \"to get an injection\", 打手套[da3 shou3 tao4] \"to knit gloves\", 打气[da3 qi4] \"to inflate\")",
         "to hit; to strike",
         "to fight",
-        "(coll.) from; since (as in 打那以後|打那以后[da3 na4 yi3 hou4] \"since then\")"
+        "(coll.) from; since (as in 打那以后[da3 na4 yi3 hou4] \"since then\")"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -13924,9 +12897,6 @@
       "level": 2,
       "simplified": "打车",
       "senseNumber": null,
-      "traditionalForms": [
-        "打車"
-      ],
       "characters": [
         "打",
         "车"
@@ -13966,9 +12936,6 @@
       "level": 2,
       "simplified": "打开",
       "senseNumber": null,
-      "traditionalForms": [
-        "打開"
-      ],
       "characters": [
         "打",
         "开"
@@ -14010,9 +12977,6 @@
       "level": 2,
       "simplified": "但",
       "senseNumber": null,
-      "traditionalForms": [
-        "但"
-      ],
       "characters": [
         "但"
       ],
@@ -14047,9 +13011,6 @@
       "level": 2,
       "simplified": "但是",
       "senseNumber": null,
-      "traditionalForms": [
-        "但是"
-      ],
       "characters": [
         "但",
         "是"
@@ -14088,9 +13049,6 @@
       "level": 2,
       "simplified": "得",
       "senseNumber": null,
-      "traditionalForms": [
-        "得"
-      ],
       "characters": [
         "得"
       ],
@@ -14124,9 +13082,6 @@
       "level": 2,
       "simplified": "地",
       "senseNumber": null,
-      "traditionalForms": [
-        "地"
-      ],
       "characters": [
         "地"
       ],
@@ -14161,9 +13116,6 @@
       "level": 2,
       "simplified": "等",
       "senseNumber": 1,
-      "traditionalForms": [
-        "等"
-      ],
       "characters": [
         "等"
       ],
@@ -14203,9 +13155,6 @@
       "level": 2,
       "simplified": "地铁",
       "senseNumber": null,
-      "traditionalForms": [
-        "地鐵"
-      ],
       "characters": [
         "地",
         "铁"
@@ -14245,9 +13194,6 @@
       "level": 2,
       "simplified": "点",
       "senseNumber": 2,
-      "traditionalForms": [
-        "點"
-      ],
       "characters": [
         "点"
       ],
@@ -14295,9 +13241,6 @@
       "level": 2,
       "simplified": "懂",
       "senseNumber": null,
-      "traditionalForms": [
-        "懂"
-      ],
       "characters": [
         "懂"
       ],
@@ -14332,9 +13275,6 @@
       "level": 2,
       "simplified": "动",
       "senseNumber": null,
-      "traditionalForms": [
-        "動"
-      ],
       "characters": [
         "动"
       ],
@@ -14362,7 +13302,7 @@
         "to make use of",
         "to stir (emotions)",
         "to alter",
-        "abbr. for 動詞|动词[dong4 ci2], verb"
+        "abbr. for 动词[dong4 ci2], verb"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -14375,9 +13315,6 @@
       "level": 2,
       "simplified": "饭馆",
       "senseNumber": null,
-      "traditionalForms": [
-        "飯館"
-      ],
       "characters": [
         "饭",
         "馆"
@@ -14417,9 +13354,6 @@
       "level": 2,
       "simplified": "飞",
       "senseNumber": null,
-      "traditionalForms": [
-        "飛"
-      ],
       "characters": [
         "飞"
       ],
@@ -14453,9 +13387,6 @@
       "level": 2,
       "simplified": "高",
       "senseNumber": null,
-      "traditionalForms": [
-        "高"
-      ],
       "characters": [
         "高"
       ],
@@ -14495,9 +13426,6 @@
       "level": 2,
       "simplified": "高中",
       "senseNumber": null,
-      "traditionalForms": [
-        "高中"
-      ],
       "characters": [
         "高",
         "中"
@@ -14524,7 +13452,7 @@
       ],
       "definitions": [
         "senior high school",
-        "abbr. for 高級中學|高级中学[gao1 ji2 zhong1 xue2]"
+        "abbr. for 高级中学[gao1 ji2 zhong1 xue2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -14537,9 +13465,6 @@
       "level": 2,
       "simplified": "告诉",
       "senseNumber": null,
-      "traditionalForms": [
-        "告訴"
-      ],
       "characters": [
         "告",
         "诉"
@@ -14578,9 +13503,6 @@
       "level": 2,
       "simplified": "个子",
       "senseNumber": null,
-      "traditionalForms": [
-        "個子"
-      ],
       "characters": [
         "个",
         "子"
@@ -14620,9 +13542,6 @@
       "level": 2,
       "simplified": "跟",
       "senseNumber": null,
-      "traditionalForms": [
-        "跟"
-      ],
       "characters": [
         "跟"
       ],
@@ -14665,9 +13584,6 @@
       "level": 2,
       "simplified": "公交车",
       "senseNumber": null,
-      "traditionalForms": [
-        "公交車"
-      ],
       "characters": [
         "公",
         "交",
@@ -14700,7 +13616,7 @@
       "definitions": [
         "public transport vehicle",
         "town bus",
-        "CL:輛|辆[liang4]"
+        "CL:辆[liang4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -14713,9 +13629,6 @@
       "level": 2,
       "simplified": "过",
       "senseNumber": null,
-      "traditionalForms": [
-        "過"
-      ],
       "characters": [
         "过"
       ],
@@ -14756,9 +13669,6 @@
       "level": 2,
       "simplified": "过来",
       "senseNumber": null,
-      "traditionalForms": [
-        "過來"
-      ],
       "characters": [
         "过",
         "来"
@@ -14800,9 +13710,6 @@
       "level": 2,
       "simplified": "过年",
       "senseNumber": null,
-      "traditionalForms": [
-        "過年"
-      ],
       "characters": [
         "过",
         "年"
@@ -14841,9 +13748,6 @@
       "level": 2,
       "simplified": "过去",
       "senseNumber": 1,
-      "traditionalForms": [
-        "過去"
-      ],
       "characters": [
         "过",
         "去"
@@ -14883,9 +13787,6 @@
       "level": 2,
       "simplified": "过",
       "senseNumber": null,
-      "traditionalForms": [
-        "過"
-      ],
       "characters": [
         "过"
       ],
@@ -14919,9 +13820,6 @@
       "level": 2,
       "simplified": "还是",
       "senseNumber": null,
-      "traditionalForms": [
-        "還是"
-      ],
       "characters": [
         "还",
         "是"
@@ -14964,9 +13862,6 @@
       "level": 2,
       "simplified": "黑色",
       "senseNumber": null,
-      "traditionalForms": [
-        "黑色"
-      ],
       "characters": [
         "黑",
         "色"
@@ -15005,9 +13900,6 @@
       "level": 2,
       "simplified": "红茶",
       "senseNumber": null,
-      "traditionalForms": [
-        "紅茶"
-      ],
       "characters": [
         "红",
         "茶"
@@ -15034,7 +13926,7 @@
       ],
       "definitions": [
         "black tea",
-        "CL:杯[bei1],壺|壶[hu2]"
+        "CL:杯[bei1],壶[hu2]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -15047,9 +13939,6 @@
       "level": 2,
       "simplified": "红色",
       "senseNumber": null,
-      "traditionalForms": [
-        "紅色"
-      ],
       "characters": [
         "红",
         "色"
@@ -15089,9 +13978,6 @@
       "level": 2,
       "simplified": "后面",
       "senseNumber": null,
-      "traditionalForms": [
-        "後面"
-      ],
       "characters": [
         "后",
         "面"
@@ -15132,11 +14018,6 @@
       "level": 2,
       "simplified": "花",
       "senseNumber": 1,
-      "traditionalForms": [
-        "花",
-        "芲",
-        "蘤"
-      ],
       "characters": [
         "花"
       ],
@@ -15183,11 +14064,6 @@
       "level": 2,
       "simplified": "花",
       "senseNumber": 2,
-      "traditionalForms": [
-        "花",
-        "芲",
-        "蘤"
-      ],
       "characters": [
         "花"
       ],
@@ -15234,9 +14110,6 @@
       "level": 2,
       "simplified": "画",
       "senseNumber": null,
-      "traditionalForms": [
-        "畫"
-      ],
       "characters": [
         "画"
       ],
@@ -15259,10 +14132,10 @@
       ],
       "definitions": [
         "to draw; to paint",
-        "picture; painting (CL:幅[fu2],張|张[zhang1])",
-        "to draw (a line) (variant of 劃|划[hua4])",
-        "stroke of a Chinese character (variant of 劃|划[hua4])",
-        "(calligraphy) horizontal stroke (variant of 劃|划[hua4])"
+        "picture; painting (CL:幅[fu2],张[zhang1])",
+        "to draw (a line) (variant of 划[hua4])",
+        "stroke of a Chinese character (variant of 划[hua4])",
+        "(calligraphy) horizontal stroke (variant of 划[hua4])"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -15275,9 +14148,6 @@
       "level": 2,
       "simplified": "坏",
       "senseNumber": null,
-      "traditionalForms": [
-        "壞"
-      ],
       "characters": [
         "坏"
       ],
@@ -15315,9 +14185,6 @@
       "level": 2,
       "simplified": "回来",
       "senseNumber": null,
-      "traditionalForms": [
-        "回來"
-      ],
       "characters": [
         "回",
         "来"
@@ -15356,9 +14223,6 @@
       "level": 2,
       "simplified": "回去",
       "senseNumber": null,
-      "traditionalForms": [
-        "回去"
-      ],
       "characters": [
         "回",
         "去"
@@ -15398,9 +14262,6 @@
       "level": 2,
       "simplified": "机场",
       "senseNumber": null,
-      "traditionalForms": [
-        "機場"
-      ],
       "characters": [
         "机",
         "场"
@@ -15428,7 +14289,7 @@
       "definitions": [
         "airport; airfield",
         "(slang) service provider for Shadowsocks or similar software for circumventing Internet censorship",
-        "CL:家[jia1],處|处[chu4]"
+        "CL:家[jia1],处[chu4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -15441,9 +14302,6 @@
       "level": 2,
       "simplified": "机票",
       "senseNumber": null,
-      "traditionalForms": [
-        "機票"
-      ],
       "characters": [
         "机",
         "票"
@@ -15470,7 +14328,7 @@
       ],
       "definitions": [
         "plane ticket; airline ticket",
-        "CL:張|张[zhang1]"
+        "CL:张[zhang1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -15483,9 +14341,6 @@
       "level": 2,
       "simplified": "记得",
       "senseNumber": null,
-      "traditionalForms": [
-        "記得"
-      ],
       "characters": [
         "记",
         "得"
@@ -15524,9 +14379,6 @@
       "level": 2,
       "simplified": "间",
       "senseNumber": null,
-      "traditionalForms": [
-        "間"
-      ],
       "characters": [
         "间"
       ],
@@ -15565,9 +14417,6 @@
       "level": 2,
       "simplified": "教",
       "senseNumber": null,
-      "traditionalForms": [
-        "教"
-      ],
       "characters": [
         "教"
       ],
@@ -15601,9 +14450,6 @@
       "level": 2,
       "simplified": "教室",
       "senseNumber": null,
-      "traditionalForms": [
-        "教室"
-      ],
       "characters": [
         "教",
         "室"
@@ -15630,7 +14476,7 @@
       ],
       "definitions": [
         "classroom",
-        "CL:間|间[jian1]"
+        "CL:间[jian1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -15643,9 +14489,6 @@
       "level": 2,
       "simplified": "介绍",
       "senseNumber": null,
-      "traditionalForms": [
-        "介紹"
-      ],
       "characters": [
         "介",
         "绍"
@@ -15687,9 +14530,6 @@
       "level": 2,
       "simplified": "进",
       "senseNumber": null,
-      "traditionalForms": [
-        "進"
-      ],
       "characters": [
         "进"
       ],
@@ -15732,9 +14572,6 @@
       "level": 2,
       "simplified": "近",
       "senseNumber": null,
-      "traditionalForms": [
-        "近"
-      ],
       "characters": [
         "近"
       ],
@@ -15770,9 +14607,6 @@
       "level": 2,
       "simplified": "进来",
       "senseNumber": null,
-      "traditionalForms": [
-        "進來"
-      ],
       "characters": [
         "进",
         "来"
@@ -15811,9 +14645,6 @@
       "level": 2,
       "simplified": "进去",
       "senseNumber": null,
-      "traditionalForms": [
-        "進去"
-      ],
       "characters": [
         "进",
         "去"
@@ -15852,9 +14683,6 @@
       "level": 2,
       "simplified": "经常",
       "senseNumber": null,
-      "traditionalForms": [
-        "經常"
-      ],
       "characters": [
         "经",
         "常"
@@ -15894,9 +14722,6 @@
       "level": 2,
       "simplified": "酒店",
       "senseNumber": null,
-      "traditionalForms": [
-        "酒店"
-      ],
       "characters": [
         "酒",
         "店"
@@ -15939,9 +14764,6 @@
       "level": 2,
       "simplified": "就",
       "senseNumber": null,
-      "traditionalForms": [
-        "就"
-      ],
       "characters": [
         "就"
       ],
@@ -15969,7 +14791,7 @@
         "as much as; as many as",
         "to approach; to move towards",
         "to undertake; to engage in",
-        "(often followed by 著|着[zhe5]) taking advantage of",
+        "(often followed by 着[zhe5]) taking advantage of",
         "(of food) to go with",
         "with regard to; concerning",
         "(pattern: 就[jiu4] ... 也[ye3] ...) even if ... still ...",
@@ -15986,9 +14808,6 @@
       "level": 2,
       "simplified": "咖啡",
       "senseNumber": null,
-      "traditionalForms": [
-        "咖啡"
-      ],
       "characters": [
         "咖",
         "啡"
@@ -16028,9 +14847,6 @@
       "level": 2,
       "simplified": "开始",
       "senseNumber": null,
-      "traditionalForms": [
-        "開始"
-      ],
       "characters": [
         "开",
         "始"
@@ -16061,7 +14877,7 @@
         "beginning",
         "to start",
         "initial",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -16074,9 +14890,6 @@
       "level": 2,
       "simplified": "开学",
       "senseNumber": null,
-      "traditionalForms": [
-        "開學"
-      ],
       "characters": [
         "开",
         "学"
@@ -16118,10 +14931,6 @@
       "level": 2,
       "simplified": "考",
       "senseNumber": null,
-      "traditionalForms": [
-        "攷",
-        "考"
-      ],
       "characters": [
         "考"
       ],
@@ -16167,9 +14976,6 @@
       "level": 2,
       "simplified": "考试",
       "senseNumber": null,
-      "traditionalForms": [
-        "考試"
-      ],
       "characters": [
         "考",
         "试"
@@ -16211,9 +15017,6 @@
       "level": 2,
       "simplified": "可能",
       "senseNumber": null,
-      "traditionalForms": [
-        "可能"
-      ],
       "characters": [
         "可",
         "能"
@@ -16248,7 +15051,7 @@
         "probability",
         "maybe",
         "perhaps",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -16261,10 +15064,6 @@
       "level": 2,
       "simplified": "裤子",
       "senseNumber": null,
-      "traditionalForms": [
-        "袴子",
-        "褲子"
-      ],
       "characters": [
         "裤",
         "子"
@@ -16292,8 +15091,8 @@
       "definitions": [
         "trousers",
         "pants",
-        "CL:條|条[tiao2]",
-        "variant of 褲子|裤子, trousers",
+        "CL:条[tiao2]",
+        "variant of 裤子, trousers",
         "pants"
       ],
       "quality": {
@@ -16307,9 +15106,6 @@
       "level": 2,
       "simplified": "快",
       "senseNumber": null,
-      "traditionalForms": [
-        "快"
-      ],
       "characters": [
         "快"
       ],
@@ -16357,9 +15153,6 @@
       "level": 2,
       "simplified": "快乐",
       "senseNumber": null,
-      "traditionalForms": [
-        "快樂"
-      ],
       "characters": [
         "快",
         "乐"
@@ -16398,9 +15191,6 @@
       "level": 2,
       "simplified": "快要",
       "senseNumber": null,
-      "traditionalForms": [
-        "快要"
-      ],
       "characters": [
         "快",
         "要"
@@ -16439,9 +15229,6 @@
       "level": 2,
       "simplified": "篮球",
       "senseNumber": null,
-      "traditionalForms": [
-        "籃球"
-      ],
       "characters": [
         "篮",
         "球"
@@ -16468,7 +15255,7 @@
       ],
       "definitions": [
         "basketball",
-        "CL:個|个[ge4],隻|只[zhi1]"
+        "CL:个[ge4],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -16481,9 +15268,6 @@
       "level": 2,
       "simplified": "累",
       "senseNumber": null,
-      "traditionalForms": [
-        "累"
-      ],
       "characters": [
         "累"
       ],
@@ -16522,9 +15306,6 @@
       "level": 2,
       "simplified": "离",
       "senseNumber": null,
-      "traditionalForms": [
-        "離"
-      ],
       "characters": [
         "离"
       ],
@@ -16566,10 +15347,6 @@
       "level": 2,
       "simplified": "里面",
       "senseNumber": null,
-      "traditionalForms": [
-        "裏面",
-        "裡面"
-      ],
       "characters": [
         "里",
         "面"
@@ -16598,7 +15375,7 @@
         "inside",
         "interior",
         "also pr. [li3 mian5]",
-        "variant of 裡面|里面[li3 mian4]"
+        "variant of 里面[li3 mian4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -16611,9 +15388,6 @@
       "level": 2,
       "simplified": "楼",
       "senseNumber": null,
-      "traditionalForms": [
-        "樓"
-      ],
       "characters": [
         "楼"
       ],
@@ -16637,7 +15411,7 @@
         "house with more than 1 story",
         "storied building",
         "floor",
-        "CL:層|层[ceng2],座[zuo4],棟|栋[dong4]",
+        "CL:层[ceng2],座[zuo4],栋[dong4]",
         "surname Lou"
       ],
       "quality": {
@@ -16651,9 +15425,6 @@
       "level": 2,
       "simplified": "路",
       "senseNumber": null,
-      "traditionalForms": [
-        "路"
-      ],
       "characters": [
         "路"
       ],
@@ -16674,7 +15445,7 @@
         "名"
       ],
       "definitions": [
-        "road (CL:條|条[tiao2])",
+        "road (CL:条[tiao2])",
         "journey",
         "route",
         "line (bus etc)",
@@ -16692,9 +15463,6 @@
       "level": 2,
       "simplified": "路上",
       "senseNumber": null,
-      "traditionalForms": [
-        "路上"
-      ],
       "characters": [
         "路",
         "上"
@@ -16734,9 +15502,6 @@
       "level": 2,
       "simplified": "旅游",
       "senseNumber": null,
-      "traditionalForms": [
-        "旅遊"
-      ],
       "characters": [
         "旅",
         "游"
@@ -16780,9 +15545,6 @@
       "level": 2,
       "simplified": "绿茶",
       "senseNumber": null,
-      "traditionalForms": [
-        "綠茶"
-      ],
       "characters": [
         "绿",
         "茶"
@@ -16822,9 +15584,6 @@
       "level": 2,
       "simplified": "绿色",
       "senseNumber": null,
-      "traditionalForms": [
-        "綠色"
-      ],
       "characters": [
         "绿",
         "色"
@@ -16863,9 +15622,6 @@
       "level": 2,
       "simplified": "慢",
       "senseNumber": null,
-      "traditionalForms": [
-        "慢"
-      ],
       "characters": [
         "慢"
       ],
@@ -16899,9 +15655,6 @@
       "level": 2,
       "simplified": "没意思",
       "senseNumber": null,
-      "traditionalForms": [
-        "沒意思"
-      ],
       "characters": [
         "没",
         "意",
@@ -16944,9 +15697,6 @@
       "level": 2,
       "simplified": "每",
       "senseNumber": null,
-      "traditionalForms": [
-        "每"
-      ],
       "characters": [
         "每"
       ],
@@ -16981,9 +15731,6 @@
       "level": 2,
       "simplified": "门",
       "senseNumber": null,
-      "traditionalForms": [
-        "門"
-      ],
       "characters": [
         "门"
       ],
@@ -17009,7 +15756,7 @@
         "CL:扇[shan4]",
         "gateway",
         "doorway",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "opening",
         "valve",
         "switch",
@@ -17038,9 +15785,6 @@
       "level": 2,
       "simplified": "门口",
       "senseNumber": null,
-      "traditionalForms": [
-        "門口"
-      ],
       "characters": [
         "门",
         "口"
@@ -17068,7 +15812,7 @@
       "definitions": [
         "doorway",
         "gate",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -17081,9 +15825,6 @@
       "level": 2,
       "simplified": "门票",
       "senseNumber": null,
-      "traditionalForms": [
-        "門票"
-      ],
       "characters": [
         "门",
         "票"
@@ -17122,11 +15863,6 @@
       "level": 2,
       "simplified": "面",
       "senseNumber": 1,
-      "traditionalForms": [
-        "面",
-        "麪",
-        "麵"
-      ],
       "characters": [
         "面"
       ],
@@ -17158,7 +15894,7 @@
         "(of food) soft (not crunchy)",
         "(slang) (of a person) ineffectual",
         "spineless",
-        "variant of 麵|面[mian4]"
+        "variant of 面[mian4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -17171,9 +15907,6 @@
       "level": 2,
       "simplified": "名",
       "senseNumber": null,
-      "traditionalForms": [
-        "名"
-      ],
       "characters": [
         "名"
       ],
@@ -17212,11 +15945,6 @@
       "level": 2,
       "simplified": "拿",
       "senseNumber": null,
-      "traditionalForms": [
-        "㧱",
-        "拏",
-        "拿"
-      ],
       "characters": [
         "拿"
       ],
@@ -17257,10 +15985,6 @@
       "level": 2,
       "simplified": "那么",
       "senseNumber": null,
-      "traditionalForms": [
-        "那麼",
-        "那麽"
-      ],
       "characters": [
         "那",
         "么"
@@ -17290,7 +16014,7 @@
         "like that; in that way; to that extent",
         "(before a number) ... or so; about ...",
         "then; in that case",
-        "variant of 那麼|那么[na4 me5]"
+        "variant of 那么[na4 me5]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -17303,9 +16027,6 @@
       "level": 2,
       "simplified": "那样",
       "senseNumber": null,
-      "traditionalForms": [
-        "那樣"
-      ],
       "characters": [
         "那",
         "样"
@@ -17345,9 +16066,6 @@
       "level": 2,
       "simplified": "奶茶",
       "senseNumber": null,
-      "traditionalForms": [
-        "奶茶"
-      ],
       "characters": [
         "奶",
         "茶"
@@ -17386,9 +16104,6 @@
       "level": 2,
       "simplified": "奶奶",
       "senseNumber": null,
-      "traditionalForms": [
-        "奶奶"
-      ],
       "characters": [
         "奶",
         "奶"
@@ -17431,9 +16146,6 @@
       "level": 2,
       "simplified": "男孩儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "男孩兒"
-      ],
       "characters": [
         "男",
         "孩",
@@ -17477,9 +16189,6 @@
       "level": 2,
       "simplified": "鸟",
       "senseNumber": null,
-      "traditionalForms": [
-        "鳥"
-      ],
       "characters": [
         "鸟"
       ],
@@ -17501,7 +16210,7 @@
       ],
       "definitions": [
         "bird",
-        "CL:隻|只[zhi1],群[qun2]",
+        "CL:只[zhi1],群[qun2]",
         "\"bird\" radical in Chinese characters (Kangxi radical 196)",
         "(dialect) to pay attention to",
         "(intensifier) damned",
@@ -17518,9 +16227,6 @@
       "level": 2,
       "simplified": "女孩儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "女孩兒"
-      ],
       "characters": [
         "女",
         "孩",
@@ -17564,9 +16270,6 @@
       "level": 2,
       "simplified": "旁边",
       "senseNumber": null,
-      "traditionalForms": [
-        "旁邊"
-      ],
       "characters": [
         "旁",
         "边"
@@ -17605,9 +16308,6 @@
       "level": 2,
       "simplified": "跑",
       "senseNumber": null,
-      "traditionalForms": [
-        "跑"
-      ],
       "characters": [
         "跑"
       ],
@@ -17647,9 +16347,6 @@
       "level": 2,
       "simplified": "跑步",
       "senseNumber": null,
-      "traditionalForms": [
-        "跑步"
-      ],
       "characters": [
         "跑",
         "步"
@@ -17690,9 +16387,6 @@
       "level": 2,
       "simplified": "票",
       "senseNumber": null,
-      "traditionalForms": [
-        "票"
-      ],
       "characters": [
         "票"
       ],
@@ -17716,7 +16410,7 @@
         "ticket",
         "ballot",
         "banknote",
-        "CL:張|张[zhang1]",
+        "CL:张[zhang1]",
         "person held for ransom",
         "amateur performance of Chinese opera",
         "classifier for groups, batches, business transactions"
@@ -17732,9 +16426,6 @@
       "level": 2,
       "simplified": "妻子",
       "senseNumber": null,
-      "traditionalForms": [
-        "妻子"
-      ],
       "characters": [
         "妻",
         "子"
@@ -17773,9 +16464,6 @@
       "level": 2,
       "simplified": "起来",
       "senseNumber": null,
-      "traditionalForms": [
-        "起來"
-      ],
       "characters": [
         "起",
         "来"
@@ -17815,9 +16503,6 @@
       "level": 2,
       "simplified": "前面",
       "senseNumber": null,
-      "traditionalForms": [
-        "前面"
-      ],
       "characters": [
         "前",
         "面"
@@ -17860,9 +16545,6 @@
       "level": 2,
       "simplified": "晴",
       "senseNumber": null,
-      "traditionalForms": [
-        "晴"
-      ],
       "characters": [
         "晴"
       ],
@@ -17897,10 +16579,6 @@
       "level": 2,
       "simplified": "球",
       "senseNumber": null,
-      "traditionalForms": [
-        "毬",
-        "球"
-      ],
       "characters": [
         "球"
       ],
@@ -17925,10 +16603,10 @@
         "ball",
         "sphere",
         "globe",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "ball game",
         "match",
-        "CL:場|场[chang3]"
+        "CL:场[chang3]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -17941,9 +16619,6 @@
       "level": 2,
       "simplified": "让",
       "senseNumber": null,
-      "traditionalForms": [
-        "讓"
-      ],
       "characters": [
         "让"
       ],
@@ -17982,9 +16657,6 @@
       "level": 2,
       "simplified": "肉",
       "senseNumber": null,
-      "traditionalForms": [
-        "肉"
-      ],
       "characters": [
         "肉"
       ],
@@ -18024,9 +16696,6 @@
       "level": 2,
       "simplified": "商场",
       "senseNumber": null,
-      "traditionalForms": [
-        "商場"
-      ],
       "characters": [
         "商",
         "场"
@@ -18070,9 +16739,6 @@
       "level": 2,
       "simplified": "上来",
       "senseNumber": null,
-      "traditionalForms": [
-        "上來"
-      ],
       "characters": [
         "上",
         "来"
@@ -18113,9 +16779,6 @@
       "level": 2,
       "simplified": "上面",
       "senseNumber": null,
-      "traditionalForms": [
-        "上面"
-      ],
       "characters": [
         "上",
         "面"
@@ -18156,9 +16819,6 @@
       "level": 2,
       "simplified": "上去",
       "senseNumber": null,
-      "traditionalForms": [
-        "上去"
-      ],
       "characters": [
         "上",
         "去"
@@ -18197,9 +16857,6 @@
       "level": 2,
       "simplified": "上网",
       "senseNumber": null,
-      "traditionalForms": [
-        "上網"
-      ],
       "characters": [
         "上",
         "网"
@@ -18241,9 +16898,6 @@
       "level": 2,
       "simplified": "身体",
       "senseNumber": null,
-      "traditionalForms": [
-        "身體"
-      ],
       "characters": [
         "身",
         "体"
@@ -18283,9 +16937,6 @@
       "level": 2,
       "simplified": "生日",
       "senseNumber": null,
-      "traditionalForms": [
-        "生日"
-      ],
       "characters": [
         "生",
         "日"
@@ -18312,7 +16963,7 @@
       ],
       "definitions": [
         "birthday",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18325,10 +16976,6 @@
       "level": 2,
       "simplified": "时",
       "senseNumber": null,
-      "traditionalForms": [
-        "旹",
-        "時"
-      ],
       "characters": [
         "时"
       ],
@@ -18355,7 +17002,7 @@
         "hour",
         "season",
         "period",
-        "old variant of 時|时[shi2]",
+        "old variant of 时[shi2]",
         "surname Shi"
       ],
       "quality": {
@@ -18369,9 +17016,6 @@
       "level": 2,
       "simplified": "事情",
       "senseNumber": null,
-      "traditionalForms": [
-        "事情"
-      ],
       "characters": [
         "事",
         "情"
@@ -18398,7 +17042,7 @@
       ],
       "definitions": [
         "affair; matter; thing; business",
-        "CL:件[jian4],樁|桩[zhuang1]"
+        "CL:件[jian4],桩[zhuang1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18411,9 +17055,6 @@
       "level": 2,
       "simplified": "手",
       "senseNumber": null,
-      "traditionalForms": [
-        "手"
-      ],
       "characters": [
         "手"
       ],
@@ -18441,7 +17082,7 @@
         "personal(ly)",
         "convenient",
         "classifier for skill",
-        "CL:雙|双[shuang1],隻|只[zhi1]"
+        "CL:双[shuang1],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18454,9 +17095,6 @@
       "level": 2,
       "simplified": "手表",
       "senseNumber": null,
-      "traditionalForms": [
-        "手錶"
-      ],
       "characters": [
         "手",
         "表"
@@ -18483,7 +17121,7 @@
       ],
       "definitions": [
         "wristwatch",
-        "CL:塊|块[kuai4],隻|只[zhi1],個|个[ge4]"
+        "CL:块[kuai4],只[zhi1],个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18496,9 +17134,6 @@
       "level": 2,
       "simplified": "书包",
       "senseNumber": null,
-      "traditionalForms": [
-        "書包"
-      ],
       "characters": [
         "书",
         "包"
@@ -18527,7 +17162,7 @@
         "schoolbag",
         "satchel",
         "bookbag",
-        "CL:個|个[ge4],隻|只[zhi1]"
+        "CL:个[ge4],只[zhi1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18540,9 +17175,6 @@
       "level": 2,
       "simplified": "舒服",
       "senseNumber": null,
-      "traditionalForms": [
-        "舒服"
-      ],
       "characters": [
         "舒",
         "服"
@@ -18582,9 +17214,6 @@
       "level": 2,
       "simplified": "送",
       "senseNumber": null,
-      "traditionalForms": [
-        "送"
-      ],
       "characters": [
         "送"
       ],
@@ -18621,9 +17250,6 @@
       "level": 2,
       "simplified": "虽然",
       "senseNumber": null,
-      "traditionalForms": [
-        "雖然"
-      ],
       "characters": [
         "虽",
         "然"
@@ -18662,9 +17288,6 @@
       "level": 2,
       "simplified": "所以",
       "senseNumber": null,
-      "traditionalForms": [
-        "所以"
-      ],
       "characters": [
         "所",
         "以"
@@ -18706,9 +17329,6 @@
       "level": 2,
       "simplified": "疼",
       "senseNumber": null,
-      "traditionalForms": [
-        "疼"
-      ],
       "characters": [
         "疼"
       ],
@@ -18743,9 +17363,6 @@
       "level": 2,
       "simplified": "踢",
       "senseNumber": null,
-      "traditionalForms": [
-        "踢"
-      ],
       "characters": [
         "踢"
       ],
@@ -18781,9 +17398,6 @@
       "level": 2,
       "simplified": "题",
       "senseNumber": null,
-      "traditionalForms": [
-        "題"
-      ],
       "characters": [
         "题"
       ],
@@ -18811,7 +17425,7 @@
         "subject",
         "to inscribe",
         "to mention",
-        "CL:個|个[ge4],道[dao4]"
+        "CL:个[ge4],道[dao4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18824,9 +17438,6 @@
       "level": 2,
       "simplified": "条",
       "senseNumber": null,
-      "traditionalForms": [
-        "條"
-      ],
       "characters": [
         "条"
       ],
@@ -18864,9 +17475,6 @@
       "level": 2,
       "simplified": "跳舞",
       "senseNumber": null,
-      "traditionalForms": [
-        "跳舞"
-      ],
       "characters": [
         "跳",
         "舞"
@@ -18905,9 +17513,6 @@
       "level": 2,
       "simplified": "头",
       "senseNumber": null,
-      "traditionalForms": [
-        "頭"
-      ],
       "characters": [
         "头"
       ],
@@ -18942,7 +17547,7 @@
         "first",
         "leading",
         "classifier for pigs or livestock",
-        "CL:個|个[ge4]"
+        "CL:个[ge4]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -18955,9 +17560,6 @@
       "level": 2,
       "simplified": "外国",
       "senseNumber": null,
-      "traditionalForms": [
-        "外國"
-      ],
       "characters": [
         "外",
         "国"
@@ -18996,9 +17598,6 @@
       "level": 2,
       "simplified": "外面",
       "senseNumber": null,
-      "traditionalForms": [
-        "外面"
-      ],
       "characters": [
         "外",
         "面"
@@ -19040,9 +17639,6 @@
       "level": 2,
       "simplified": "完",
       "senseNumber": null,
-      "traditionalForms": [
-        "完"
-      ],
       "characters": [
         "完"
       ],
@@ -19080,9 +17676,6 @@
       "level": 2,
       "simplified": "万",
       "senseNumber": null,
-      "traditionalForms": [
-        "萬"
-      ],
       "characters": [
         "万"
       ],
@@ -19118,10 +17711,6 @@
       "level": 2,
       "simplified": "往",
       "senseNumber": null,
-      "traditionalForms": [
-        "往",
-        "徃"
-      ],
       "characters": [
         "往"
       ],
@@ -19162,9 +17751,6 @@
       "level": 2,
       "simplified": "网上",
       "senseNumber": null,
-      "traditionalForms": [
-        "網上"
-      ],
       "characters": [
         "网",
         "上"
@@ -19203,9 +17789,6 @@
       "level": 2,
       "simplified": "忘",
       "senseNumber": null,
-      "traditionalForms": [
-        "忘"
-      ],
       "characters": [
         "忘"
       ],
@@ -19241,9 +17824,6 @@
       "level": 2,
       "simplified": "位",
       "senseNumber": null,
-      "traditionalForms": [
-        "位"
-      ],
       "characters": [
         "位"
       ],
@@ -19283,9 +17863,6 @@
       "level": 2,
       "simplified": "为什么",
       "senseNumber": null,
-      "traditionalForms": [
-        "為什麼"
-      ],
       "characters": [
         "为",
         "什",
@@ -19328,9 +17905,6 @@
       "level": 2,
       "simplified": "希望",
       "senseNumber": null,
-      "traditionalForms": [
-        "希望"
-      ],
       "characters": [
         "希",
         "望"
@@ -19357,7 +17931,7 @@
       ],
       "definitions": [
         "to hope",
-        "a hope; a wish (CL:個|个[ge4])"
+        "a hope; a wish (CL:个[ge4])"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -19370,9 +17944,6 @@
       "level": 2,
       "simplified": "洗",
       "senseNumber": null,
-      "traditionalForms": [
-        "洗"
-      ],
       "characters": [
         "洗"
       ],
@@ -19409,9 +17980,6 @@
       "level": 2,
       "simplified": "洗手间",
       "senseNumber": null,
-      "traditionalForms": [
-        "洗手間"
-      ],
       "characters": [
         "洗",
         "手",
@@ -19457,9 +18025,6 @@
       "level": 2,
       "simplified": "下来",
       "senseNumber": null,
-      "traditionalForms": [
-        "下來"
-      ],
       "characters": [
         "下",
         "来"
@@ -19504,10 +18069,6 @@
       "level": 2,
       "simplified": "下面",
       "senseNumber": null,
-      "traditionalForms": [
-        "下面",
-        "下麵"
-      ],
       "characters": [
         "下",
         "面"
@@ -19551,9 +18112,6 @@
       "level": 2,
       "simplified": "下去",
       "senseNumber": null,
-      "traditionalForms": [
-        "下去"
-      ],
       "characters": [
         "下",
         "去"
@@ -19596,9 +18154,6 @@
       "level": 2,
       "simplified": "小孩儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "小孩兒"
-      ],
       "characters": [
         "小",
         "孩",
@@ -19642,9 +18197,6 @@
       "level": 2,
       "simplified": "小时候",
       "senseNumber": null,
-      "traditionalForms": [
-        "小時候"
-      ],
       "characters": [
         "小",
         "时",
@@ -19688,10 +18240,6 @@
       "level": 2,
       "simplified": "笑",
       "senseNumber": null,
-      "traditionalForms": [
-        "咲",
-        "笑"
-      ],
       "characters": [
         "笑"
       ],
@@ -19727,9 +18275,6 @@
       "level": 2,
       "simplified": "姓",
       "senseNumber": null,
-      "traditionalForms": [
-        "姓"
-      ],
       "characters": [
         "姓"
       ],
@@ -19765,9 +18310,6 @@
       "level": 2,
       "simplified": "姓名",
       "senseNumber": null,
-      "traditionalForms": [
-        "姓名"
-      ],
       "characters": [
         "姓",
         "名"
@@ -19806,9 +18348,6 @@
       "level": 2,
       "simplified": "颜色",
       "senseNumber": null,
-      "traditionalForms": [
-        "顏色"
-      ],
       "characters": [
         "颜",
         "色"
@@ -19852,9 +18391,6 @@
       "level": 2,
       "simplified": "眼睛",
       "senseNumber": null,
-      "traditionalForms": [
-        "眼睛"
-      ],
       "characters": [
         "眼",
         "睛"
@@ -19881,7 +18417,7 @@
       ],
       "definitions": [
         "eye",
-        "CL:隻|只[zhi1],雙|双[shuang1]"
+        "CL:只[zhi1],双[shuang1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -19894,10 +18430,6 @@
       "level": 2,
       "simplified": "药",
       "senseNumber": null,
-      "traditionalForms": [
-        "葯",
-        "藥"
-      ],
       "characters": [
         "药"
       ],
@@ -19919,11 +18451,11 @@
       ],
       "definitions": [
         "leaf of the iris",
-        "variant of 藥|药[yao4]",
+        "variant of 药[yao4]",
         "medicine",
         "drug",
         "substance used for a specific purpose (e.g. poisoning, explosion, fermenting)",
-        "CL:種|种[zhong3],服[fu4],味[wei4]",
+        "CL:种[zhong3],服[fu4],味[wei4]",
         "to poison"
       ],
       "quality": {
@@ -19937,9 +18469,6 @@
       "level": 2,
       "simplified": "药店",
       "senseNumber": null,
-      "traditionalForms": [
-        "藥店"
-      ],
       "characters": [
         "药",
         "店"
@@ -19978,9 +18507,6 @@
       "level": 2,
       "simplified": "爷爷",
       "senseNumber": null,
-      "traditionalForms": [
-        "爺爺"
-      ],
       "characters": [
         "爷",
         "爷"
@@ -20019,9 +18545,6 @@
       "level": 2,
       "simplified": "一会儿",
       "senseNumber": null,
-      "traditionalForms": [
-        "一會兒"
-      ],
       "characters": [
         "一",
         "会",
@@ -20069,9 +18592,6 @@
       "level": 2,
       "simplified": "已经",
       "senseNumber": null,
-      "traditionalForms": [
-        "已經"
-      ],
       "characters": [
         "已",
         "经"
@@ -20110,9 +18630,6 @@
       "level": 2,
       "simplified": "一起",
       "senseNumber": null,
-      "traditionalForms": [
-        "一起"
-      ],
       "characters": [
         "一",
         "起"
@@ -20154,9 +18671,6 @@
       "level": 2,
       "simplified": "意思",
       "senseNumber": null,
-      "traditionalForms": [
-        "意思"
-      ],
       "characters": [
         "意",
         "思"
@@ -20190,7 +18704,7 @@
         "interest",
         "fun",
         "token of appreciation, affection etc",
-        "CL:個|个[ge4]",
+        "CL:个[ge4]",
         "to give as a small token",
         "to do sth as a gesture of goodwill etc"
       ],
@@ -20205,10 +18719,6 @@
       "level": 2,
       "simplified": "阴",
       "senseNumber": null,
-      "traditionalForms": [
-        "陰",
-        "隂"
-      ],
       "characters": [
         "阴"
       ],
@@ -20240,7 +18750,7 @@
         "hidden",
         "genitalia",
         "surname Yin",
-        "variant of 陰|阴[yin1]"
+        "variant of 阴[yin1]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -20253,9 +18763,6 @@
       "level": 2,
       "simplified": "因为",
       "senseNumber": null,
-      "traditionalForms": [
-        "因為"
-      ],
       "characters": [
         "因",
         "为"
@@ -20297,10 +18804,6 @@
       "level": 2,
       "simplified": "游",
       "senseNumber": null,
-      "traditionalForms": [
-        "游",
-        "遊"
-      ],
       "characters": [
         "游"
       ],
@@ -20323,7 +18826,7 @@
       "definitions": [
         "surname You",
         "to swim",
-        "variant of 遊|游[you2]",
+        "variant of 游[you2]",
         "to walk",
         "to tour",
         "to roam",
@@ -20340,9 +18843,6 @@
       "level": 2,
       "simplified": "游泳",
       "senseNumber": null,
-      "traditionalForms": [
-        "游泳"
-      ],
       "characters": [
         "游",
         "泳"
@@ -20382,9 +18882,6 @@
       "level": 2,
       "simplified": "有意思",
       "senseNumber": null,
-      "traditionalForms": [
-        "有意思"
-      ],
       "characters": [
         "有",
         "意",
@@ -20429,9 +18926,6 @@
       "level": 2,
       "simplified": "有时",
       "senseNumber": null,
-      "traditionalForms": [
-        "有時"
-      ],
       "characters": [
         "有",
         "时"
@@ -20471,9 +18965,6 @@
       "level": 2,
       "simplified": "右",
       "senseNumber": null,
-      "traditionalForms": [
-        "右"
-      ],
       "characters": [
         "右"
       ],
@@ -20510,9 +19001,6 @@
       "level": 2,
       "simplified": "右边",
       "senseNumber": null,
-      "traditionalForms": [
-        "右邊"
-      ],
       "characters": [
         "右",
         "边"
@@ -20552,9 +19040,6 @@
       "level": 2,
       "simplified": "鱼",
       "senseNumber": null,
-      "traditionalForms": [
-        "魚"
-      ],
       "characters": [
         "鱼"
       ],
@@ -20575,8 +19060,8 @@
         "名"
       ],
       "definitions": [
-        "fish (CL:條|条[tiao2],尾[wei3])",
-        "used in the names of various aquatic animals that are not fish (including abalone 鮑魚|鲍鱼[bao4 yu2], alligators and crocodiles 鱷魚|鳄鱼[e4 yu2] and octopi 章魚|章鱼[zhang1 yu2])",
+        "fish (CL:条[tiao2],尾[wei3])",
+        "used in the names of various aquatic animals that are not fish (including abalone 鲍鱼[bao4 yu2], alligators and crocodiles 鳄鱼[e4 yu2] and octopi 章鱼[zhang1 yu2])",
         "surname Yu"
       ],
       "quality": {
@@ -20590,9 +19075,6 @@
       "level": 2,
       "simplified": "远",
       "senseNumber": null,
-      "traditionalForms": [
-        "遠"
-      ],
       "characters": [
         "远"
       ],
@@ -20630,9 +19112,6 @@
       "level": 2,
       "simplified": "运动",
       "senseNumber": null,
-      "traditionalForms": [
-        "運動"
-      ],
       "characters": [
         "运",
         "动"
@@ -20666,7 +19145,7 @@
         "motion",
         "movement",
         "campaign",
-        "CL:場|场[chang3]"
+        "CL:场[chang3]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -20679,9 +19158,6 @@
       "level": 2,
       "simplified": "站",
       "senseNumber": 1,
-      "traditionalForms": [
-        "站"
-      ],
       "characters": [
         "站"
       ],
@@ -20720,9 +19196,6 @@
       "level": 2,
       "simplified": "丈夫",
       "senseNumber": null,
-      "traditionalForms": [
-        "丈夫"
-      ],
       "characters": [
         "丈",
         "夫"
@@ -20761,10 +19234,6 @@
       "level": 2,
       "simplified": "这么",
       "senseNumber": null,
-      "traditionalForms": [
-        "這麼",
-        "這麽"
-      ],
       "characters": [
         "这",
         "么"
@@ -20795,7 +19264,7 @@
         "how much?",
         "this way",
         "like this",
-        "variant of 這麼|这么[zhe4 me5]"
+        "variant of 这么[zhe4 me5]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -20808,9 +19277,6 @@
       "level": 2,
       "simplified": "这样",
       "senseNumber": null,
-      "traditionalForms": [
-        "這樣"
-      ],
       "characters": [
         "这",
         "样"
@@ -20850,10 +19316,6 @@
       "level": 2,
       "simplified": "着",
       "senseNumber": null,
-      "traditionalForms": [
-        "着",
-        "著"
-      ],
       "characters": [
         "着"
       ],
@@ -20875,7 +19337,7 @@
       ],
       "definitions": [
         "aspect particle indicating action in progress or ongoing state",
-        "variant of 著|着[zhe5]"
+        "variant of 着[zhe5]"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -20888,9 +19350,6 @@
       "level": 2,
       "simplified": "正",
       "senseNumber": null,
-      "traditionalForms": [
-        "正"
-      ],
       "characters": [
         "正"
       ],
@@ -20934,10 +19393,6 @@
       "level": 2,
       "simplified": "周",
       "senseNumber": null,
-      "traditionalForms": [
-        "周",
-        "週"
-      ],
       "characters": [
         "周"
       ],
@@ -20986,9 +19441,6 @@
       "level": 2,
       "simplified": "准备",
       "senseNumber": null,
-      "traditionalForms": [
-        "準備"
-      ],
       "characters": [
         "准",
         "备"
@@ -21031,9 +19483,6 @@
       "level": 2,
       "simplified": "自己",
       "senseNumber": null,
-      "traditionalForms": [
-        "自己"
-      ],
       "characters": [
         "自",
         "己"
@@ -21072,9 +19521,6 @@
       "level": 2,
       "simplified": "走",
       "senseNumber": null,
-      "traditionalForms": [
-        "走"
-      ],
       "characters": [
         "走"
       ],
@@ -21119,9 +19565,6 @@
       "level": 2,
       "simplified": "走路",
       "senseNumber": null,
-      "traditionalForms": [
-        "走路"
-      ],
       "characters": [
         "走",
         "路"
@@ -21163,9 +19606,6 @@
       "level": 2,
       "simplified": "足球",
       "senseNumber": null,
-      "traditionalForms": [
-        "足球"
-      ],
       "characters": [
         "足",
         "球"
@@ -21192,7 +19632,7 @@
       ],
       "definitions": [
         "soccer; football",
-        "a soccer ball; a football (CL:個|个[ge4])"
+        "a soccer ball; a football (CL:个[ge4])"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
@@ -21205,11 +19645,6 @@
       "level": 2,
       "simplified": "最",
       "senseNumber": null,
-      "traditionalForms": [
-        "㝡",
-        "冣",
-        "最"
-      ],
       "characters": [
         "最"
       ],
@@ -21246,9 +19681,6 @@
       "level": 2,
       "simplified": "左",
       "senseNumber": null,
-      "traditionalForms": [
-        "左"
-      ],
       "characters": [
         "左"
       ],
@@ -21291,9 +19723,6 @@
       "level": 2,
       "simplified": "左边",
       "senseNumber": null,
-      "traditionalForms": [
-        "左邊"
-      ],
       "characters": [
         "左",
         "边"

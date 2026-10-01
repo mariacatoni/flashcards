@@ -36,8 +36,6 @@ def validate(path: Path) -> list[str]:
             errors.append(f"{label}: missing simplified headword")
         if not entry.get("definitions"):
             errors.append(f"{label}: missing definitions")
-        if not entry.get("traditionalForms"):
-            errors.append(f"{label}: missing traditional forms")
         if not entry.get("characters"):
             errors.append(f"{label}: missing character list")
         readings = entry.get("pinyin", {}).get("readings", [])
@@ -81,4 +79,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

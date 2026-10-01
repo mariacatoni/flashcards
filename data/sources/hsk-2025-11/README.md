@@ -15,8 +15,11 @@ only Level 1 and Level 2 rows selected from the upstream generated TSV.
 - Snapshot selected: 2026-09-30
 
 The snapshot retains the original source index, every level-specific row,
-official tone-marked pinyin, part-of-speech codes, numbered pinyin,
-CC-CEDICT traditional forms, and CC-CEDICT definitions.
+official tone-marked pinyin, part-of-speech codes, numbered pinyin, and
+CC-CEDICT definitions. Traditional-character fields are intentionally omitted
+because this application supports simplified Chinese only. CC-CEDICT inline
+references in `traditional|simplified[pinyin]` form are reduced to their
+simplified side before storage.
 
 Level 2 contains four level-specific grammatical uses of Level 1 headwords.
 These are intentional and must not be deduplicated by written form alone.
@@ -33,4 +36,3 @@ The importer accepts this subset or the complete upstream TSV. To refresh:
 6. Regenerate and validate the JSON.
 
 Large PDF and dictionary source files are intentionally excluded from Git.
-

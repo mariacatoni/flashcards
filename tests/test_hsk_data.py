@@ -28,8 +28,8 @@ class HskDataTests(unittest.TestCase):
     def test_every_entry_has_required_learning_data(self):
         for entry in self.entries:
             self.assertTrue(entry["simplified"])
-            self.assertTrue(entry["traditionalForms"])
             self.assertTrue(entry["definitions"])
+            self.assertFalse(any("|" in definition for definition in entry["definitions"]))
             self.assertTrue(entry["characters"])
             self.assertTrue(entry["pinyin"]["readings"])
 

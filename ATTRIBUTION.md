@@ -18,8 +18,8 @@ The source rows used here were extracted by the MIT-licensed
 
 ## CC-CEDICT
 
-Traditional forms and English dictionary definitions are derived from
-CC-CEDICT, maintained by MDBG and community contributors.
+English dictionary definitions are derived from CC-CEDICT, maintained by MDBG
+and community contributors.
 
 CC-CEDICT is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International license (CC BY-SA 4.0). The generated vocabulary JSON containing

@@ -20,7 +20,6 @@ REQUIRED_COLUMNS = {
     "part_of_speech",
     "pinyin_numbered",
     "pinyin_cc-cedict",
-    "traditional_cc-cedict",
     "definition_cc-cedict",
 }
 
@@ -78,7 +77,12 @@ def split_part_of_speech(value: str) -> list[str]:
 
 
 def split_definitions(value: str) -> list[str]:
-    return [definition.strip() for definition in value.split("/") if definition.strip()]
+    simplified = re.sub(r"[\u3400-\u9fff·]+\|([\u3400-\u9fff·]+)", r"\1", value)
+    return [
+        definition.strip()
+        for definition in simplified.split("/")
+        if definition.strip()
+    ]
 
 
 def parse_numbered_readings(value: str) -> list[list[dict[str, object]]]:
@@ -125,16 +129,8 @@ def convert_row(row: dict[str, str]) -> dict[str, object]:
     definitions = split_definitions(row["definition_cc-cedict"])
     numbered = row["pinyin_numbered"].strip()
     cedict_numbered = row["pinyin_cc-cedict"].strip() or None
-    traditional_forms = [
-        form.strip()
-        for form in row["traditional_cc-cedict"].split("/")
-        if form.strip()
-    ]
-
     if not definitions:
         raise ValueError(f"Missing definition for source row {source_index}")
-    if not traditional_forms:
-        raise ValueError(f"Missing traditional form for source row {source_index}")
 
     return {
         "id": make_id(source_index, level, numbered),
@@ -142,7 +138,6 @@ def convert_row(row: dict[str, str]) -> dict[str, object]:
         "level": level,
         "simplified": simplified,
         "senseNumber": sense_number,
-        "traditionalForms": traditional_forms,
         "characters": hanzi_characters(simplified),
         "pinyin": {
             "display": row["pinyin"].strip(),
@@ -237,4 +232,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
