@@ -22,6 +22,7 @@ const state = {
   cards: [],
   index: 0,
   levels: [],
+  levelsInitialized: false,
   decks: [DEFAULT_FILTER_DECK],
   query: "",
   searchSuggestionIndex: -1,
@@ -211,6 +212,10 @@ function datasetLevels(documentValue) {
     .sort((left, right) => left - right);
 }
 
+function defaultLevelSelection(documentValue) {
+  return datasetLevels(documentValue).map(String);
+}
+
 function datasetUrlFromManifest(manifest) {
   const filename = manifest?.dataset;
   if (
@@ -238,9 +243,11 @@ function cardsInSelectedLevels() {
 function renderLevelFilters() {
   const availableLevels = datasetLevels(state.document);
   const availableValues = availableLevels.map(String);
-  state.levels = state.levels.filter((level) => availableValues.includes(level));
-  if (state.levels.length === 0 && availableValues.length > 0) {
-    state.levels = [availableValues[0]];
+  if (!state.levelsInitialized) {
+    state.levels = defaultLevelSelection(state.document);
+    state.levelsInitialized = true;
+  } else {
+    state.levels = state.levels.filter((level) => availableValues.includes(level));
   }
 
   const choices = availableLevels.map((level) => {
@@ -320,10 +327,6 @@ function cardMatchesQuery(card, queryValue) {
   );
 }
 
-function matchesSearch(card) {
-  return cardMatchesQuery(card, state.query);
-}
-
 function searchMatchRank(card, queryValue) {
   const query = queryValue.trim();
   if (card.simplified === query) return 0;
@@ -359,6 +362,16 @@ function matchingSearchSuggestions(cards, query, limit = SEARCH_SUGGESTION_LIMIT
     )
     .slice(0, limit)
     .map(({ card }) => card);
+}
+
+function cardsForView(entries, levels, decks, query, cardDeck) {
+  if (query.trim()) {
+    return entries.filter((card) => cardMatchesQuery(card, query));
+  }
+  return entries.filter(
+    (card) =>
+      levels.includes(String(card.level)) && decks.includes(cardDeck(card)),
+  );
 }
 
 function updateDeckOptions() {
@@ -426,10 +439,7 @@ function renderPinyin(card) {
 }
 
 function currentSearchSuggestions() {
-  const eligibleCards = cardsInSelectedLevels().filter((card) =>
-    state.decks.includes(deckFor(card)),
-  );
-  return matchingSearchSuggestions(eligibleCards, state.query);
+  return matchingSearchSuggestions(state.document.entries, state.query);
 }
 
 function closeSearchSuggestions() {
@@ -726,7 +736,7 @@ function render() {
         "Select at least one HSK level and one deck to see cards.";
     } else if (state.query.trim()) {
       elements.emptyMessage.textContent =
-        `No cards in the selected levels and decks match “${state.query.trim()}”.`;
+        `No cards in the library match “${state.query.trim()}”.`;
     } else {
       elements.emptyMessage.textContent =
         "No cards are in the selected levels and decks yet.";
@@ -752,8 +762,12 @@ function render() {
 }
 
 function applyFilters(resetIndex = true) {
-  state.cards = cardsInSelectedLevels().filter(
-    (card) => state.decks.includes(deckFor(card)) && matchesSearch(card),
+  state.cards = cardsForView(
+    state.document.entries,
+    state.levels,
+    state.decks,
+    state.query,
+    deckFor,
   );
   state.index = resetIndex
     ? 0
@@ -805,13 +819,32 @@ function move(offset) {
   render();
 }
 
+function shuffledCards(cards, random = Math.random) {
+  const shuffled = [...cards];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(random() * (index + 1));
+    [shuffled[index], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[index],
+    ];
+  }
+  return shuffled;
+}
+
 function shuffle() {
   if (state.cards.length < 2) return;
-  let nextIndex = state.index;
-  while (nextIndex === state.index) {
-    nextIndex = Math.floor(Math.random() * state.cards.length);
+  const currentId = currentCard().id;
+  state.cards = shuffledCards(state.cards);
+
+  if (state.cards[0].id === currentId) {
+    const swapIndex = state.cards.findIndex((card) => card.id !== currentId);
+    [state.cards[0], state.cards[swapIndex]] = [
+      state.cards[swapIndex],
+      state.cards[0],
+    ];
   }
-  state.index = nextIndex;
+
+  state.index = 0;
   render();
 }
 

@@ -42,8 +42,11 @@ async function loadTestFunctions() {
       filterSummary,
       initialDeckFor,
       cardMatchesQuery,
+      cardsForView,
+      defaultLevelSelection,
       matchingSearchSuggestions,
       migrateLegacyAssignments,
+      shuffledCards,
       strokeCharactersFor,
       updateFilterValues,
     };`,
@@ -135,6 +138,16 @@ test("available HSK levels come from dataset metadata", async () => {
   );
 });
 
+test("every available HSK level is selected by default", async () => {
+  const { defaultLevelSelection } = await loadTestFunctions();
+
+  assert.deepEqual(
+    [...defaultLevelSelection({ dataset: { levels: [4, 1, 3, 2, 4] } })],
+    ["1", "2", "3", "4"],
+  );
+  assert.deepEqual([...defaultLevelSelection({ dataset: { levels: [] } })], []);
+});
+
 test("the data manifest only accepts local JSON filenames", async () => {
   const { datasetUrlFromManifest } = await loadTestFunctions();
 
@@ -186,4 +199,59 @@ test("search suggestions rank exact matches first and respect the limit", async 
     ["three"],
   );
   assert.deepEqual([...matchingSearchSuggestions(cards, "", 2)], []);
+});
+
+test("search uses the full library while empty search respects filters", async () => {
+  const { cardsForView } = await loadTestFunctions();
+  const cards = [
+    {
+      id: "selected",
+      level: 1,
+      deck: "studying",
+      simplified: "学",
+      pinyin: { display: "xué", numbered: "xue2" },
+    },
+    {
+      id: "outside-filters",
+      level: 4,
+      deck: "unclassified",
+      simplified: "半",
+      pinyin: { display: "bàn", numbered: "ban4" },
+    },
+  ];
+  const cardDeck = (card) => card.deck;
+
+  assert.deepEqual(
+    [...cardsForView(cards, ["1"], ["studying"], "", cardDeck)].map(
+      (card) => card.id,
+    ),
+    ["selected"],
+  );
+  assert.deepEqual(
+    [...cardsForView(cards, ["1"], ["studying"], "ban4", cardDeck)].map(
+      (card) => card.id,
+    ),
+    ["outside-filters"],
+  );
+});
+
+test("shuffle randomizes one combined card set without changing the source", async () => {
+  const { shuffledCards } = await loadTestFunctions();
+  const cards = [
+    { id: "hsk-1-a", level: 1 },
+    { id: "hsk-1-b", level: 1 },
+    { id: "hsk-2-a", level: 2 },
+    { id: "hsk-2-b", level: 2 },
+  ];
+
+  const shuffled = shuffledCards(cards, () => 0);
+
+  assert.deepEqual(
+    [...shuffled].map((card) => card.id),
+    ["hsk-1-b", "hsk-2-a", "hsk-2-b", "hsk-1-a"],
+  );
+  assert.deepEqual(
+    cards.map((card) => card.id),
+    ["hsk-1-a", "hsk-1-b", "hsk-2-a", "hsk-2-b"],
+  );
 });

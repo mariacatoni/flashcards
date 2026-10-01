@@ -67,13 +67,19 @@ they remain after a reload but are not yet synchronized between browsers or
 devices. Previously available Level 1–2 cards retain Studying as their initial
 deck. Newly imported Level 3–4 cards, and cards from future imports, begin in
 Unclassified. The app still opens with the Studying deck selected.
+All available HSK levels are selected when the app opens.
 
 Cards can also be filtered by simplified characters, tone-marked pinyin,
 numbered pinyin, or pinyin without tones. The HSK-level and deck dropdowns
 contain checkboxes that can be combined to study more than one level or deck
-at a time. Search displays up to seven potential matches from the selected
-levels and decks; a match can be chosen with the pointer or with the arrow keys
-and Enter.
+at a time. While a search is active, it searches the full library regardless of
+the selected levels and decks and displays up to seven potential matches. Clear
+the search to resume the selected filters. A match can be chosen with the
+pointer or with the arrow keys and Enter.
+
+Shuffle randomizes the complete visible card set across all selected HSK levels
+and decks. Previous and Next then move through that mixed order until the
+filters or search change.
 
 The Stroke order control opens an animated, character-by-character reference.
 Hanzi Writer and its character data are loaded on demand from pinned jsDelivr
