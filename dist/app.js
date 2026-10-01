@@ -1,6 +1,10 @@
 const STORAGE_KEY = "hsk-flashcards.deck-assignments.v2";
 const LEGACY_STORAGE_KEY = "hsk-flashcards.deck-assignments.v1";
 const LEGACY_DEFAULT_DECK = "later";
+const HANZI_WRITER_SRC =
+  "https://cdn.jsdelivr.net/npm/hanzi-writer@3.7.3/dist/hanzi-writer.min.js";
+const HANZI_DATA_ROOT =
+  "https://cdn.jsdelivr.net/npm/hanzi-writer-data@2.0.1/";
 const DEFAULT_DECK = "studying";
 const DECK_LABELS = {
   later: "To learn later",
@@ -13,19 +17,29 @@ const state = {
   document: null,
   cards: [],
   index: 0,
-  level: "1",
-  deck: DEFAULT_DECK,
+  levels: ["1"],
+  decks: [DEFAULT_DECK],
   query: "",
   assignments: {},
   canPersist: true,
   showPinyin: true,
   showEnglish: true,
+  strokeCharacters: [],
+  strokeIndex: 0,
+  strokeWriter: null,
+  strokeRenderToken: 0,
 };
 
+let hanziWriterPromise;
+
 const elements = {
-  levelFilter: document.querySelector("#level-filter"),
+  levelFilters: [...document.querySelectorAll(".level-filter-input")],
+  levelFilterSummary: document.querySelector("#level-filter-summary"),
   searchInput: document.querySelector("#search-input"),
-  deckFilter: document.querySelector("#deck-filter"),
+  deckFilters: [...document.querySelectorAll(".deck-filter-input")],
+  deckFilterSummary: document.querySelector("#deck-filter-summary"),
+  deckCountLabels: [...document.querySelectorAll("[data-deck-count]")],
+  filterMenus: [...document.querySelectorAll(".filter-menu details")],
   progress: document.querySelector("#progress"),
   cardMeta: document.querySelector("#card-meta"),
   levelBadge: document.querySelector("#level-badge"),
@@ -41,6 +55,17 @@ const elements = {
   deckStatus: document.querySelector("#deck-status"),
   togglePinyin: document.querySelector("#toggle-pinyin"),
   toggleEnglish: document.querySelector("#toggle-english"),
+  openStrokeOrder: document.querySelector("#open-stroke-order"),
+  strokeDialog: document.querySelector("#stroke-dialog"),
+  closeStrokeOrder: document.querySelector("#close-stroke-order"),
+  strokeCharacter: document.querySelector("#stroke-character"),
+  strokePosition: document.querySelector("#stroke-position"),
+  strokeTarget: document.querySelector("#stroke-target"),
+  strokeStatus: document.querySelector("#stroke-status"),
+  strokeNavigation: document.querySelector("#stroke-navigation"),
+  previousStrokeCharacter: document.querySelector("#previous-stroke-character"),
+  replayStrokes: document.querySelector("#replay-strokes"),
+  nextStrokeCharacter: document.querySelector("#next-stroke-character"),
   previous: document.querySelector("#previous-card"),
   shuffle: document.querySelector("#shuffle-card"),
   next: document.querySelector("#next-card"),
@@ -83,6 +108,18 @@ function currentCard() {
 
 function deckFor(card) {
   return state.assignments[card.id] ?? DEFAULT_DECK;
+}
+
+function strokeCharactersFor(card) {
+  const characters = Array.isArray(card?.characters)
+    ? card.characters
+    : [...(card?.simplified ?? "")];
+  return characters.filter((character) => character.trim().length > 0);
+}
+
+function clampStrokeIndex(index, characterCount) {
+  if (characterCount === 0) return 0;
+  return Math.min(Math.max(index, 0), characterCount - 1);
 }
 
 function sanitizeAssignments(value, validIds) {
@@ -142,9 +179,21 @@ function saveAssignments() {
   }
 }
 
-function cardsInSelectedLevel() {
+function updateFilterValues(values, value, checked) {
+  const nextValues = values.filter((item) => item !== value);
+  if (checked) nextValues.push(value);
+  return nextValues;
+}
+
+function filterSummary(values, labels, emptyLabel) {
+  if (values.length === 0) return emptyLabel;
+  if (values.length === 1) return labels[values[0]];
+  return `${values.length} selected`;
+}
+
+function cardsInSelectedLevels() {
   return state.document.entries.filter(
-    (card) => state.level === "all" || String(card.level) === state.level,
+    (card) => state.levels.includes(String(card.level)),
   );
 }
 
@@ -209,13 +258,27 @@ function matchesSearch(card) {
 
 function updateDeckOptions() {
   const counts = { later: 0, studying: 0, learned: 0 };
-  cardsInSelectedLevel().forEach((card) => {
+  cardsInSelectedLevels().forEach((card) => {
     counts[deckFor(card)] += 1;
   });
 
-  [...elements.deckFilter.options].forEach((option) => {
-    option.textContent = `${DECK_LABELS[option.value]} (${counts[option.value]})`;
+  elements.deckCountLabels.forEach((label) => {
+    const deck = label.dataset.deckCount;
+    label.textContent = `${DECK_LABELS[deck]} (${counts[deck]})`;
   });
+}
+
+function updateFilterSummaries() {
+  elements.levelFilterSummary.textContent = filterSummary(
+    state.levels,
+    { 1: "HSK 1", 2: "HSK 2" },
+    "No levels",
+  );
+  elements.deckFilterSummary.textContent = filterSummary(
+    state.decks,
+    DECK_LABELS,
+    "No decks",
+  );
 }
 
 function createToneSpan(text, tone) {
@@ -254,6 +317,168 @@ function renderPinyin(card) {
   elements.pinyin.setAttribute("aria-label", card.pinyin.display);
 }
 
+function loadHanziWriter() {
+  if (globalThis.HanziWriter) return Promise.resolve(globalThis.HanziWriter);
+  if (hanziWriterPromise) return hanziWriterPromise;
+
+  hanziWriterPromise = new Promise((resolve, reject) => {
+    const script = document.createElement("script");
+    script.src = HANZI_WRITER_SRC;
+    script.async = true;
+    script.addEventListener("load", () => resolve(globalThis.HanziWriter));
+    script.addEventListener("error", () => {
+      hanziWriterPromise = undefined;
+      reject(new Error("Hanzi Writer could not be loaded."));
+    });
+    document.head.append(script);
+  });
+
+  return hanziWriterPromise;
+}
+
+function loadStrokeData(character) {
+  return fetch(`${HANZI_DATA_ROOT}${encodeURIComponent(character)}.json`).then(
+    (response) => {
+      if (!response.ok) {
+        throw new Error(`Stroke data request failed with status ${response.status}`);
+      }
+      return response.json();
+    },
+  );
+}
+
+function updateStrokeNavigation() {
+  const lastIndex = state.strokeCharacters.length - 1;
+  const hasMultipleCharacters = state.strokeCharacters.length > 1;
+  elements.strokeNavigation.classList.toggle(
+    "single-character",
+    !hasMultipleCharacters,
+  );
+  elements.previousStrokeCharacter.hidden = !hasMultipleCharacters;
+  elements.nextStrokeCharacter.hidden = !hasMultipleCharacters;
+  elements.previousStrokeCharacter.disabled =
+    !hasMultipleCharacters || state.strokeIndex <= 0;
+  elements.nextStrokeCharacter.disabled =
+    !hasMultipleCharacters || state.strokeIndex >= lastIndex;
+}
+
+async function renderStrokeCharacter() {
+  const character = state.strokeCharacters[state.strokeIndex];
+  if (!character) return;
+
+  const renderToken = ++state.strokeRenderToken;
+  state.strokeWriter = null;
+  elements.strokeTarget.replaceChildren();
+  elements.strokeCharacter.textContent = character;
+  elements.strokePosition.textContent = `${state.strokeIndex + 1} of ${state.strokeCharacters.length}`;
+  elements.strokeTarget.setAttribute(
+    "aria-label",
+    `Animated stroke order for ${character}`,
+  );
+  elements.strokeStatus.textContent = "Loading stroke data…";
+  elements.replayStrokes.disabled = true;
+  updateStrokeNavigation();
+
+  try {
+    const HanziWriter = await loadHanziWriter();
+    if (renderToken !== state.strokeRenderToken || !elements.strokeDialog.open) return;
+
+    const reduceMotion =
+      typeof globalThis.matchMedia === "function" &&
+      globalThis.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    let writer;
+    writer = HanziWriter.create("stroke-target", character, {
+      width: 278,
+      height: 278,
+      padding: 20,
+      showOutline: true,
+      showCharacter: reduceMotion,
+      strokeColor: "#20272b",
+      outlineColor: "#d5d9d6",
+      strokeAnimationSpeed: 1,
+      delayBetweenStrokes: 220,
+      charDataLoader: loadStrokeData,
+      onLoadCharDataSuccess() {
+        Promise.resolve().then(() => {
+          if (
+            renderToken !== state.strokeRenderToken ||
+            !elements.strokeDialog.open ||
+            !state.strokeWriter
+          ) {
+            return;
+          }
+          elements.replayStrokes.disabled = false;
+          if (reduceMotion) {
+            elements.strokeStatus.textContent =
+              "Animation ready. Select Replay to begin.";
+          } else {
+            elements.strokeStatus.textContent = "";
+            state.strokeWriter.animateCharacter();
+          }
+        });
+      },
+      onLoadCharDataError(error) {
+        if (renderToken !== state.strokeRenderToken) return;
+        elements.strokeStatus.textContent =
+          "Stroke order is unavailable. Check your connection and try again.";
+        console.error(error);
+      },
+    });
+    state.strokeWriter = writer;
+  } catch (error) {
+    if (renderToken !== state.strokeRenderToken) return;
+    elements.strokeStatus.textContent =
+      "Stroke order is unavailable. Check your connection and try again.";
+    console.error(error);
+  }
+}
+
+function openStrokeOrder() {
+  const card = currentCard();
+  if (!card) return;
+
+  state.strokeCharacters = strokeCharactersFor(card);
+  state.strokeIndex = 0;
+  if (state.strokeCharacters.length === 0) return;
+
+  if (typeof elements.strokeDialog.showModal === "function") {
+    elements.strokeDialog.showModal();
+  } else {
+    elements.strokeDialog.setAttribute("open", "");
+  }
+  renderStrokeCharacter();
+}
+
+function cleanUpStrokeOrder() {
+  state.strokeRenderToken += 1;
+  state.strokeWriter = null;
+  elements.strokeTarget.replaceChildren();
+  elements.strokeStatus.textContent = "";
+}
+
+function closeStrokeOrder() {
+  if (typeof elements.strokeDialog.close === "function") {
+    elements.strokeDialog.close();
+  } else {
+    elements.strokeDialog.removeAttribute("open");
+    cleanUpStrokeOrder();
+  }
+}
+
+function setStrokeIndex(index) {
+  const nextIndex = clampStrokeIndex(index, state.strokeCharacters.length);
+  if (nextIndex === state.strokeIndex) return;
+  state.strokeIndex = nextIndex;
+  renderStrokeCharacter();
+}
+
+function replayStrokeOrder() {
+  if (!state.strokeWriter) return;
+  elements.strokeStatus.textContent = "";
+  state.strokeWriter.animateCharacter();
+}
+
 function render() {
   const card = currentCard();
   const hasCard = Boolean(card);
@@ -271,14 +496,20 @@ function render() {
   [elements.previous, elements.shuffle, elements.next].forEach((button) => {
     button.disabled = !hasCard;
   });
+  elements.openStrokeOrder.disabled = !hasCard;
 
   if (!hasCard) {
-    const levelLabel = state.level === "all" ? "HSK 1–2" : `HSK ${state.level}`;
     elements.progress.textContent = "0 of 0";
-    elements.emptyMessage.textContent = state.query.trim()
-      ? `No ${levelLabel} cards in ${DECK_LABELS[state.deck]} match “${state.query.trim()}”.`
-      : `No ${levelLabel} cards are in ${DECK_LABELS[state.deck]} yet. ` +
-        "Choose another deck to move cards here.";
+    if (state.levels.length === 0 || state.decks.length === 0) {
+      elements.emptyMessage.textContent =
+        "Select at least one HSK level and one deck to see cards.";
+    } else if (state.query.trim()) {
+      elements.emptyMessage.textContent =
+        `No cards in the selected levels and decks match “${state.query.trim()}”.`;
+    } else {
+      elements.emptyMessage.textContent =
+        "No cards are in the selected levels and decks yet.";
+    }
     return;
   }
 
@@ -300,24 +531,25 @@ function render() {
 }
 
 function applyFilters(resetIndex = true) {
-  state.cards = cardsInSelectedLevel().filter(
-    (card) => deckFor(card) === state.deck && matchesSearch(card),
+  state.cards = cardsInSelectedLevels().filter(
+    (card) => state.decks.includes(deckFor(card)) && matchesSearch(card),
   );
   state.index = resetIndex
     ? 0
     : Math.min(state.index, Math.max(state.cards.length - 1, 0));
   updateDeckOptions();
+  updateFilterSummaries();
   render();
 }
 
-function setLevel(level) {
-  state.level = level;
+function setLevelFilter(level, checked) {
+  state.levels = updateFilterValues(state.levels, level, checked);
   elements.deckStatus.textContent = "";
   applyFilters();
 }
 
-function setDeckFilter(deck) {
-  state.deck = deck;
+function setDeckFilter(deck, checked) {
+  state.decks = updateFilterValues(state.decks, deck, checked);
   elements.deckStatus.textContent = "";
   applyFilters();
 }
@@ -370,11 +602,31 @@ function setVisibility(kind, visible) {
 }
 
 function bindEvents() {
-  elements.levelFilter.addEventListener("change", (event) => setLevel(event.target.value));
+  elements.filterMenus.forEach((menu) => {
+    menu.addEventListener("toggle", () => {
+      if (!menu.open) return;
+      elements.filterMenus.forEach((otherMenu) => {
+        if (otherMenu !== menu) otherMenu.open = false;
+      });
+    });
+  });
+  elements.levelFilters.forEach((checkbox) => {
+    checkbox.addEventListener("change", () =>
+      setLevelFilter(checkbox.value, checkbox.checked),
+    );
+  });
   elements.searchInput.addEventListener("input", (event) => setSearch(event.target.value));
-  elements.deckFilter.addEventListener("change", (event) =>
-    setDeckFilter(event.target.value),
-  );
+  elements.deckFilters.forEach((checkbox) => {
+    checkbox.addEventListener("change", () =>
+      setDeckFilter(checkbox.value, checkbox.checked),
+    );
+  });
+  document.addEventListener("click", (event) => {
+    if (event.target.closest?.(".filter-menu")) return;
+    elements.filterMenus.forEach((menu) => {
+      menu.open = false;
+    });
+  });
   elements.deckButtons.forEach((button) => {
     button.addEventListener("click", () => assignCurrentCard(button.dataset.deck));
   });
@@ -387,9 +639,23 @@ function bindEvents() {
   elements.toggleEnglish.addEventListener("click", () =>
     setVisibility("english", !state.showEnglish),
   );
+  elements.openStrokeOrder.addEventListener("click", openStrokeOrder);
+  elements.closeStrokeOrder.addEventListener("click", closeStrokeOrder);
+  elements.previousStrokeCharacter.addEventListener("click", () =>
+    setStrokeIndex(state.strokeIndex - 1),
+  );
+  elements.nextStrokeCharacter.addEventListener("click", () =>
+    setStrokeIndex(state.strokeIndex + 1),
+  );
+  elements.replayStrokes.addEventListener("click", replayStrokeOrder);
+  elements.strokeDialog.addEventListener("close", cleanUpStrokeOrder);
+  elements.strokeDialog.addEventListener("click", (event) => {
+    if (event.target === elements.strokeDialog) closeStrokeOrder();
+  });
 
   document.addEventListener("keydown", (event) => {
     const target = event.target;
+    if (elements.strokeDialog.open) return;
     if (
       target instanceof HTMLInputElement ||
       target instanceof HTMLSelectElement ||
@@ -418,6 +684,7 @@ async function initialize() {
     elements.cardContent.hidden = true;
     elements.cardMeta.hidden = true;
     elements.deckAssignment.disabled = true;
+    elements.openStrokeOrder.disabled = true;
     elements.errorMessage.hidden = false;
     elements.errorMessage.textContent =
       "The flashcard data could not be loaded. Please refresh the page.";

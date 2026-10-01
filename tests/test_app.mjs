@@ -35,7 +35,13 @@ async function loadTestFunctions() {
     HTMLSelectElement: class {},
   };
   vm.runInNewContext(
-    `${source}\n;globalThis.testFunctions = { migrateLegacyAssignments };`,
+    `${source}\n;globalThis.testFunctions = {
+      clampStrokeIndex,
+      filterSummary,
+      migrateLegacyAssignments,
+      strokeCharactersFor,
+      updateFilterValues,
+    };`,
     context,
   );
   return context.testFunctions;
@@ -54,4 +60,43 @@ test("legacy deck assignments retain their old meaning", async () => {
     { ...migrateLegacyAssignments(entries, legacy) },
     { unassigned: "later", learned: "learned" },
   );
+});
+
+test("stroke-order characters preserve repeated positions in a word", async () => {
+  const { strokeCharactersFor } = await loadTestFunctions();
+
+  assert.deepEqual(
+    [...strokeCharactersFor({ simplified: "爸爸", characters: ["爸", "爸"] })],
+    ["爸", "爸"],
+  );
+  assert.deepEqual(
+    [...strokeCharactersFor({ simplified: "学习", characters: ["学", "习"] })],
+    ["学", "习"],
+  );
+});
+
+test("stroke-order navigation stays within the current word", async () => {
+  const { clampStrokeIndex } = await loadTestFunctions();
+
+  assert.equal(clampStrokeIndex(-1, 2), 0);
+  assert.equal(clampStrokeIndex(1, 2), 1);
+  assert.equal(clampStrokeIndex(2, 2), 1);
+  assert.equal(clampStrokeIndex(4, 0), 0);
+});
+
+test("checkbox filters can combine or remove selections", async () => {
+  const { updateFilterValues } = await loadTestFunctions();
+
+  assert.deepEqual([...updateFilterValues(["1"], "2", true)], ["1", "2"]);
+  assert.deepEqual([...updateFilterValues(["1", "2"], "1", false)], ["2"]);
+  assert.deepEqual([...updateFilterValues(["studying"], "studying", false)], []);
+});
+
+test("filter summaries stay concise", async () => {
+  const { filterSummary } = await loadTestFunctions();
+  const labels = { 1: "HSK 1", 2: "HSK 2" };
+
+  assert.equal(filterSummary([], labels, "No levels"), "No levels");
+  assert.equal(filterSummary(["1"], labels, "No levels"), "HSK 1");
+  assert.equal(filterSummary(["1", "2"], labels, "No levels"), "2 selected");
 });

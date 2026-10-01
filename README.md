@@ -53,4 +53,10 @@ after a reload but are not yet synchronized between browsers or devices. New
 and unassigned cards begin in Studying.
 
 Cards can also be filtered by simplified characters, tone-marked pinyin,
-numbered pinyin, or pinyin without tones.
+numbered pinyin, or pinyin without tones. The HSK-level and deck dropdowns
+contain checkboxes that can be combined to study more than one level or deck
+at a time.
+
+The Stroke order control opens an animated, character-by-character reference.
+Hanzi Writer and its character data are loaded on demand from pinned jsDelivr
+packages, so the first animation requires an internet connection.

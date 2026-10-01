@@ -34,8 +34,17 @@ this attribution retained.
 
 Stroke-order coverage is checked against the `chanind/hanzi-writer-data`
 repository. That data originates from Make Me a Hanzi and Arphic fonts and is
-distributed under the Arphic Public License. The current coverage report is
-pinned to repository commit `68d10a4b21150cae5e1ebbd223eed289cf32d90c`.
+distributed under the Arphic Public License. Runtime character data is loaded
+from the pinned `hanzi-writer-data` 2.0.1 package. The current coverage report
+is pinned to repository commit `68d10a4b21150cae5e1ebbd223eed289cf32d90c`.
 
 - Data repository: https://github.com/chanind/hanzi-writer-data
 - License notice: https://github.com/chanind/hanzi-writer-data/blob/master/ARPHICPL.TXT
+
+## Hanzi Writer
+
+Stroke-order rendering and animation use Hanzi Writer 3.7.3, released under
+the MIT License.
+
+- Project: https://github.com/chanind/hanzi-writer
+- License: https://github.com/chanind/hanzi-writer/blob/master/LICENSE

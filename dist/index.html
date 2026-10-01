@@ -28,17 +28,61 @@
           <p class="eyebrow" id="app-title">Chinese flashcards</p>
           <p class="source-note">HSK 3.0 · 2025 syllabus</p>
         </div>
-
-        <div class="study-context">
-          <label for="level-filter">Level</label>
-          <select id="level-filter" aria-label="Choose HSK level">
-            <option value="1">HSK 1</option>
-            <option value="2">HSK 2</option>
-            <option value="all">All</option>
-          </select>
-          <output id="progress" aria-live="polite">Loading…</output>
-        </div>
+        <output class="study-progress" id="progress" aria-live="polite">Loading…</output>
       </header>
+
+      <section class="filter-bar" aria-label="Card filters">
+        <div class="search-control">
+          <label for="search-input">Search</label>
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Character or pinyin"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <div class="filter-menu">
+          <span class="filter-label">HSK level</span>
+          <details>
+            <summary id="level-filter-summary">HSK 1</summary>
+            <fieldset class="filter-popover" id="level-filter">
+              <legend class="visually-hidden">Filter by HSK level</legend>
+              <label class="filter-choice">
+                <input class="level-filter-input" type="checkbox" value="1" checked />
+                HSK 1
+              </label>
+              <label class="filter-choice">
+                <input class="level-filter-input" type="checkbox" value="2" />
+                HSK 2
+              </label>
+            </fieldset>
+          </details>
+        </div>
+
+        <div class="filter-menu deck-filter-menu">
+          <span class="filter-label">Deck</span>
+          <details>
+            <summary id="deck-filter-summary">Studying</summary>
+            <fieldset class="filter-popover" id="deck-filter">
+              <legend class="visually-hidden">Filter by deck</legend>
+              <label class="filter-choice">
+                <input class="deck-filter-input" type="checkbox" value="later" />
+                <span data-deck-count="later">To learn later</span>
+              </label>
+              <label class="filter-choice">
+                <input class="deck-filter-input" type="checkbox" value="studying" checked />
+                <span data-deck-count="studying">Studying</span>
+              </label>
+              <label class="filter-choice">
+                <input class="deck-filter-input" type="checkbox" value="learned" />
+                <span data-deck-count="learned">Learned</span>
+              </label>
+            </fieldset>
+          </details>
+        </div>
+      </section>
 
       <div class="study-workspace">
         <div class="card-column">
@@ -70,24 +114,6 @@
         </div>
 
         <aside class="deck-panel" aria-label="Study controls">
-          <div class="search-control">
-            <label for="search-input">Search</label>
-            <input
-              id="search-input"
-              type="search"
-              placeholder="Character or pinyin"
-              autocomplete="off"
-              spellcheck="false"
-            />
-          </div>
-
-          <label for="deck-filter">Deck</label>
-          <select id="deck-filter" aria-label="Choose study deck">
-            <option value="later">To learn later</option>
-            <option value="studying" selected>Studying</option>
-            <option value="learned">Learned</option>
-          </select>
-
           <fieldset class="deck-assignment" id="deck-assignment">
             <legend>Move this card to</legend>
             <div class="deck-options">
@@ -112,9 +138,43 @@
             <button class="text-toggle" id="toggle-english" type="button" aria-pressed="true">
               English on
             </button>
+            <button class="text-toggle" id="open-stroke-order" type="button">
+              Stroke order
+            </button>
           </div>
         </aside>
       </div>
     </main>
+
+    <dialog class="stroke-dialog" id="stroke-dialog" aria-labelledby="stroke-title">
+      <div class="stroke-header">
+        <p id="stroke-title">Stroke order</p>
+        <button id="close-stroke-order" type="button">Close</button>
+      </div>
+
+      <p class="stroke-character-label">
+        <span id="stroke-character"></span>
+        <span id="stroke-position"></span>
+      </p>
+
+      <div
+        class="stroke-target"
+        id="stroke-target"
+        role="img"
+        aria-label="Animated stroke order"
+      ></div>
+
+      <p class="stroke-status" id="stroke-status" aria-live="polite"></p>
+
+      <div class="stroke-navigation" id="stroke-navigation" aria-label="Stroke-order controls">
+        <button id="previous-stroke-character" type="button" aria-label="Previous character">
+          Previous
+        </button>
+        <button id="replay-strokes" type="button" disabled>Replay</button>
+        <button id="next-stroke-character" type="button" aria-label="Next character">
+          Next
+        </button>
+      </div>
+    </dialog>
   </body>
 </html>

@@ -113,29 +113,134 @@ input:focus-visible {
   font-size: 0.8rem;
 }
 
-.study-context {
-  display: grid;
-  grid-template-columns: auto minmax(116px, auto);
-  align-items: center;
-  gap: 0.25rem 0.6rem;
-  font-size: 0.88rem;
-}
-
-.study-context label,
-.study-context output {
+.study-progress {
   color: var(--muted);
-}
-
-.study-context output {
-  grid-column: 1 / -1;
-  text-align: right;
+  font-size: 0.88rem;
   font-variant-numeric: tabular-nums;
 }
 
-.study-context select {
-  min-width: 96px;
-  padding: 0 2.25rem 0 0.7rem;
+.filter-bar {
+  display: grid;
+  grid-template-columns: minmax(220px, 300px) minmax(145px, auto) minmax(180px, auto);
+  align-items: end;
+  justify-content: start;
+  gap: 1rem clamp(1rem, 2.5vw, 2rem);
+  margin-bottom: 1rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.filter-label,
+.search-control label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.search-control {
+  width: min(100%, 300px);
+}
+
+.search-control input {
+  width: 100%;
+  padding: 0 0.7rem;
   background: var(--surface);
+}
+
+.filter-menu {
+  position: relative;
+  min-width: 145px;
+}
+
+.deck-filter-menu {
+  min-width: 180px;
+}
+
+.filter-menu details {
+  position: relative;
+}
+
+.filter-menu summary {
+  min-height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.6rem 0.7rem;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  font-size: 0.84rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.filter-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.filter-menu summary::after {
+  content: "▾";
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.filter-menu details[open] summary {
+  border-color: var(--focus);
+}
+
+.filter-menu summary:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--focus) 35%, transparent);
+  outline-offset: 2px;
+}
+
+.filter-popover {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 0.3rem);
+  left: 0;
+  min-width: 100%;
+  display: grid;
+  gap: 0.65rem;
+  margin: 0;
+  padding: 0.8rem;
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.deck-filter-menu .filter-popover {
+  min-width: 230px;
+}
+
+.filter-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--ink);
+  font-size: 0.84rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-choice input {
+  width: 1rem;
+  height: 1rem;
+  min-height: 0;
+  margin: 0;
+  accent-color: var(--focus);
 }
 
 .study-workspace {
@@ -156,36 +261,6 @@ input:focus-visible {
   flex-direction: column;
   padding-left: clamp(1rem, 2vw, 1.5rem);
   border-left: 1px solid var(--line);
-}
-
-.deck-panel > label {
-  display: block;
-  margin-bottom: 0.4rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.search-control {
-  margin-bottom: 1.5rem;
-}
-
-.search-control label {
-  display: block;
-  margin-bottom: 0.4rem;
-  color: var(--muted);
-  font-size: 0.78rem;
-}
-
-.search-control input {
-  width: 100%;
-  padding: 0 0.7rem;
-  background: var(--surface);
-}
-
-.deck-panel > select {
-  width: 100%;
-  padding: 0 2.25rem 0 0.7rem;
-  background: var(--surface);
 }
 
 .flashcard {
@@ -309,7 +384,7 @@ input:focus-visible {
 
 .deck-assignment {
   min-width: 0;
-  margin: 1.5rem 0 0;
+  margin: 0;
   padding: 0;
   border: 0;
 }
@@ -357,6 +432,7 @@ input:focus-visible {
 
 .card-navigation {
   gap: 0.65rem;
+  margin-top: 1rem;
 }
 
 .visibility-controls {
@@ -378,6 +454,110 @@ input:focus-visible {
   color: var(--ink);
   background: var(--surface);
   border-color: var(--line-strong);
+}
+
+.stroke-dialog {
+  width: min(420px, calc(100% - 1.5rem));
+  margin: auto;
+  padding: 1.25rem;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  box-shadow: none;
+}
+
+.stroke-dialog::backdrop {
+  background: rgb(32 39 43 / 32%);
+}
+
+.stroke-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.stroke-header p,
+.stroke-character-label,
+.stroke-status {
+  margin: 0;
+}
+
+.stroke-header p {
+  font-size: 1rem;
+}
+
+.stroke-header button {
+  min-height: 36px;
+  padding: 0.4rem 0.7rem;
+}
+
+.stroke-character-label {
+  min-height: 2.6rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
+}
+
+#stroke-character {
+  font-family: "LXGW WenKai GB", "Kaiti SC", "STKaiti", "KaiTi", serif;
+  font-size: 2rem;
+}
+
+#stroke-position {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.stroke-target {
+  width: 280px;
+  height: 280px;
+  margin: 0.5rem auto 0;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.stroke-status {
+  min-height: 2.6rem;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.stroke-navigation {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 0.5rem;
+}
+
+.stroke-navigation.single-character {
+  grid-template-columns: 1fr;
+}
+
+.stroke-navigation.single-character #replay-strokes {
+  justify-self: center;
+}
+
+.stroke-navigation button:first-child {
+  justify-self: start;
+}
+
+.stroke-navigation button:last-child {
+  justify-self: end;
+}
+
+.stroke-navigation button:disabled {
+  color: #9da3a4;
+  cursor: not-allowed;
+  background: transparent;
+  border-color: var(--line);
 }
 
 .card-navigation {
@@ -405,6 +585,14 @@ input:focus-visible {
     width: min(760px, calc(100% - 2rem));
   }
 
+  .filter-bar {
+    grid-template-columns: minmax(220px, 300px) auto;
+  }
+
+  .search-control {
+    grid-column: 1 / -1;
+  }
+
   .study-workspace {
     grid-template-columns: 1fr;
   }
@@ -414,14 +602,6 @@ input:focus-visible {
     padding: 1rem 0 0;
     border-top: 1px solid var(--line);
     border-left: 0;
-  }
-
-  .deck-panel > select {
-    width: min(100%, 18rem);
-  }
-
-  .search-control {
-    width: min(100%, 18rem);
   }
 
   .visibility-controls {
@@ -449,17 +629,23 @@ input:focus-visible {
   }
 
   .study-header {
-    flex-direction: column;
-    align-items: stretch;
+    align-items: end;
     gap: 0.8rem;
   }
 
-  .study-context {
-    grid-template-columns: 4rem 1fr;
+  .filter-bar {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
-  .study-context output {
-    text-align: left;
+  .search-control {
+    grid-column: auto;
+    width: 100%;
+  }
+
+  .filter-menu,
+  .deck-filter-menu {
+    width: 100%;
   }
 
   .flashcard {
@@ -487,6 +673,16 @@ input:focus-visible {
 
   .text-toggle {
     min-height: 48px;
+  }
+
+  .stroke-dialog {
+    padding: 1rem;
+  }
+
+  .stroke-target {
+    width: min(280px, 100%);
+    height: auto;
+    aspect-ratio: 1;
   }
 
   .card-navigation button {
