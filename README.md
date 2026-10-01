@@ -11,7 +11,8 @@ It is produced from the preserved source snapshot with:
 ```sh
 python3 scripts/import_hsk.py \
   data/sources/hsk-2025-11/hsk-levels-1-4.source.tsv \
-  data/generated/hsk-2025-11/levels-1-4.json
+  data/generated/hsk-2025-11/levels-1-4.json \
+  --overrides data/sources/hsk-2025-11/editorial-overrides.json
 ```
 
 By default, the importer includes every valid level present in the source.
@@ -110,9 +111,15 @@ The Level 1–4 expansion followed this process:
    layout in the browser before committing the data expansion.
 
 The automated import is complete, but automated validation is not the same as
-editorial review. The generated quality flags currently identify 1,600 entries
-whose CC-CEDICT definitions should be reviewed for the intended syllabus sense,
-including 1,191 newly added Level 3–4 entries.
+editorial review. Reviewed learner-facing definitions are stored separately in
+`data/sources/hsk-2025-11/editorial-overrides.json`, leaving the pinned source
+snapshot unchanged. The remaining Level 3–4 queue is generated in batches with:
+
+```sh
+python3 scripts/build_definition_review.py \
+  data/generated/hsk-2025-11/levels-1-4.json \
+  data/review/hsk-2025-11/levels-3-4-definition-review.tsv
+```
 
 Repeat the same process for later cumulative expansions. The official source
 groups advanced vocabulary into one `7-9` band, so that band must be modeled

@@ -26,6 +26,13 @@ because this application supports simplified Chinese only. CC-CEDICT inline
 references in `traditional|simplified[pinyin]` form are reduced to their
 simplified side before storage.
 
+The pinned TSV is never edited for English sense selection. Reviewed concise
+definitions are recorded by stable card ID in `editorial-overrides.json` and
+applied by `scripts/import_hsk.py --overrides`. This keeps every editorial
+decision auditable and prevents a later source refresh from silently erasing
+it. The official syllabus pinyin remains authoritative when it differs from
+CC-CEDICT, including tone-sandhi and neutral-tone differences.
+
 Level 2 contains four level-specific grammatical uses of Level 1 headwords.
 These are intentional and must not be deduplicated by written form alone.
 The Level 1–4 snapshot contains 300 Level 1 rows, 204 Level 2 rows, 507 Level 3

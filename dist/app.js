@@ -218,14 +218,17 @@ function defaultLevelSelection(documentValue) {
 
 function datasetUrlFromManifest(manifest) {
   const filename = manifest?.dataset;
+  const revision = manifest?.revision;
   if (
     manifest?.schemaVersion !== 1 ||
     typeof filename !== "string" ||
-    !/^[a-zA-Z0-9._-]+\.json$/.test(filename)
+    !/^[a-zA-Z0-9._-]+\.json$/.test(filename) ||
+    typeof revision !== "string" ||
+    !/^[a-f0-9]{12}$/.test(revision)
   ) {
     throw new Error("The data manifest is invalid.");
   }
-  return `./data/${filename}`;
+  return `./data/${filename}?v=${revision}`;
 }
 
 function filterSummary(values, labels, emptyLabel) {
@@ -973,7 +976,7 @@ function bindEvents() {
 async function initialize() {
   bindEvents();
   try {
-    const manifestResponse = await fetch("./data/manifest.json");
+    const manifestResponse = await fetch("./data/manifest.json", { cache: "no-store" });
     if (!manifestResponse.ok) {
       throw new Error(`Manifest request failed with status ${manifestResponse.status}`);
     }

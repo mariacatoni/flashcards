@@ -334,14 +334,12 @@
         "副"
       ],
       "definitions": [
-        "half",
-        "semi-",
-        "incomplete",
-        "(after a number) and a half"
+        "half; partly"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -1116,14 +1114,12 @@
         "名"
       ],
       "definitions": [
-        "the Great Learning, one of the Four Books 四书[Si4 shu1] in Confucianism",
-        "university",
-        "college",
-        "CL:所[suo3]"
+        "university; college"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -1392,25 +1388,12 @@
         "名"
       ],
       "definitions": [
-        "to touch briefly; to tap",
-        "to mark with a dot; to check off (on a list)",
-        "to order (food etc); to select",
-        "to mention; to bring up (a topic or person)",
-        "to hint at; to imply",
-        "to administer (eye medicine etc) in drops",
-        "to light (a fire, a lamp etc); to ignite",
-        "to nod (one's head) in agreement; to beckon by moving (one's hand) up and down",
-        "point; dot; spot; speck",
-        "dot stroke in Chinese characters",
-        "(math.) decimal point",
-        "point in time or space",
-        "(after a number) o'clock",
-        "a small amount; a bit; (after a verb or adjective) a bit more",
-        "classifier for small amounts"
+        "point; dot; o'clock"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -2392,20 +2375,12 @@
       ],
       "definitions": [
         "to divide; to separate",
-        "to distribute; to allocate",
-        "to distinguish (good and bad)",
-        "(bound form) branch of (an organization); sub- (as in 分局[fen1 ju2])",
-        "fraction",
-        "one tenth (of certain units)",
-        "unit of length equivalent to 0.33 cm",
-        "minute (unit of time)",
-        "minute (angular measurement unit)",
-        "a point (in sports or games)",
-        "0.01 yuan (unit of money)"
+        "minute; point"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -3578,24 +3553,12 @@
         "量"
       ],
       "definitions": [
-        "to circle",
-        "to go back",
-        "to turn around",
-        "to answer",
-        "to return",
-        "to revolve",
-        "Hui ethnic group (Chinese Muslims)",
-        "time",
-        "classifier for acts of a play",
-        "section or chapter (of a classic book)",
-        "to curve",
-        "to return",
-        "to revolve",
-        "variant of 回[hui2]"
+        "time; occurrence (classifier for events)"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -3819,18 +3782,12 @@
         "后缀"
       ],
       "definitions": [
-        "home",
-        "family",
-        "(polite) my (sister, uncle etc)",
-        "classifier for families or businesses",
-        "refers to the philosophical schools of pre-Han China",
-        "noun suffix for a specialist in some activity, such as a musician or revolutionary, corresponding to English -ist, -er, -ary or -ian",
-        "CL:个[ge4]",
-        "used in 家伙[jia1 huo5] and 家俱[jia1 ju4]"
+        "specialist; suffix corresponding to -ist or -er"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -4050,17 +4007,12 @@
         "介"
       ],
       "definitions": [
-        "to shout",
-        "to call",
-        "to order",
-        "to ask",
-        "to be called",
-        "by (indicates agent in the passive mood)",
-        "variant of 叫[jiao4]"
+        "by; passive-voice marker"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -7245,14 +7197,13 @@
         "名"
       ],
       "definitions": [
-        "abbr. for 日本[Ri4 ben3], Japan",
-        "sun",
-        "day",
-        "date, day of the month"
+        "day; date",
+        "sun"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -13291,20 +13242,12 @@
         "副"
       ],
       "definitions": [
-        "from; through; via",
-        "(bound form) to follow",
-        "(bound form) to obey",
-        "(bound form) to engage in (an activity)",
-        "(used before a negative) ever",
-        "(bound form) (Taiwan pr. [zong4]) retainer; attendant",
-        "(bound form) (Taiwan pr. [zong4]) assistant; auxiliary; subordinate",
-        "(bound form) (Taiwan pr. [zong4]) related by common paternal grandfather or earlier ancestor",
-        "surname Cong",
-        "variant of 从[cong2]"
+        "ever (used before a negative)"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -13711,17 +13654,12 @@
         "介"
       ],
       "definitions": [
-        "to wait for; to await",
-        "by the time; when; till",
-        "and so on; etc.; et al.",
-        "(bound form) class; rank; grade",
-        "(bound form) equal to; same as",
-        "(used to end an enumeration)",
-        "(literary) (plural suffix attached to a personal pronoun or noun)"
+        "by the time; when"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -13837,25 +13775,13 @@
         "量"
       ],
       "definitions": [
-        "to touch briefly; to tap",
-        "to mark with a dot; to check off (on a list)",
-        "to order (food etc); to select",
-        "to mention; to bring up (a topic or person)",
-        "to hint at; to imply",
-        "to administer (eye medicine etc) in drops",
-        "to light (a fire, a lamp etc); to ignite",
-        "to nod (one's head) in agreement; to beckon by moving (one's hand) up and down",
-        "point; dot; spot; speck",
-        "dot stroke in Chinese characters",
-        "(math.) decimal point",
-        "point in time or space",
-        "(after a number) o'clock",
-        "a small amount; a bit; (after a verb or adjective) a bit more",
-        "classifier for small amounts"
+        "a little; a bit",
+        "small amount"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -17410,16 +17336,12 @@
         "介"
       ],
       "definitions": [
-        "to yield",
-        "to permit",
-        "to let sb do sth",
-        "to have sb do sth",
-        "to make sb (feel sad etc)",
-        "by (indicates the agent in a passive clause, like 被[bei4])"
+        "by; passive-voice marker"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -18351,25 +18273,12 @@
         "量"
       ],
       "definitions": [
-        "head",
-        "hair style",
-        "the top",
-        "end",
-        "beginning or end",
-        "a stub",
-        "remnant",
-        "chief",
-        "boss",
-        "side",
-        "aspect",
-        "first",
-        "leading",
-        "classifier for pigs or livestock",
-        "CL:个[ge4]"
+        "classifier for livestock"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -20846,16 +20755,13 @@
         "介"
       ],
       "definitions": [
-        "to hold; to grasp",
-        "to hold a baby in position to help it urinate or defecate",
-        "handlebar",
-        "classifier: handful, bundle, bunch",
-        "classifier for things with handles",
-        "(used to put the object before the verb: 把[ba3] + {noun} + {verb})"
+        "classifier for handled objects",
+        "marker placing an object before its verb"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -21345,15 +21251,12 @@
         "介"
       ],
       "definitions": [
-        "quilt",
-        "to cover (with)",
-        "(literary) to suffer (a misfortune)",
-        "used to indicate passive voice (placed before the doer of the action like \"by\" in English passive-voice sentences, or, if the doer is not mentioned, before the verb)",
-        "(since c. 2009) (sarcastic or jocular) used to indicate that the following word should be regarded as being in air quotes (as in 被旅游[bei4 lu : 3 you2] to \"go on a trip\")"
+        "by; passive-voice marker"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -21431,15 +21334,12 @@
       ],
       "definitions": [
         "to compare",
-        "to contrast",
-        "comparatively",
-        "relatively",
-        "quite",
-        "comparison"
+        "comparatively; relatively"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -21597,14 +21497,12 @@
         "副"
       ],
       "definitions": [
-        "to have to",
-        "must",
-        "compulsory",
-        "necessarily"
+        "must; have to"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -21670,14 +21568,12 @@
         "量"
       ],
       "definitions": [
-        "everywhere",
-        "all over",
-        "classifier for actions: one time",
-        "variant of 遍[bian4]"
+        "time; classifier for a complete action"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -22352,18 +22248,13 @@
         "副"
       ],
       "definitions": [
-        "(variant of 才[cai2]) just now",
-        "(variant of 才[cai2]) (before an expression of quantity) only",
-        "ability; talent",
-        "sb of a certain type",
-        "a capable individual",
-        "then and only then",
-        "just now",
-        "(before an expression of quantity) only"
+        "only; not until",
+        "then and only then"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -22553,15 +22444,13 @@
         "量"
       ],
       "definitions": [
-        "to pile on top of one another",
-        "layer; stratum",
-        "floor (of a building); story",
-        "(math.) sheaf",
+        "layer; floor",
         "classifier for layers"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -22752,18 +22641,12 @@
         "副"
       ],
       "definitions": [
-        "always",
-        "ever",
-        "often",
-        "frequently",
-        "common",
-        "general",
-        "constant",
-        "surname Chang"
+        "often; frequently"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -24852,16 +24735,13 @@
         "量"
       ],
       "definitions": [
-        "paragraph",
-        "section",
-        "segment",
-        "stage (of a process)",
-        "classifier for stories, periods of time, lengths of thread etc",
-        "surname Duan"
+        "section; period",
+        "classifier for segments"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -25761,16 +25641,12 @@
         "量"
       ],
       "definitions": [
-        "surname Feng",
-        "to confer",
-        "to grant",
-        "to bestow a title",
-        "to seal",
-        "classifier for sealed objects, esp. letters"
+        "classifier for letters or sealed objects"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -26203,16 +26079,12 @@
         "副"
       ],
       "definitions": [
-        "hard",
-        "firm",
-        "strong",
-        "just",
-        "barely",
-        "exactly"
+        "just; barely"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -28164,14 +28036,12 @@
         "副"
       ],
       "definitions": [
-        "extremely",
-        "pole (geography, physics)",
-        "utmost",
-        "top"
+        "extremely"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -28708,16 +28578,12 @@
         "量"
       ],
       "definitions": [
-        "angle",
-        "corner",
-        "horn",
-        "horn-shaped",
-        "unit of money equal to 0.1 yuan, or 10 cents (a dime)",
-        "CL:个[ge4]"
+        "one tenth of a yuan; jiao"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -28859,18 +28725,13 @@
         "名"
       ],
       "definitions": [
-        "joint; node",
-        "(bound form) section; segment",
-        "solar term (one of the 24 divisions of the year in the traditional Chinese calendar)",
-        "seasonal festival",
-        "(bound form) to economize; to save",
-        "(bound form) moral integrity; chastity",
-        "classifier for segments: lessons, train wagons, biblical verses etc",
-        "knot (nautical miles per hour)"
+        "section; segment",
+        "classifier for lessons or sections"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -29800,15 +29661,12 @@
         "连"
       ],
       "definitions": [
-        "(prefix) can; may; able to; -able",
-        "to approve; to permit",
-        "to suit",
-        "(particle used for emphasis) certainly; very",
         "but; however"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -29949,17 +29807,13 @@
         "量"
       ],
       "definitions": [
-        "quarter (hour)",
-        "moment",
-        "to carve",
-        "to engrave",
-        "to cut",
-        "oppressive",
-        "classifier for short time intervals"
+        "quarter of an hour",
+        "short interval"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -30382,21 +30236,12 @@
         "副"
       ],
       "definitions": [
-        "prefix used before the surname of a person or a numeral indicating the order of birth of the children in a family or to indicate affection or familiarity",
-        "old (of people)",
-        "venerable (person)",
-        "experienced",
-        "of long standing",
-        "always",
-        "all the time",
-        "of the past",
-        "very",
-        "outdated",
-        "(of meat etc) tough"
+        "always; all the time"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -31286,26 +31131,12 @@
         "量"
       ],
       "definitions": [
-        "hair",
-        "feather",
-        "down",
-        "wool",
-        "mildew",
-        "mold",
-        "coarse or semifinished",
-        "young",
-        "raw",
-        "careless",
-        "unthinking",
-        "nervous",
-        "scared",
-        "(of currency) to devalue or depreciate",
-        "classifier for Chinese fractional monetary unit ( = 角[jiao3] , = one-tenth of a yuan or 10 fen 分[fen1])",
-        "surname Mao"
+        "one tenth of a yuan; mao"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -31334,14 +31165,12 @@
         "量"
       ],
       "definitions": [
-        "surname Mi",
-        "uncooked rice",
-        "meter (unit of length)",
-        "(slang) Chinese yuan"
+        "meter"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -32187,16 +32016,12 @@
         "副"
       ],
       "definitions": [
-        "surname Pa",
-        "to be afraid",
-        "to fear",
-        "to dread",
-        "to be unable to endure",
-        "perhaps"
+        "perhaps; maybe"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -33676,16 +33501,13 @@
         "量"
       ],
       "definitions": [
-        "sound",
-        "voice",
-        "tone",
-        "noise",
-        "reputation",
+        "sound; voice",
         "classifier for sounds"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -34332,17 +34154,12 @@
         "量"
       ],
       "definitions": [
-        "surname Shuang",
-        "two",
-        "double",
-        "pair",
-        "both",
-        "even (number)",
-        "variant of 双[shuang1]"
+        "pair; classifier for pairs"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -34841,20 +34658,12 @@
         "副"
       ],
       "definitions": [
-        "straight",
-        "erect",
-        "to stick out (a part of the body)",
-        "to (physically) straighten up",
-        "to support",
-        "to withstand",
-        "outstanding",
-        "(coll.) quite",
-        "very",
-        "classifier for machine guns"
+        "quite; very"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -35505,14 +35314,12 @@
         "介"
       ],
       "definitions": [
-        "because of",
-        "for",
-        "to",
-        "variant of 为[wei4]"
+        "for; because of"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -36261,35 +36068,13 @@
         "介"
       ],
       "definitions": [
-        "surname Xiang",
-        "to tend toward",
-        "to guide",
-        "variant of 向[xiang4]",
-        "towards",
-        "to face",
-        "to turn towards",
-        "direction",
-        "to support",
-        "to side with",
-        "shortly before",
-        "formerly",
-        "always",
-        "all along",
-        "(suffix) suitable for ...",
-        "oriented to ...",
-        "variant of 向[xiang4]",
-        "direction",
-        "orientation",
-        "to face",
-        "to turn toward",
-        "to",
-        "towards",
-        "shortly before",
-        "formerly"
+        "towards; to face",
+        "direction"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -36358,18 +36143,12 @@
         "副"
       ],
       "definitions": [
-        "to resemble",
-        "to be like",
-        "to look as if",
-        "such as",
-        "appearance",
-        "image",
-        "portrait",
-        "image under a mapping (math.)"
+        "as if; such as"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -37380,12 +37159,12 @@
         "量"
       ],
       "definitions": [
-        "page",
-        "leaf"
+        "page; classifier for pages"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -37921,12 +37700,12 @@
         "副"
       ],
       "definitions": [
-        "straight (in a straight line)",
-        "continuously; always; all the way through"
+        "continuously; all along"
       ],
       "quality": {
         "pinyinMatchesCedict": false,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -38862,16 +38641,12 @@
         "副"
       ],
       "definitions": [
-        "generic word for peoples or states of south China or south Asia at different historical periods",
-        "abbr. for Vietnam 越南",
-        "to exceed",
-        "to climb over",
-        "to surpass",
-        "the more... the more"
+        "the more... the more..."
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -39221,16 +38996,13 @@
         "量"
       ],
       "definitions": [
-        "surname Zhang",
-        "to open up",
-        "to spread",
-        "sheet of paper",
-        "classifier for flat objects, sheet",
-        "classifier for votes"
+        "to open; to spread",
+        "classifier for flat objects"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -39887,15 +39659,13 @@
         "量"
       ],
       "definitions": [
-        "seed",
-        "species",
-        "kind",
-        "type",
-        "classifier for types, kinds, sorts"
+        "kind; type",
+        "classifier for kinds"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -40231,16 +40001,13 @@
         "副"
       ],
       "definitions": [
-        "(bound form) general; overall",
-        "to sum up",
-        "in every case; always; invariably",
-        "anyway; after all; eventually; sooner or later",
-        "surely",
-        "(after a person's name) abbr. for 总经理[zong3 jing1 li3] or 总编[zong3 bian1] etc"
+        "always; invariably",
+        "anyway; after all"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -40745,19 +40512,12 @@
       ],
       "definitions": [
         "to press",
-        "to push",
-        "to leave aside or shelve",
-        "to control",
-        "to restrain",
-        "to keep one's hand on",
-        "to check or refer to",
-        "according to",
-        "in the light of",
-        "(of an editor or author) to make a comment"
+        "according to"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -42062,22 +41822,14 @@
         "连"
       ],
       "definitions": [
-        "and",
-        "furthermore",
-        "also",
-        "together with",
-        "(not) at all",
-        "simultaneously",
         "to combine",
-        "to join",
-        "to merge",
-        "to combine",
-        "to amalgamate",
-        "variant of 并[bing4]"
+        "and; also",
+        "not at all (with a negative)"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -42512,18 +42264,13 @@
         "量"
       ],
       "definitions": [
-        "ministry",
-        "department",
-        "section",
-        "part",
-        "division",
-        "troops",
-        "board",
-        "classifier for works of literature, films, machines etc"
+        "part; department",
+        "classifier for books, films, or machines"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -43426,16 +43173,12 @@
         "量"
       ],
       "definitions": [
-        "large place used for a specific purpose",
-        "stage",
-        "scene (of a play)",
-        "classifier for sporting or recreational activities",
-        "classifier for number of exams",
-        "variant of 场[chang3]"
+        "classifier for events, activities, or exams"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -43930,15 +43673,12 @@
         "副"
       ],
       "definitions": [
-        "to repeat",
-        "repetition",
-        "again",
-        "re-",
-        "classifier: layer"
+        "again; repeatedly"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -45835,28 +45575,13 @@
         "介"
       ],
       "definitions": [
-        "(onom.) dong",
-        "ding dong (bell)",
-        "to be",
-        "to act as",
-        "manage",
-        "withstand",
-        "when",
-        "during",
-        "ought",
-        "should",
-        "match equally",
-        "equal",
-        "same",
-        "obstruct",
-        "just at (a time or place)",
-        "on the spot",
-        "right",
-        "just at"
+        "to be; to serve as",
+        "when; during"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -46043,18 +45768,13 @@
         "量"
       ],
       "definitions": [
-        "road; path (CL:条[tiao2],股[gu3])",
-        "(bound form) way; reason; principle",
-        "(bound form) a skill; an art; a specialization",
-        "(Daoism) the Way; the Dao",
-        "to say (introducing a direct quotation, as in a novel)",
-        "(bound form) to express; to extend (polite words)",
-        "classifier for long thin things (rivers, cracks, shadows etc), barriers (walls, doors etc), questions (in an exam etc), commands, courses in a meal, steps in a process",
-        "(old) circuit (administrative division)"
+        "way; path",
+        "classifier for questions, courses, or barriers"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -46322,17 +46042,12 @@
         "助"
       ],
       "definitions": [
-        "to wait for; to await",
-        "by the time; when; till",
-        "and so on; etc.; et al.",
-        "(bound form) class; rank; grade",
-        "(bound form) equal to; same as",
-        "(used to end an enumeration)",
-        "(literary) (plural suffix attached to a personal pronoun or noun)"
+        "and so on; etc."
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -47583,18 +47298,12 @@
         "量"
       ],
       "definitions": [
-        "to stop",
-        "to pause",
-        "to arrange",
-        "to lay out",
-        "to kowtow",
-        "to stamp (one's foot)",
-        "at once",
-        "classifier for meals, beatings, scoldings etc: time, bout, spell, meal"
+        "classifier for meals, beatings, or scoldings"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -48538,12 +48247,13 @@
         "量"
       ],
       "definitions": [
-        "classifier for gifts, newspaper, magazine, papers, reports, contracts etc",
-        "variant of 分[fen4]"
+        "portion; copy",
+        "classifier for documents or jobs"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -48689,13 +48399,12 @@
         "量"
       ],
       "definitions": [
-        "width",
-        "roll",
-        "classifier for textiles or pictures"
+        "classifier for pictures or textiles"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -49349,17 +49058,12 @@
         "后缀"
       ],
       "definitions": [
-        "to feel",
-        "to move",
-        "to touch",
-        "to affect",
-        "feeling",
-        "emotion",
-        "(suffix) sense of ~"
+        "sense of; feeling of"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -54578,17 +54282,13 @@
         "副"
       ],
       "definitions": [
-        "will",
-        "shall",
-        "to use",
-        "to take",
-        "to checkmate",
-        "just a short while ago",
-        "(introduces object of main verb, used in the same way as 把[ba3])"
+        "will; shall",
+        "object marker similar to 把"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -55626,13 +55326,13 @@
         "连"
       ],
       "definitions": [
-        "outcome; result; consequence",
-        "in the end; as a result",
-        "to kill; to dispatch"
+        "result; outcome",
+        "as a result; in the end"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -57293,11 +56993,12 @@
         "量"
       ],
       "definitions": [
-        "classifier for trees, cabbages, plants etc"
+        "classifier for trees and plants"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -57519,24 +57220,12 @@
         "量"
       ],
       "definitions": [
-        "Ke (c. 2000 BC), seventh of the legendary Flame Emperors, 炎帝[Yan2 di4] descended from Shennong 神农[Shen2 nong2] Farmer God",
-        "abbr. for 克罗地亚[Ke4 luo2 di4 ya4], Croatia",
-        "(Tw) abbr. for 克罗埃西亚[Ke4 luo2 ai1 xi1 ya4], Croatia",
-        "to be able to",
-        "to subdue",
-        "to restrain",
-        "to overcome",
-        "gram",
-        "Tibetan unit of land area, about 6 ares",
-        "variant of 克[ke4]",
-        "to subdue",
-        "to overthrow",
-        "to restrain",
-        "variant of 克[ke4]"
+        "gram"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -59066,19 +58755,13 @@
         "介"
       ],
       "definitions": [
-        "surname Lian",
-        "to link",
-        "to join",
-        "to connect",
-        "continuously",
-        "in succession",
         "including",
-        "(used with 也[ye3], 都[dou1] etc) even",
-        "company (military)"
+        "even (used with 也 or 都)"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -59220,15 +58903,12 @@
         "量"
       ],
       "definitions": [
-        "two",
-        "both",
-        "some",
-        "a few",
-        "tael, unit of weight equal to 50 grams (modern) or 1⁄16 of a catty 斤[jin1] (old)"
+        "two; both"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -59295,16 +58975,13 @@
         "量"
       ],
       "definitions": [
-        "to arrange",
-        "to line up",
-        "file",
-        "series",
-        "(in data tables) column",
-        "(Tw) row"
+        "to line up; to arrange",
+        "row; column"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -60721,13 +60398,12 @@
         "量"
       ],
       "definitions": [
-        "second (unit of time)",
-        "arc second (angular measurement unit)",
-        "(coll.) instantly"
+        "second (unit of time)"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -62406,14 +62082,13 @@
         "量"
       ],
       "definitions": [
-        "sheet",
-        "piece of writing",
-        "bound set of bamboo slips used for record keeping (old)",
-        "classifier for written items: chapter, article"
+        "article; piece of writing",
+        "classifier for written works"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -62443,24 +62118,13 @@
         "量"
       ],
       "definitions": [
-        "thin piece",
-        "flake",
-        "a slice",
-        "film",
-        "TV play",
-        "to slice",
-        "to carve thin",
-        "partial",
-        "incomplete",
-        "one-sided",
-        "classifier for slices, tablets, tract of land, area of water",
-        "classifier for CDs, movies, DVDs etc",
-        "used with numeral 一[yi1]: classifier for scenario, scene, feeling, atmosphere, sound etc",
-        "Kangxi radical 91"
+        "slice; piece",
+        "classifier for slices or areas"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -62830,22 +62494,13 @@
         "量"
       ],
       "definitions": [
-        "a period of time",
-        "phase",
-        "stage",
-        "classifier for issues of a periodical, courses of study",
-        "time",
-        "term",
-        "period",
-        "to hope",
-        "Taiwan pr. [qi2]",
-        "variant of 期[qi1]",
-        "period",
-        "cycle"
+        "period; issue",
+        "classifier for periodicals or courses"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -67450,14 +67105,12 @@
         "量"
       ],
       "definitions": [
-        "head",
-        "chief",
-        "first (occasion, thing etc)",
-        "classifier for poems, songs etc"
+        "classifier for songs or poems"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -67856,7 +67509,8 @@
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -68776,25 +68430,12 @@
         "量"
       ],
       "definitions": [
-        "(classical) you (in letters)",
-        "variant of 台[tai2]",
-        "Taiwan (abbr.)",
-        "Taiwan (abbr.)",
-        "surname Tai",
-        "desk; table; counter",
-        "platform",
-        "stage",
-        "terrace",
-        "stand",
-        "support",
-        "station",
-        "broadcasting station",
-        "classifier for vehicles or machines",
-        "typhoon"
+        "classifier for machines or vehicles"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -69092,13 +68733,12 @@
         "量"
       ],
       "definitions": [
-        "classifier for times, round trips or rows",
-        "a time",
-        "a trip"
+        "trip; classifier for journeys or occurrences"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -72586,17 +72226,13 @@
         "量"
       ],
       "definitions": [
-        "back of neck",
-        "item",
-        "thing",
-        "term (in a mathematical formula)",
-        "sum (of money)",
-        "classifier for principles, items, clauses, tasks, research projects etc",
-        "surname Xiang"
+        "item; term",
+        "classifier for projects or tasks"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -73299,22 +72935,13 @@
         "后缀"
       ],
       "definitions": [
-        "nature",
-        "character",
-        "property",
-        "quality",
-        "attribute",
-        "sexuality",
-        "sex",
-        "gender",
-        "suffix forming adjective from verb",
-        "suffix forming noun from adjective, corresponding to -ness or -ity",
-        "essence",
-        "CL:个[ge4]"
+        "quality; nature",
+        "suffix corresponding to -ness or -ity"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -74654,12 +74281,12 @@
         "量"
       ],
       "definitions": [
-        "night",
-        "variant of 夜[ye4]"
+        "night"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -75501,15 +75128,13 @@
         "介"
       ],
       "definitions": [
-        "to follow",
-        "from",
-        "because of; due to",
-        "by; via; through",
-        "(before a noun and a verb) it is for ... to ..."
+        "by; through; via",
+        "because of"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -76016,13 +75641,12 @@
         "连"
       ],
       "definitions": [
-        "and",
-        "to give",
-        "together with"
+        "and; with"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -76373,19 +75997,13 @@
         "副"
       ],
       "definitions": [
-        "to make an appointment",
-        "to invite",
-        "approximately",
-        "pact",
-        "treaty",
-        "to economize",
-        "to restrict",
-        "to reduce (a fraction)",
-        "concise"
+        "approximately; about",
+        "to arrange an appointment"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -77162,18 +76780,13 @@
         "助"
       ],
       "definitions": [
-        "(after a verb or adjective) one who (is) ...",
-        "(after a noun) person involved in ...",
-        "-er",
-        "-ist",
-        "(used after a number or 后[hou4] or 前[qian2] to refer to sth mentioned previously)",
-        "(used after a term, to mark a pause before defining the term)",
-        "(old) (used at the end of a command)",
-        "(old) this"
+        "one who; person who",
+        "suffix corresponding to -er or -ist"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -77649,14 +77262,12 @@
         "助"
       ],
       "definitions": [
-        "(possessive particle, literary equivalent of 的[de5])",
-        "him",
-        "her",
-        "it"
+        "possessive particle; literary equivalent of 的"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -79307,13 +78918,12 @@
         "介"
       ],
       "definitions": [
-        "(bound form) self; oneself",
-        "from; since",
-        "naturally; as a matter of course"
+        "from; since"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -79751,15 +79361,13 @@
         "量"
       ],
       "definitions": [
-        "seat",
-        "base; stand",
-        "(bound form) constellation",
-        "(archaic) suffix used in a respectful form of address (e.g. 师座[shi1 zuo4])",
-        "classifier for large immovable objects such as buildings, mountains, bridges etc"
+        "seat; base",
+        "classifier for large stationary objects"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {
@@ -79954,21 +79562,13 @@
         "介"
       ],
       "definitions": [
-        "one's conduct",
-        "deed",
-        "activity",
-        "accomplishment",
-        "achievement",
         "to act as",
-        "as (in the capacity of)",
-        "qua",
-        "to view as",
-        "to look upon (sth as)",
-        "to take sth to be"
+        "as; in the capacity of"
       ],
       "quality": {
         "pinyinMatchesCedict": true,
-        "definitionNeedsReview": true
+        "definitionNeedsReview": false,
+        "definitionReviewed": true
       }
     },
     {

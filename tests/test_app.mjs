@@ -152,11 +152,26 @@ test("the data manifest only accepts local JSON filenames", async () => {
   const { datasetUrlFromManifest } = await loadTestFunctions();
 
   assert.equal(
-    datasetUrlFromManifest({ schemaVersion: 1, dataset: "levels-1-4.json" }),
-    "./data/levels-1-4.json",
+    datasetUrlFromManifest({
+      schemaVersion: 1,
+      dataset: "levels-1-4.json",
+      revision: "0123456789ab",
+    }),
+    "./data/levels-1-4.json?v=0123456789ab",
   );
   assert.throws(() =>
-    datasetUrlFromManifest({ schemaVersion: 1, dataset: "../private.json" }),
+    datasetUrlFromManifest({
+      schemaVersion: 1,
+      dataset: "../private.json",
+      revision: "0123456789ab",
+    }),
+  );
+  assert.throws(() =>
+    datasetUrlFromManifest({
+      schemaVersion: 1,
+      dataset: "levels-1-4.json",
+      revision: "not-a-hash",
+    }),
   );
 });
 

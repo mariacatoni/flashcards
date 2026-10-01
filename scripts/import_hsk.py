@@ -61,6 +61,11 @@ def parse_args() -> argparse.Namespace:
         nargs="+",
         help="Levels to include (default: every level present in the source)",
     )
+    parser.add_argument(
+        "--overrides",
+        type=Path,
+        help="Reviewed definition overrides keyed by stable card ID",
+    )
     return parser.parse_args()
 
 
@@ -174,6 +179,34 @@ def read_entries(
     return entries
 
 
+def apply_editorial_overrides(
+    entries: list[dict[str, object]], path: Path
+) -> list[dict[str, object]]:
+    document = json.loads(path.read_text(encoding="utf-8"))
+    if document.get("schemaVersion") != 1 or not isinstance(document.get("entries"), dict):
+        raise ValueError("Editorial overrides must use schemaVersion 1 and an entries object")
+
+    entries_by_id = {str(entry["id"]): entry for entry in entries}
+    unknown_ids = sorted(set(document["entries"]) - set(entries_by_id))
+    if unknown_ids:
+        raise ValueError(f"Editorial overrides contain unknown IDs: {', '.join(unknown_ids)}")
+
+    for entry_id, review in document["entries"].items():
+        definitions = review.get("definitions") if isinstance(review, dict) else None
+        if (
+            not isinstance(definitions, list)
+            or not definitions
+            or any(not isinstance(value, str) or not value.strip() for value in definitions)
+        ):
+            raise ValueError(f"{entry_id}: reviewed definitions must be non-empty strings")
+        entry = entries_by_id[entry_id]
+        entry["definitions"] = [value.strip() for value in definitions]
+        entry["quality"]["definitionNeedsReview"] = False
+        entry["quality"]["definitionReviewed"] = True
+
+    return entries
+
+
 def build_dataset(entries: list[dict[str, object]], levels: Iterable[int]) -> dict[str, object]:
     selected_levels = sorted(set(levels))
     level_counts = Counter(int(entry["level"]) for entry in entries)
@@ -225,6 +258,8 @@ def main() -> None:
     ):
         raise SystemExit("Levels must be integers from 1 through 9")
     entries = read_entries(args.input, requested_levels)
+    if args.overrides:
+        entries = apply_editorial_overrides(entries, args.overrides)
     if not entries:
         raise SystemExit("No entries matched the requested levels")
     levels = {int(entry["level"]) for entry in entries}

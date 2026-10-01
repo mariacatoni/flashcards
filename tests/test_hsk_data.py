@@ -4,7 +4,13 @@ import unittest
 from copy import deepcopy
 from pathlib import Path
 
-from scripts.import_hsk import build_dataset, read_entries, write_dataset
+from scripts.import_hsk import (
+    apply_editorial_overrides,
+    build_dataset,
+    read_entries,
+    write_dataset,
+)
+from scripts.build_definition_review import build_queue
 from scripts.check_stroke_coverage import build_report
 from scripts.select_hsk_source import select_rows
 from scripts.validate_hsk import load_expected_counts, validate
@@ -13,6 +19,7 @@ from scripts.validate_hsk import load_expected_counts, validate
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "data/sources/hsk-2025-11/hsk-levels-1-4.source.tsv"
 LEGACY_SOURCE = ROOT / "data/sources/hsk-2025-11/hsk-levels-1-2.source.tsv"
+OVERRIDES = ROOT / "data/sources/hsk-2025-11/editorial-overrides.json"
 
 
 class HskDataTests(unittest.TestCase):
@@ -67,6 +74,27 @@ class HskDataTests(unittest.TestCase):
             self.assertTrue(entry["characters"])
             self.assertTrue(entry["pinyin"]["readings"])
 
+    def test_editorial_overrides_are_explicit_and_valid(self):
+        entries = read_entries(SOURCE, {1, 2, 3, 4})
+        reviewed = apply_editorial_overrides(entries, OVERRIDES)
+        university = next(entry for entry in reviewed if entry["id"] == "hsk3-2025-11-0027-l1-da4-xue2")
+        self.assertEqual(["university; college"], university["definitions"])
+        self.assertFalse(university["quality"]["definitionNeedsReview"])
+        self.assertTrue(university["quality"]["definitionReviewed"])
+
+    def test_definition_review_queue_contains_only_unresolved_level_three_and_four_rows(self):
+        entries = apply_editorial_overrides(read_entries(SOURCE), OVERRIDES)
+        dataset = build_dataset(entries, {1, 2, 3, 4})
+        with tempfile.TemporaryDirectory() as directory:
+            dataset_path = Path(directory) / "dataset.json"
+            queue_path = Path(directory) / "review.tsv"
+            write_dataset(dataset, dataset_path)
+            summary = build_queue(dataset_path, queue_path, {3, 4}, 100)
+            self.assertGreater(summary["pending"], 0)
+            queue = queue_path.read_text(encoding="utf-8")
+            self.assertIn("status\treviewed_definition\treview_note", queue.splitlines()[0])
+            self.assertNotIn("hsk3-2025-11-0007-l4-ban4", queue)
+
     def test_same_written_form_can_have_distinct_pronunciations(self):
         guo = [entry for entry in self.entries if entry["simplified"] == "过"]
         self.assertEqual(2, len(guo))
@@ -114,6 +142,7 @@ class HskDataTests(unittest.TestCase):
             (ROOT / "dist/data/manifest.json").read_text(encoding="utf-8")
         )
         self.assertEqual(1, manifest["schemaVersion"])
+        self.assertRegex(manifest["revision"], r"^[a-f0-9]{12}$")
         published = ROOT / "dist/data" / manifest["dataset"]
         self.assertTrue(published.is_file())
 

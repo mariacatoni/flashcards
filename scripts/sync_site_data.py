@@ -2,6 +2,7 @@
 """Copy a generated dataset into the site and update its data manifest."""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import shutil
@@ -51,8 +52,13 @@ def main() -> None:
     target = DATA_DIRECTORY / target_name
     DATA_DIRECTORY.mkdir(parents=True, exist_ok=True)
     shutil.copyfile(source, target)
+    revision = hashlib.sha256(source.read_bytes()).hexdigest()[:12]
     MANIFEST.write_text(
-        json.dumps({"schemaVersion": 1, "dataset": target_name}, indent=2) + "\n",
+        json.dumps(
+            {"schemaVersion": 1, "dataset": target_name, "revision": revision},
+            indent=2,
+        )
+        + "\n",
         encoding="utf-8",
     )
     try:
@@ -60,7 +66,7 @@ def main() -> None:
     except ValueError:
         source_label = source
     print(f"Synced {source_label} to {target.relative_to(ROOT)}")
-    print(f"Updated {MANIFEST.relative_to(ROOT)} -> {target_name}")
+    print(f"Updated {MANIFEST.relative_to(ROOT)} -> {target_name}?v={revision}")
 
 
 if __name__ == "__main__":
