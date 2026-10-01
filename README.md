@@ -1,7 +1,7 @@
 # Chinese Flash Card App
 
-This repository currently contains the first implementation milestone: a
-versioned HSK 3.0 vocabulary data foundation for Levels 1 and 2.
+This repository contains a versioned HSK 3.0 vocabulary data foundation for
+Levels 1 and 2 and a buildless flashcard study interface.
 
 The generated data lives in `data/generated/hsk-2025-11/levels-1-2.json`.
 It is produced from the preserved source snapshot with:
@@ -37,8 +37,8 @@ Source provenance and licensing are documented in
 
 ## Local flashcard preview
 
-The Step 2 interface is a buildless static site in `dist/`. Sync the validated
-dataset and serve that directory with:
+The static interface is in `dist/`. Sync the validated dataset and serve that
+directory with:
 
 ```sh
 python3 scripts/sync_site_data.py
@@ -46,3 +46,7 @@ python3 -m http.server 4173 --directory dist
 ```
 
 Then open `http://localhost:4173`.
+
+Cards can be organized into To learn later, Studying, and Learned decks. Deck
+assignments are stored in the current browser with `localStorage`; they remain
+after a reload but are not yet synchronized between browsers or devices.

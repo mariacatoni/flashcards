@@ -40,39 +40,70 @@
         </div>
       </header>
 
-      <section class="flashcard" aria-label="Flashcard">
-        <div class="card-meta">
-          <span class="level-badge" id="level-badge">HSK</span>
-          <span class="part-of-speech" id="part-of-speech"></span>
+      <div class="study-workspace">
+        <div class="card-column">
+          <section class="flashcard" aria-label="Flashcard">
+            <div class="card-meta" id="card-meta">
+              <span class="level-badge" id="level-badge">HSK</span>
+              <span class="part-of-speech" id="part-of-speech"></span>
+            </div>
+
+            <div class="card-content" id="card-content" aria-live="polite">
+              <div class="hanzi" id="hanzi" lang="zh-Hans"></div>
+              <div class="pinyin" id="pinyin"></div>
+              <p class="translation" id="translation"></p>
+            </div>
+
+            <p class="error-message" id="error-message" role="alert" hidden></p>
+            <p class="empty-message" id="empty-message" role="status" hidden></p>
+          </section>
+
+          <nav class="card-navigation" aria-label="Flashcard navigation">
+            <button id="previous-card" type="button">Previous</button>
+            <button id="shuffle-card" type="button">Shuffle</button>
+            <button id="next-card" type="button">Next</button>
+          </nav>
+
+          <p class="keyboard-note">
+            Keyboard: left/right to move · P for pinyin · E for English · S to shuffle
+          </p>
         </div>
 
-        <div class="card-content" id="card-content" aria-live="polite">
-          <div class="hanzi" id="hanzi" lang="zh-Hans"></div>
-          <div class="pinyin" id="pinyin"></div>
-          <p class="translation" id="translation"></p>
-        </div>
+        <aside class="deck-panel" aria-label="Deck controls">
+          <label for="deck-filter">Deck</label>
+          <select id="deck-filter" aria-label="Choose study deck">
+            <option value="later">To learn later</option>
+            <option value="studying">Studying</option>
+            <option value="learned">Learned</option>
+          </select>
 
-        <p class="error-message" id="error-message" role="alert" hidden></p>
-      </section>
+          <fieldset class="deck-assignment" id="deck-assignment">
+            <legend>Move this card to</legend>
+            <div class="deck-options">
+              <button class="deck-button" type="button" data-deck="later">
+                To learn later
+              </button>
+              <button class="deck-button" type="button" data-deck="studying">
+                Studying
+              </button>
+              <button class="deck-button" type="button" data-deck="learned">
+                Learned
+              </button>
+            </div>
+          </fieldset>
 
-      <div class="visibility-controls" aria-label="Card visibility">
-        <button class="text-toggle" id="toggle-pinyin" type="button" aria-pressed="true">
-          Pinyin on
-        </button>
-        <button class="text-toggle" id="toggle-english" type="button" aria-pressed="true">
-          English on
-        </button>
+          <p class="deck-status" id="deck-status" aria-live="polite"></p>
+
+          <div class="visibility-controls" aria-label="Card visibility">
+            <button class="text-toggle" id="toggle-pinyin" type="button" aria-pressed="true">
+              Pinyin on
+            </button>
+            <button class="text-toggle" id="toggle-english" type="button" aria-pressed="true">
+              English on
+            </button>
+          </div>
+        </aside>
       </div>
-
-      <nav class="card-navigation" aria-label="Flashcard navigation">
-        <button id="previous-card" type="button">Previous</button>
-        <button id="shuffle-card" type="button">Shuffle</button>
-        <button id="next-card" type="button">Next</button>
-      </nav>
-
-      <p class="keyboard-note">
-        Keyboard: left/right to move · P for pinyin · E for English · S to shuffle
-      </p>
     </main>
   </body>
 </html>

@@ -1,15 +1,28 @@
+const STORAGE_KEY = "hsk-flashcards.deck-assignments.v1";
+const DEFAULT_DECK = "later";
+const DECK_LABELS = {
+  later: "To learn later",
+  studying: "Studying",
+  learned: "Learned",
+};
+
 const state = {
   document: null,
   cards: [],
   index: 0,
   level: "1",
+  deck: DEFAULT_DECK,
+  assignments: {},
+  canPersist: true,
   showPinyin: true,
   showEnglish: true,
 };
 
 const elements = {
   levelFilter: document.querySelector("#level-filter"),
+  deckFilter: document.querySelector("#deck-filter"),
   progress: document.querySelector("#progress"),
+  cardMeta: document.querySelector("#card-meta"),
   levelBadge: document.querySelector("#level-badge"),
   partOfSpeech: document.querySelector("#part-of-speech"),
   hanzi: document.querySelector("#hanzi"),
@@ -17,6 +30,10 @@ const elements = {
   translation: document.querySelector("#translation"),
   cardContent: document.querySelector("#card-content"),
   errorMessage: document.querySelector("#error-message"),
+  emptyMessage: document.querySelector("#empty-message"),
+  deckAssignment: document.querySelector("#deck-assignment"),
+  deckButtons: [...document.querySelectorAll(".deck-button")],
+  deckStatus: document.querySelector("#deck-status"),
   togglePinyin: document.querySelector("#toggle-pinyin"),
   toggleEnglish: document.querySelector("#toggle-english"),
   previous: document.querySelector("#previous-card"),
@@ -59,6 +76,59 @@ function currentCard() {
   return state.cards[state.index];
 }
 
+function deckFor(card) {
+  return state.assignments[card.id] ?? DEFAULT_DECK;
+}
+
+function loadAssignments() {
+  try {
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (!saved) return {};
+
+    const parsed = JSON.parse(saved);
+    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+
+    const validIds = new Set(state.document.entries.map((card) => card.id));
+    return Object.fromEntries(
+      Object.entries(parsed).filter(
+        ([id, deck]) => validIds.has(id) && Object.hasOwn(DECK_LABELS, deck),
+      ),
+    );
+  } catch (error) {
+    state.canPersist = false;
+    console.warn("Deck assignments could not be read from browser storage.", error);
+    return {};
+  }
+}
+
+function saveAssignments() {
+  if (!state.canPersist) return;
+
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state.assignments));
+  } catch (error) {
+    state.canPersist = false;
+    console.warn("Deck assignments could not be saved to browser storage.", error);
+  }
+}
+
+function cardsInSelectedLevel() {
+  return state.document.entries.filter(
+    (card) => state.level === "all" || String(card.level) === state.level,
+  );
+}
+
+function updateDeckOptions() {
+  const counts = { later: 0, studying: 0, learned: 0 };
+  cardsInSelectedLevel().forEach((card) => {
+    counts[deckFor(card)] += 1;
+  });
+
+  [...elements.deckFilter.options].forEach((option) => {
+    option.textContent = `${DECK_LABELS[option.value]} (${counts[option.value]})`;
+  });
+}
+
 function createToneSpan(text, tone) {
   const span = document.createElement("span");
   span.className = `tone-${tone}`;
@@ -97,7 +167,30 @@ function renderPinyin(card) {
 
 function render() {
   const card = currentCard();
-  if (!card) return;
+  const hasCard = Boolean(card);
+
+  elements.cardMeta.hidden = !hasCard;
+  elements.cardContent.hidden = !hasCard;
+  elements.emptyMessage.hidden = hasCard;
+  elements.deckButtons.forEach((button) => {
+    button.disabled = !hasCard;
+    button.setAttribute(
+      "aria-pressed",
+      String(hasCard && button.dataset.deck === deckFor(card)),
+    );
+  });
+  [elements.previous, elements.shuffle, elements.next].forEach((button) => {
+    button.disabled = !hasCard;
+  });
+
+  if (!hasCard) {
+    const levelLabel = state.level === "all" ? "HSK 1–2" : `HSK ${state.level}`;
+    elements.progress.textContent = "0 of 0";
+    elements.emptyMessage.textContent =
+      `No ${levelLabel} cards are in ${DECK_LABELS[state.deck]} yet. ` +
+      "Choose another deck to move cards here.";
+    return;
+  }
 
   elements.progress.textContent = `${state.index + 1} of ${state.cards.length}`;
   elements.levelBadge.textContent = `HSK ${card.level}`;
@@ -116,16 +209,43 @@ function render() {
   elements.translation.classList.toggle("is-concealed", !state.showEnglish);
 }
 
-function setLevel(level) {
-  state.level = level;
-  state.cards = state.document.entries.filter(
-    (card) => level === "all" || String(card.level) === level,
-  );
-  state.index = 0;
+function applyFilters(resetIndex = true) {
+  state.cards = cardsInSelectedLevel().filter((card) => deckFor(card) === state.deck);
+  state.index = resetIndex
+    ? 0
+    : Math.min(state.index, Math.max(state.cards.length - 1, 0));
+  updateDeckOptions();
   render();
 }
 
+function setLevel(level) {
+  state.level = level;
+  elements.deckStatus.textContent = "";
+  applyFilters();
+}
+
+function setDeckFilter(deck) {
+  state.deck = deck;
+  elements.deckStatus.textContent = "";
+  applyFilters();
+}
+
+function assignCurrentCard(deck) {
+  const card = currentCard();
+  if (!card || !Object.hasOwn(DECK_LABELS, deck)) return;
+
+  if (deck === DEFAULT_DECK) delete state.assignments[card.id];
+  else state.assignments[card.id] = deck;
+
+  saveAssignments();
+  const persistenceNote = state.canPersist ? "" : " for this session only";
+  elements.deckStatus.textContent =
+    `${card.simplified} moved to ${DECK_LABELS[deck]}${persistenceNote}.`;
+  applyFilters(false);
+}
+
 function move(offset) {
+  if (state.cards.length === 0) return;
   state.index = (state.index + offset + state.cards.length) % state.cards.length;
   render();
 }
@@ -153,6 +273,12 @@ function setVisibility(kind, visible) {
 
 function bindEvents() {
   elements.levelFilter.addEventListener("change", (event) => setLevel(event.target.value));
+  elements.deckFilter.addEventListener("change", (event) =>
+    setDeckFilter(event.target.value),
+  );
+  elements.deckButtons.forEach((button) => {
+    button.addEventListener("click", () => assignCurrentCard(button.dataset.deck));
+  });
   elements.previous.addEventListener("click", () => move(-1));
   elements.next.addEventListener("click", () => move(1));
   elements.shuffle.addEventListener("click", shuffle);
@@ -181,9 +307,12 @@ async function initialize() {
     const response = await fetch("./data/levels-1-2.json");
     if (!response.ok) throw new Error(`Data request failed with status ${response.status}`);
     state.document = await response.json();
-    setLevel(state.level);
+    state.assignments = loadAssignments();
+    applyFilters();
   } catch (error) {
     elements.cardContent.hidden = true;
+    elements.cardMeta.hidden = true;
+    elements.deckAssignment.disabled = true;
     elements.errorMessage.hidden = false;
     elements.errorMessage.textContent =
       "The flashcard data could not be loaded. Please refresh the page.";

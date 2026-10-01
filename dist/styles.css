@@ -16,6 +16,8 @@
   --level-1-ink: #405c67;
   --level-2-bg: #eee9de;
   --level-2-ink: #6c5b3f;
+  --deck-active: #e7ebe7;
+  --deck-active-ink: #34493d;
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", sans-serif;
   font-synthesis: none;
@@ -23,6 +25,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
 }
 
 body {
@@ -72,7 +78,7 @@ select:focus-visible {
 }
 
 .study-shell {
-  width: min(760px, calc(100% - 2rem));
+  width: min(1040px, calc(100% - 2rem));
   margin: 0 auto;
   padding: clamp(1.25rem, 4vw, 3rem) 0 2rem;
 }
@@ -105,7 +111,7 @@ select:focus-visible {
 
 .study-context {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto minmax(116px, auto);
   align-items: center;
   gap: 0.25rem 0.6rem;
   font-size: 0.88rem;
@@ -124,6 +130,39 @@ select:focus-visible {
 
 .study-context select {
   min-width: 96px;
+  padding: 0 2.25rem 0 0.7rem;
+  background: var(--surface);
+}
+
+.study-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 760px) minmax(190px, 230px);
+  align-items: start;
+  gap: clamp(1.25rem, 3vw, 2rem);
+}
+
+.card-column {
+  min-width: 0;
+}
+
+.deck-panel {
+  min-width: 0;
+  min-height: clamp(390px, 58vh, 540px);
+  display: flex;
+  flex-direction: column;
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  border-left: 1px solid var(--line);
+}
+
+.deck-panel > label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.deck-panel > select {
+  width: 100%;
   padding: 0 2.25rem 0 0.7rem;
   background: var(--surface);
 }
@@ -208,6 +247,15 @@ select:focus-visible {
   line-height: 1.55;
 }
 
+.empty-message {
+  width: min(28rem, 100%);
+  margin: auto;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
 .is-concealed {
   visibility: hidden;
 }
@@ -238,19 +286,69 @@ select:focus-visible {
   text-align: center;
 }
 
-.visibility-controls,
+.deck-assignment {
+  min-width: 0;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  border: 0;
+}
+
+.deck-assignment legend {
+  width: 100%;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+  text-align: left;
+}
+
+.deck-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.deck-button {
+  color: var(--muted);
+  border-color: var(--line);
+}
+
+.deck-button[aria-pressed="true"] {
+  color: var(--deck-active-ink);
+  background: var(--deck-active);
+  border-color: #87988d;
+}
+
+.deck-button:disabled,
+.card-navigation button:disabled {
+  color: #9da3a4;
+  cursor: not-allowed;
+  background: transparent;
+  border-color: var(--line);
+}
+
+.deck-status {
+  min-height: 1.2rem;
+  margin: 0.5rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
 .card-navigation {
-  display: flex;
   gap: 0.65rem;
 }
 
 .visibility-controls {
-  justify-content: center;
-  margin: 0.85rem 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
 }
 
 .text-toggle {
-  min-width: 112px;
+  min-width: 0;
+  padding-inline: 0.5rem;
   color: var(--muted);
   border-color: var(--line);
 }
@@ -281,6 +379,44 @@ select:focus-visible {
   text-align: center;
 }
 
+@media (max-width: 860px) {
+  .study-shell {
+    width: min(760px, calc(100% - 2rem));
+  }
+
+  .study-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .deck-panel {
+    min-height: 0;
+    padding: 1rem 0 0;
+    border-top: 1px solid var(--line);
+    border-left: 0;
+  }
+
+  .deck-panel > select {
+    width: min(100%, 18rem);
+  }
+
+  .visibility-controls {
+    width: min(100%, 18rem);
+  }
+
+  .deck-assignment {
+    margin-top: 1rem;
+  }
+
+  .deck-assignment legend,
+  .deck-status {
+    text-align: center;
+  }
+
+  .deck-options {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (max-width: 560px) {
   .study-shell {
     width: min(100% - 1rem, 760px);
@@ -288,7 +424,17 @@ select:focus-visible {
   }
 
   .study-header {
-    align-items: start;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.8rem;
+  }
+
+  .study-context {
+    grid-template-columns: 4rem 1fr;
+  }
+
+  .study-context output {
+    text-align: left;
   }
 
   .flashcard {
@@ -301,10 +447,21 @@ select:focus-visible {
 
   .visibility-controls {
     gap: 0.4rem;
+    margin-top: 0;
+    padding-top: 1rem;
+  }
+
+  .deck-options {
+    gap: 0.35rem;
+  }
+
+  .deck-button {
+    min-height: 48px;
+    padding-inline: 0.5rem;
   }
 
   .text-toggle {
-    flex: 1;
+    min-height: 48px;
   }
 
   .card-navigation button {
