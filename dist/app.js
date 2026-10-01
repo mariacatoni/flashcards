@@ -1,4 +1,6 @@
-const STORAGE_KEY = "hsk-flashcards.deck-assignments.v1";
+const STORAGE_KEY = "hsk-flashcards.deck-assignments.v2";
+const LEGACY_STORAGE_KEY = "hsk-flashcards.deck-assignments.v1";
+const LEGACY_DEFAULT_DECK = "later";
 const DEFAULT_DECK = "studying";
 const DECK_LABELS = {
   later: "To learn later",
@@ -83,20 +85,45 @@ function deckFor(card) {
   return state.assignments[card.id] ?? DEFAULT_DECK;
 }
 
+function sanitizeAssignments(value, validIds) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return {};
+
+  return Object.fromEntries(
+    Object.entries(value).filter(
+      ([id, deck]) => validIds.has(id) && Object.hasOwn(DECK_LABELS, deck),
+    ),
+  );
+}
+
+function migrateLegacyAssignments(entries, value) {
+  const validIds = new Set(entries.map((card) => card.id));
+  const legacyAssignments = sanitizeAssignments(value, validIds);
+
+  return Object.fromEntries(
+    entries
+      .map((card) => [
+        card.id,
+        legacyAssignments[card.id] ?? LEGACY_DEFAULT_DECK,
+      ])
+      .filter(([, deck]) => deck !== DEFAULT_DECK),
+  );
+}
+
 function loadAssignments() {
   try {
     const saved = localStorage.getItem(STORAGE_KEY);
-    if (!saved) return {};
-
-    const parsed = JSON.parse(saved);
-    if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
-
     const validIds = new Set(state.document.entries.map((card) => card.id));
-    return Object.fromEntries(
-      Object.entries(parsed).filter(
-        ([id, deck]) => validIds.has(id) && Object.hasOwn(DECK_LABELS, deck),
-      ),
+    if (saved) return sanitizeAssignments(JSON.parse(saved), validIds);
+
+    const legacySaved = localStorage.getItem(LEGACY_STORAGE_KEY);
+    if (!legacySaved) return {};
+
+    const migrated = migrateLegacyAssignments(
+      state.document.entries,
+      JSON.parse(legacySaved),
     );
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(migrated));
+    return migrated;
   } catch (error) {
     state.canPersist = false;
     console.warn("Deck assignments could not be read from browser storage.", error);
