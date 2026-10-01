@@ -49,4 +49,8 @@ Then open `http://localhost:4173`.
 
 Cards can be organized into To learn later, Studying, and Learned decks. Deck
 assignments are stored in the current browser with `localStorage`; they remain
-after a reload but are not yet synchronized between browsers or devices.
+after a reload but are not yet synchronized between browsers or devices. New
+and unassigned cards begin in Studying.
+
+Cards can also be filtered by simplified characters, tone-marked pinyin,
+numbered pinyin, or pinyin without tones.

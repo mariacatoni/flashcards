@@ -40,18 +40,21 @@ body {
 }
 
 button,
-select {
+select,
+input {
   font: inherit;
 }
 
 button,
 select,
+input,
 .flashcard {
   border-radius: 3px;
 }
 
 button,
-select {
+select,
+input {
   min-height: 42px;
   color: var(--ink);
   background: transparent;
@@ -72,7 +75,8 @@ button:active {
 }
 
 button:focus-visible,
-select:focus-visible {
+select:focus-visible,
+input:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--focus) 35%, transparent);
   outline-offset: 2px;
 }
@@ -159,6 +163,23 @@ select:focus-visible {
   margin-bottom: 0.4rem;
   color: var(--muted);
   font-size: 0.78rem;
+}
+
+.search-control {
+  margin-bottom: 1.5rem;
+}
+
+.search-control label {
+  display: block;
+  margin-bottom: 0.4rem;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.search-control input {
+  width: 100%;
+  padding: 0 0.7rem;
+  background: var(--surface);
 }
 
 .deck-panel > select {
@@ -396,6 +417,10 @@ select:focus-visible {
   }
 
   .deck-panel > select {
+    width: min(100%, 18rem);
+  }
+
+  .search-control {
     width: min(100%, 18rem);
   }
 

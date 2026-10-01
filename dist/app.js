@@ -1,10 +1,11 @@
 const STORAGE_KEY = "hsk-flashcards.deck-assignments.v1";
-const DEFAULT_DECK = "later";
+const DEFAULT_DECK = "studying";
 const DECK_LABELS = {
   later: "To learn later",
   studying: "Studying",
   learned: "Learned",
 };
+const TONE_MARK_PATTERN = /[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/u;
 
 const state = {
   document: null,
@@ -12,6 +13,7 @@ const state = {
   index: 0,
   level: "1",
   deck: DEFAULT_DECK,
+  query: "",
   assignments: {},
   canPersist: true,
   showPinyin: true,
@@ -20,6 +22,7 @@ const state = {
 
 const elements = {
   levelFilter: document.querySelector("#level-filter"),
+  searchInput: document.querySelector("#search-input"),
   deckFilter: document.querySelector("#deck-filter"),
   progress: document.querySelector("#progress"),
   cardMeta: document.querySelector("#card-meta"),
@@ -118,6 +121,65 @@ function cardsInSelectedLevel() {
   );
 }
 
+function normalizeMarkedPinyin(value) {
+  return value
+    .trim()
+    .toLowerCase()
+    .normalize("NFC")
+    .replaceAll("u:", "ü")
+    .replaceAll("v", "ü")
+    .replace(/[\s'’.-]/g, "");
+}
+
+function normalizeNumberedPinyin(value) {
+  return value
+    .trim()
+    .toLowerCase()
+    .normalize("NFC")
+    .replaceAll("u:", "v")
+    .replaceAll("ü", "v")
+    .replace(/[^a-z1-5]/g, "");
+}
+
+function normalizePlainPinyin(value) {
+  return value
+    .trim()
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replaceAll("v", "u")
+    .replace(/[1-5]/g, "")
+    .replace(/[^a-z]/g, "");
+}
+
+function matchesSearch(card) {
+  const query = state.query.trim();
+  if (!query) return true;
+  if (card.simplified.includes(query)) return true;
+
+  if (/[1-5]/.test(query)) {
+    const normalizedQuery = normalizeNumberedPinyin(query);
+    return (
+      normalizedQuery.length > 0 &&
+      normalizeNumberedPinyin(card.pinyin.numbered).includes(normalizedQuery)
+    );
+  }
+
+  if (TONE_MARK_PATTERN.test(query.normalize("NFC"))) {
+    const normalizedQuery = normalizeMarkedPinyin(query);
+    return (
+      normalizedQuery.length > 0 &&
+      normalizeMarkedPinyin(card.pinyin.display).includes(normalizedQuery)
+    );
+  }
+
+  const normalizedQuery = normalizePlainPinyin(query);
+  return (
+    normalizedQuery.length > 0 &&
+    normalizePlainPinyin(card.pinyin.display).includes(normalizedQuery)
+  );
+}
+
 function updateDeckOptions() {
   const counts = { later: 0, studying: 0, learned: 0 };
   cardsInSelectedLevel().forEach((card) => {
@@ -186,9 +248,10 @@ function render() {
   if (!hasCard) {
     const levelLabel = state.level === "all" ? "HSK 1–2" : `HSK ${state.level}`;
     elements.progress.textContent = "0 of 0";
-    elements.emptyMessage.textContent =
-      `No ${levelLabel} cards are in ${DECK_LABELS[state.deck]} yet. ` +
-      "Choose another deck to move cards here.";
+    elements.emptyMessage.textContent = state.query.trim()
+      ? `No ${levelLabel} cards in ${DECK_LABELS[state.deck]} match “${state.query.trim()}”.`
+      : `No ${levelLabel} cards are in ${DECK_LABELS[state.deck]} yet. ` +
+        "Choose another deck to move cards here.";
     return;
   }
 
@@ -210,7 +273,9 @@ function render() {
 }
 
 function applyFilters(resetIndex = true) {
-  state.cards = cardsInSelectedLevel().filter((card) => deckFor(card) === state.deck);
+  state.cards = cardsInSelectedLevel().filter(
+    (card) => deckFor(card) === state.deck && matchesSearch(card),
+  );
   state.index = resetIndex
     ? 0
     : Math.min(state.index, Math.max(state.cards.length - 1, 0));
@@ -226,6 +291,12 @@ function setLevel(level) {
 
 function setDeckFilter(deck) {
   state.deck = deck;
+  elements.deckStatus.textContent = "";
+  applyFilters();
+}
+
+function setSearch(query) {
+  state.query = query;
   elements.deckStatus.textContent = "";
   applyFilters();
 }
@@ -273,6 +344,7 @@ function setVisibility(kind, visible) {
 
 function bindEvents() {
   elements.levelFilter.addEventListener("change", (event) => setLevel(event.target.value));
+  elements.searchInput.addEventListener("input", (event) => setSearch(event.target.value));
   elements.deckFilter.addEventListener("change", (event) =>
     setDeckFilter(event.target.value),
   );
@@ -291,7 +363,13 @@ function bindEvents() {
 
   document.addEventListener("keydown", (event) => {
     const target = event.target;
-    if (target instanceof HTMLSelectElement || target instanceof HTMLButtonElement) return;
+    if (
+      target instanceof HTMLInputElement ||
+      target instanceof HTMLSelectElement ||
+      target instanceof HTMLButtonElement
+    ) {
+      return;
+    }
 
     if (event.key === "ArrowLeft") move(-1);
     if (event.key === "ArrowRight") move(1);
